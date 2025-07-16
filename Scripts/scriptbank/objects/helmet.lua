@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Helmet v25   by Necrym59
+-- Helmet v27   by Necrym59
 -- DESCRIPTION: The applied object will give the player a Helmet Hud? Set Always active ON.
 -- DESCRIPTION: [PICKUP_TEXT$="E to Pickup/Wear"]
 -- DESCRIPTION: [PICKUP_RANGE=80(1,100)]
@@ -13,7 +13,8 @@
 -- DESCRIPTION: [@COMPASS=2(1=On, 2=Off)]
 -- DESCRIPTION: [@COMPASS_POSITION=2(1=Top, 2=Bottom)]
 -- DESCRIPTION: [IMAGEFILE$="imagebank\\misc\\testimages\\helmethud1.png"] for the Helmet overlay image
--- DESCRIPTION: [NIGHTVISION_COLOR!=0] If set on will change nightvision rgb values set.
+-- DESCRIPTION: [@@HUD_SCREEN$="In-Game HUD"(0=hudscreenlist)] eg; In-Game HUD 2
+-- DESCRIPTION: [@NIGHTVISION_CAPABILITY=0(0=Off,1=On)] If set ON will change nightvision to set rgb values.
 -- DESCRIPTION: [NIGHTVISION_AMBIENCE_R=0(0,255)]
 -- DESCRIPTION: [NIGHTVISION_AMBIENCE_G=180(0,255)]
 -- DESCRIPTION: [NIGHTVISION_AMBIENCE_B=0(0,255)]
@@ -23,16 +24,21 @@
 -- DESCRIPTION: [NIGHTVISION_FOG_B=0(0,255)]
 -- DESCRIPTION: [NIGHTVISION_FOG_NEAREST=0(0,100)]
 -- DESCRIPTION: [NIGHTVISION_FOG_DISTANCE=50(0,100)]
--- DESCRIPTION: [TOXIC_PROTECTION!=0] If set on will protect against toxic or radiation zones.
+-- DESCRIPTION: [@TOXICITY_PROTECTION=0(0=Off,1=On)] If set ON will protect against toxic or radiation zones.
+-- DESCRIPTION: [@PROMPT_DISPLAY=1(1=Local,2=Screen)]
+-- DESCRIPTION: [@ITEM_HIGHLIGHT=0(0=None,1=Shape,2=Outline,3=Icon)]
+-- DESCRIPTION: [HIGHLIGHT_ICON_IMAGEFILE$="imagebank\\icons\\pickup.png"]
 -- DESCRIPTION: <Sound0> for pickup/wearing/removing
 -- DESCRIPTION: <Sound1> loop for while wearing
 -- DESCRIPTION: <Sound2> for NightVison On/Off
 
+local module_misclib = require "scriptbank\\module_misclib"
 local U = require "scriptbank\\utillib"
 g_have_helmet = {}
 g_toxiczone = {}
 g_gasmask_on = {}
 g_radsuit_on = {}
+g_tEnt = {}
 
 local helmet = {}
 local pickup_text = {}
@@ -47,7 +53,8 @@ local max_zoom = {}
 local compass = {}
 local compass_position = {}
 local screen_image = {}
-local nightvision_color = {}
+local hud_screen = {}
+local nightvision_capability = {}
 local nightvision_ambience_r = {}
 local nightvision_ambience_g = {}
 local nightvision_ambience_b = {}
@@ -57,7 +64,10 @@ local nightvision_fog_g = {}
 local nightvision_fog_b = {}
 local nightvision_fog_nearest = {}
 local nightvision_fog_distance = {}
-local toxic_protection = {}
+local toxicity_protection = {}
+local prompt_display = {}
+local item_highlight = {}
+local highlight_icon = {}
 
 local compass_pos = {}
 local last_gun = {}
@@ -92,8 +102,13 @@ local nv_fog_b = {}
 local nv_fog_near = {}
 local nv_fog_dist = {}
 local current_fov = {}
+local hudonce = {}
+local hl_icon = {}
+local hl_imgwidth = {}
+local hl_imgheight = {}
+local last_gun = g_PlayerGunName
 
-function helmet_properties(e, pickup_text, pickup_range, usage_text, helmet_mode, min_zoom, max_zoom, zoom_speed, zoom_readout_x, zoom_readout_y, compass, compass_position, screen_image, nightvision_color, nightvision_ambience_r, nightvision_ambience_g, nightvision_ambience_b, nightvision_intensity, nightvision_fog_r, nightvision_fog_g, nightvision_fog_b, nightvision_fog_nearest, nightvision_fog_distance, toxic_protection)
+function helmet_properties(e, pickup_text, pickup_range, usage_text, helmet_mode, min_zoom, max_zoom, zoom_speed, zoom_readout_x, zoom_readout_y, compass, compass_position, screen_image, hud_screen, nightvision_capability, nightvision_ambience_r, nightvision_ambience_g, nightvision_ambience_b, nightvision_intensity, nightvision_fog_r, nightvision_fog_g, nightvision_fog_b, nightvision_fog_nearest, nightvision_fog_distance, toxicity_protection, prompt_display, item_highlight, highlight_icon_imagefile)
 	helmet[e].pickup_text = pickup_text
 	helmet[e].pickup_range = pickup_range
 	helmet[e].usage_text = usage_text
@@ -106,7 +121,8 @@ function helmet_properties(e, pickup_text, pickup_range, usage_text, helmet_mode
 	helmet[e].compass = compass or 2
 	helmet[e].compass_position = compass_position
 	helmet[e].screen_image = imagefile or screen_image
-	helmet[e].nightvision_color = nightvision_color or 1
+	helmet[e].hud_screen = hud_screen
+	helmet[e].nightvision_capability = nightvision_capability or 1
 	helmet[e].nightvision_ambience_r = nightvision_ambience_r
 	helmet[e].nightvision_ambience_g = nightvision_ambience_g
 	helmet[e].nightvision_ambience_b = nightvision_ambience_b
@@ -116,7 +132,10 @@ function helmet_properties(e, pickup_text, pickup_range, usage_text, helmet_mode
 	helmet[e].nightvision_fog_b = nightvision_fog_b
 	helmet[e].nightvision_fog_nearest = nightvision_fog_nearest
 	helmet[e].nightvision_fog_distance = nightvision_fog_distance
-	helmet[e].toxic_protection = toxic_protection or 0
+	helmet[e].toxicity_protection = toxicity_protection or 0
+	helmet[e].prompt_display = prompt_display
+	helmet[e].item_highlight = item_highlight
+	helmet[e].highlight_icon = highlight_icon_imagefile
 end
 
 function helmet_init(e)
@@ -133,7 +152,8 @@ function helmet_init(e)
 	helmet[e].compass = 2
 	helmet[e].compass_position = 1
 	helmet[e].screen_image = "imagebank\\misc\\testimages\\helmethud1.png"
-	helmet[e].nightvision_color = nightvision_color or 1
+	helmet[e].hud_screen = ""
+	helmet[e].nightvision_capability = nightvision_capability or 1
 	helmet[e].nightvision_ambience_r = 0
 	helmet[e].nightvision_ambience_g = 180
 	helmet[e].nightvision_ambience_b = 0
@@ -143,10 +163,14 @@ function helmet_init(e)
 	helmet[e].nightvision_fog_b = 0
 	helmet[e].nightvision_fog_nearest = 0
 	helmet[e].nightvision_fog_distance = 50	
-	helmet[e].toxic_protection = 0
+	helmet[e].toxicity_protection = 0
+	helmet[e].prompt_display = 1
+	helmet[e].item_highlight = 0
+	helmet[e].highlight_icon = "imagebank\\icons\\pickup.png"
 
 	have_helmet[e] = 0
 	g_have_helmet = 0
+	g_tEnt = 0
 	start_wheel = 0
 	mod = 0
 	fov = 0
@@ -157,6 +181,7 @@ function helmet_init(e)
 	init_compass()
 	nvswitch[e] = 0
 	hmswitch[e] = 0
+	hudonce[e] = 0
 	doloop[e] = 0
 	g_gasmask_on = 0
 	g_radsuit_on = 0	
@@ -172,15 +197,29 @@ function helmet_init(e)
 	default_FogBlue = GetFogBlue()
 	default_FogNearest = GetFogNearest()
 	default_FogDistance = GetFogDistance()
+	hl_icon[e] = ""
+	hl_imgwidth[e] = 0
+	hl_imgheight[e] = 0
 end
 
 function helmet_main(e)
 
 	if status[e] == "init" then
-		helmetsp[e] = CreateSprite(LoadImage(helmet[e].screen_image))
-		SetSpriteSize(helmetsp[e],100,100)
-		SetSpriteDepth(helmetsp[e],100)
-		SetSpritePosition(helmetsp[e],1000,1000)
+		if helmet[e].item_highlight == 3 and helmet[e].highlight_icon ~= "" then
+			hl_icon[e] = CreateSprite(LoadImage(helmet[e].highlight_icon))
+			hl_imgwidth[e] = GetImageWidth(LoadImage(helmet[e].highlight_icon))
+			hl_imgheight[e] = GetImageHeight(LoadImage(helmet[e].highlight_icon))
+			SetSpriteSize(hl_icon[e],-1,-1)
+			SetSpriteDepth(hl_icon[e],100)
+			SetSpriteOffset(hl_icon[e],hl_imgwidth[e]/2.0, hl_imgheight[e]/2.0)
+			SetSpritePosition(hl_icon[e],500,500)
+		end
+		if helmet[e].screen_image ~= "" then	
+			helmetsp[e] = CreateSprite(LoadImage(helmet[e].screen_image))
+			SetSpriteSize(helmetsp[e],100,100)
+			SetSpriteDepth(helmetsp[e],99)
+			SetSpritePosition(helmetsp[e],1000,1000)
+		end	
 		compass_pos = helmet[e].compass_position
 		mod = g_PlayerFOV
 		fov = g_PlayerFOV
@@ -210,30 +249,41 @@ function helmet_main(e)
 		g_have_helmet = have_helmet[e]
 		if helmet[e].helmet_mode == 1 or helmet[e].helmet_mode == 2 then
 			if PlayerDist < helmet[e].pickup_range and g_PlayerHealth > 0 and have_helmet[e] == 0 then
-				PromptLocal(e,helmet[e].pickup_text)
-				if g_KeyPressE == 1 then
-					have_helmet[e] = 1
-					if GetEntityCollectable(e) == 1 then SetEntityCollected(e,1) end
-					PlaySound(e,0)
-					LoopNon3DSound(e,1)
-					Hide(e)
-					CollisionOff(e)
-					SetPosition(e,g_PlayerPosX,g_PlayerPosY+500,g_PlayerPosZ)
-					ActivateIfUsed(e)
-				end
+				--pinpoint select object--
+				module_misclib.pinpoint(e,helmet[e].pickup_range,helmet[e].item_highlight,hl_icon[e])
+				--end pinpoint select object--
+				if PlayerDist < helmet[e].pickup_range and g_tEnt == e then
+					if helmet[e].prompt_display == 1 then TextCenterOnX(50,54,1,helmet[e].pickup_text) end
+					if helmet[e].prompt_display == 2 then Prompt(helmet[e].pickup_text) end				
+					if g_KeyPressE == 1 then
+						have_helmet[e] = 1
+						if GetEntityCollectable(e) == 1 then SetEntityCollected(e,1) end
+						PlaySound(e,0)
+						LoopNon3DSound(e,1)
+						Hide(e)
+						CollisionOff(e)
+						SetPosition(e,g_PlayerPosX,g_PlayerPosY+500,g_PlayerPosZ)
+						ActivateIfUsed(e)						
+					end
+				end	
 			end
 		end
 	end
 	if have_helmet[e] == 1 then
 		g_have_helmet = have_helmet[e]
 		if hmswitch[e] == 0 then
-			if helmet[e].toxic_protection == 1 then
+			if helmet[e].toxicity_protection == 1 then
 				g_gasmask_on = 1
 				g_radsuit_on = 1
 			end	
 			ResetPosition(e,g_PlayerPosX,g_PlayerPosY+500,g_PlayerPosZ)
 			PasteSpritePosition(helmetsp[e],0,0)
 			TextCenterOnXColor(50,95,2,helmet[e].usage_text,100,255,100)
+			if hudonce[e] == 0 and helmet[e].hud_screen ~= "" then
+				ScreenToggle(helmet[e].hud_screen)
+				g_liveHudScreen = 1
+				hudonce[e] = 1
+			end
 			if doloop[e] == 0 then
 				LoopNon3DSound(e,1)
 				doloop[e] = 1
@@ -245,7 +295,7 @@ function helmet_main(e)
 			end
 		end
 		if hmswitch[e] == 1 then
-			if helmet[e].toxic_protection == 1 then
+			if helmet[e].toxicity_protection == 1 then
 				g_gasmask_on = 0
 				g_radsuit_on = 0
 			end
@@ -289,7 +339,7 @@ function helmet_main(e)
 		if g_Time > keypause1[e] and nvswitch[e] == 0 then
 			if GetInKey() == "n" or GetInKey() == "N" and nvswitch[e] == 0 then
 				PlaySound(e,2)
-				if helmet[e].nightvision_color == 1 then
+				if helmet[e].nightvision_capability == 1 then
 					SetAmbienceRed(nv_ambience_r[e])
 					SetAmbienceGreen(nv_ambience_g[e])
 					SetAmbienceBlue(nv_ambience_b[e])
@@ -322,10 +372,12 @@ function helmet_main(e)
 		end
 		if helmet[e].helmet_mode == 1 then
 			if GetInKey() == "h" or GetInKey() == "H" then
-				local ox,oy,oz = U.Rotate3D( 0, 60, 0, math.rad( g_PlayerAngX ), math.rad( g_PlayerAngY ), math.rad( g_PlayerAngZ ) )
+				local ox,oy,oz = U.Rotate3D( 0,20,20, math.rad( g_PlayerAngX ), math.rad( g_PlayerAngY ), math.rad( g_PlayerAngZ ) )
 				local forwardposx, forwardposy, forwardposz = g_PlayerPosX + ox, g_PlayerPosY + oy, g_PlayerPosZ + oz
 				ResetPosition(e,forwardposx, forwardposy, forwardposz)
 				SetRotation(e,0, -90, 0)
+				GravityOn(e)
+				CollisionOn(e)
 				Show(e)
 				SetAmbienceRed(default_AmbienceRed)
 				SetAmbienceBlue(default_AmbienceBlue)
@@ -342,13 +394,16 @@ function helmet_main(e)
 				keypause1[e] = g_Time + 1000
 				have_helmet[e] = 0
 				g_have_helmet = have_helmet[e]
-				if helmet[e].toxic_protection == 1 then
+				if helmet[e].toxicity_protection == 1 then
 					g_gasmask_on = 1
 					g_radsuit_on = 1
 					if g_toxiczone == 'gas' then SetPlayerHealth(currenthealth[e]) end
 					if g_toxiczone == 'radiation' then SetPlayerHealth(currenthealth[e]) end
 				end
 				SetPlayerFOV(fov)
+				ScreenToggle("")
+				g_liveHudScreen = 0
+				hudonce[e] = 0
 			end
 		end
 		if helmet[e].helmet_mode == 2 then --reuseable
@@ -370,13 +425,16 @@ function helmet_main(e)
 					keypause2[e] = g_Time + 1000
 					hmswitch[e] = 1
 					StopSound(e,1)
-					if helmet[e].toxic_protection == 1 then
+					if helmet[e].toxicity_protection == 1 then
 						g_gasmask_on = 1
 						g_radsuit_on = 1
 						if g_toxiczone == 'gas' then SetPlayerHealth(currenthealth[e]) end
 						if g_toxiczone == 'radiation' then SetPlayerHealth(currenthealth[e]) end
 					end				
 					SetPlayerFOV(fov)
+					ScreenToggle("")
+					g_liveHudScreen = 0
+					hudonce[e] = 0
 				end
 			end
 			if g_Time > keypause2[e] and hmswitch[e] == 1 then
