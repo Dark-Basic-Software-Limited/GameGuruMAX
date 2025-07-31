@@ -1,4 +1,4 @@
--- Quest Switch v6 by Necrym59
+-- Quest Switch v7 by Necrym59
 -- DESCRIPTION: This object will be treated as a quest activated switch object for activating other objects or game elements.
 -- DESCRIPTION: [@QUEST_ACTIVATION=1(0=QuestList)]
 -- DESCRIPTION: [USE_RANGE=90(1,200)]
@@ -144,7 +144,7 @@ function quest_switch_main(e)
 		tEnt[e] = g_tEnt
 		--end pinpoint select object--
 	end
-	if PlayerDist < quest_switch[e].use_range and tEnt[e] ~= 0 then
+	if PlayerDist < quest_switch[e].use_range and tEnt[e] == e then
 		if g_Entity[e].activated == 0 and switched[e] == 0 then
 			if quest_switch[e].enabled_text ~= "" then
 				if quest_switch[e].prompt_display == 1 then PromptLocal(e,quest_switch[e].enabled_text) end

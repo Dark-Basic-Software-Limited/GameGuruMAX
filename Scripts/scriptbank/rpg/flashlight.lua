@@ -1,4 +1,4 @@
--- Flashlight v33: by Necrym59
+-- Flashlight v34: by Necrym59
 -- DESCRIPTION: Will give the player a Flashlight.
 -- DESCRIPTION: [PICKUP_TEXT$="E to pickup"]
 -- DESCRIPTION: [PICKUP_RANGE=100(1,200)]
@@ -188,6 +188,7 @@ function flashlight_main(e)
 		if CurrentlyHeldWeaponID ~= GetWeaponID(flashlight[e].useage_weapon) then 
 			if status[e] == 'ON' then
 				SetGamePlayerStateFlashlightControl(0.0)
+				status[e] = 'OFF'
 			end
 			can_use[e] = 0
 			SetFlashLightKeyEnabled(0)
