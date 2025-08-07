@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Speeder v17 by Necrym59 and smallg
+-- Speeder v18 by Necrym59 and smallg
 -- DESCRIPTION: Will create a speeder vehicle object. Set IsImmobile ON.
 -- DESCRIPTION: [PROMPT_TEXT$="E to mount speeder"]
 -- DESCRIPTION: [ENTER_RANGE=150]
@@ -16,9 +16,13 @@
 -- DESCRIPTION: [IMPACT_ANGLE=40(1,360)]
 -- DESCRIPTION: [SPEEDER_HEALTH=1000(100,1000)]
 -- DESCRIPTION: [MAXIMUM_SLOPE=19(1,100)]
--- DESCRIPTION: [USE_TEXT$="WASD-drive, SPACE-Brake, /-Radio"]
+-- DESCRIPTION: [USE_TEXT$="E to exit, WASD-drive, SPACE-Brake, /-Radio"]
 -- DESCRIPTION: [@@VEHICLE_HUD$="In-Game HUD"(0=hudscreenlist)] eg; In-Game HUD 2
+-- DESCRIPTION: [@READOUTS=1(1=Text Display, 2=User Global Readouts)]
+-- DESCRIPTION: [@@SPEED_READOUT_GLOBAL$=""(0=globallist)] user global (eg: MySpeedReadout)
+-- DESCRIPTION: [@@AUX_READOUT_GLOBAL$=""(0=globallist)] user global (eg: MyAuxReadout)
 -- DESCRIPTION: [LOCK_PLAYER!=0]
+-- DESCRIPTION: [REVERSED_CONTROL!=0] for reverse faced vehicles
 -- DESCRIPTION: [VEHICLE_UNLOCKED!=1] If set off is locked and requires key 
 -- DESCRIPTION: <Sound0> Moving
 -- DESCRIPTION: <Sound1> Idle Loop
@@ -46,8 +50,12 @@ local speeder_health = {}
 local maximum_slope = {}
 local use_text = {}
 local vehicle_hud = {}
+local readouts = {}
+local speed_readout_global = {}
+local aux_readout_global = {}
 local lock_player = {}
 local vehicle_unlocked = {}
+local reversed_control = {}
 
 local old_health = {}
 local pos_x = {}
@@ -68,7 +76,7 @@ local tEnt = {}
 local underwater = {}
 local hudonce = {}
 
-function speeder_properties(e, prompt_text, enter_range, enter_angle, player_z_adjustment, player_y_adjustment, player_angle_adjustment, maximum_speed, minimum_speed, turn_speed, acceleration, decceleration, impact_range, impact_angle, speeder_health, maximum_slope, use_text, vehicle_hud, lock_player, vehicle_unlocked)
+function speeder_properties(e, prompt_text, enter_range, enter_angle, player_z_adjustment, player_y_adjustment, player_angle_adjustment, maximum_speed, minimum_speed, turn_speed, acceleration, decceleration, impact_range, impact_angle, speeder_health, maximum_slope, use_text, vehicle_hud, readouts, speed_readout_global, aux_readout_global, lock_player, reversed_control, vehicle_unlocked)
 	speeder[e].prompt_text = prompt_text
 	speeder[e].enter_range = enter_range
 	speeder[e].enter_angle = enter_angle
@@ -86,7 +94,11 @@ function speeder_properties(e, prompt_text, enter_range, enter_angle, player_z_a
 	speeder[e].maximum_slope = maximum_slope
 	speeder[e].use_text	= use_text
 	speeder[e].vehicle_hud = vehicle_hud
+	speeder[e].readouts = readouts
+	speeder[e].speed_readout_global = speed_readout_global
+	speeder[e].aux_readout_global = aux_readout_global	
 	speeder[e].lock_player = lock_player or 0
+	speeder[e].reversed_control	= reversed_control or 0
 	speeder[e].vehicle_unlocked	= vehicle_unlocked or 1
 end
 
@@ -108,8 +120,12 @@ function speeder_init(e)
 	speeder[e].speeder_health = 1000
 	speeder[e].maximum_slope = 19
 	speeder[e].use_text	= "WASD-drive, SPACE-Brake, /-Radio"
-	speeder[e].vehicle_hud = "In-Game HUD"	
+	speeder[e].vehicle_hud = "In-Game HUD"
+	speeder[e].readouts = 1	
+	speeder[e].speed_readout_global = ""
+	speeder[e].aux_readout_global = ""
 	speeder[e].lock_player = 0
+	speeder[e].reversed_control = 0
 	speeder[e].vehicle_unlocked	= 1
 
 	status[e] = "init"
@@ -155,16 +171,18 @@ function speeder_main(e)
 	end
 	if status[e] == "drive" then		
 		GravityOff(e)
-		UpdatePosition(e)
+		UpdatePosition(e,speeder[e].reversed_control)
 		UpdatePlayerPosition(e)
 		Controlspeeder(e)				
 		if speed[e] > 0 - (speeder[e].maximum_speed/10) and speed[e] < 0 + (speeder[e].maximum_speed/10) then 
-			Prompt("E to exit speeder")			
+			if speeder[e].readouts == 1 then TextCenterOnX(50,95,3,speeder[e].use_text) end
+			if speeder[e].readouts == 2 then _G["g_UserGlobal['"..speeder[e].aux_readout_global.."']"] = speeder[e].use_text end	
 		else 
 			CheckForHittingNPC(e)
 			CollisionCheck(e)			
 		end
-		if speed[e] < 10 then TextCenterOnX(50,95,3,speeder[e].use_text) end
+		
+
 		GetOutspeeder(e)
 		if g_PlayerHealth < 1 then 
 			SetEntityHealth(e,0)
@@ -216,14 +234,25 @@ function GetInspeeder(e)
 	end 
 end 
 
-function UpdatePosition(e)
-	CollisionOff(e)
-	new_y = math.rad(g_Entity[e]['angley'])
-	pos_x[e] = g_Entity[e]['x'] + (math.sin(new_y) * (speed[e]/10))
-	pos_z[e] = g_Entity[e]['z'] + (math.cos(new_y) * (speed[e]/10))
-	pos_y[e] = g_Entity[e]['y']
-	pos_y[e] = GetSurfaceHeight(pos_x[e], pos_y[e], pos_z[e])
-	PositionObject(g_Entity[e]['obj'],pos_x[e],pos_y[e],pos_z[e])
+function UpdatePosition(e,mode)
+	if mode == 0 then	
+		CollisionOff(e)
+		new_y = math.rad(g_Entity[e]['angley'])
+		pos_x[e] = g_Entity[e]['x'] + (math.sin(new_y) * (speed[e]/10))
+		pos_z[e] = g_Entity[e]['z'] + (math.cos(new_y) * (speed[e]/10))
+		pos_y[e] = g_Entity[e]['y']
+		pos_y[e] = GetSurfaceHeight(pos_x[e], pos_y[e], pos_z[e])
+		PositionObject(g_Entity[e]['obj'],pos_x[e],pos_y[e],pos_z[e])
+	end
+	if mode == 1 then	
+		CollisionOff(e)
+		new_y = math.rad(g_Entity[e]['angley'])
+		pos_x[e] = g_Entity[e]['x'] - (math.sin(new_y) * (speed[e]/10))
+		pos_z[e] = g_Entity[e]['z'] - (math.cos(new_y) * (speed[e]/10))
+		pos_y[e] = g_Entity[e]['y']
+		pos_y[e] = GetSurfaceHeight(pos_x[e], pos_y[e], pos_z[e])
+		PositionObject(g_Entity[e]['obj'],pos_x[e],pos_y[e],pos_z[e])
+	end	
 end
 
 function UpdatePlayerPosition(e)
@@ -307,6 +336,14 @@ function Controlspeeder(e)
 				radioswitch[e] = "Off"
 				keypause[e] = g_Time + 1000
 			end	
+		end
+
+		if speed[e] > 0 then
+			if speeder[e].readouts == 1 then TextCenterOnX(50,92,3,"Speed: " ..math.floor(speed[e])) end
+			if speeder[e].readouts == 2 then _G["g_UserGlobal['"..speeder[e].speed_readout_global.."']"] = math.floor(speed[e]) end
+		else
+			if speeder[e].readouts == 1 then TextCenterOnX(50,92,3,"Speed: 0" ) end
+			speed[e] = 0
 		end
 	end
 end

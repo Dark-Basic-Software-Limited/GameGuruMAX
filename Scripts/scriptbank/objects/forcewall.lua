@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Forcewall script v9 
+-- Forcewall script v10 
 -- DESCRIPTION: Attach object to use as a forcefield wall. Set Static to Physics ON.
 -- DESCRIPTION: [PROMPT_TEXT$="You cannot pass"]
 -- DESCRIPTION: [@FORCE_MODE=1(1=Static, 2=Repel, 3=Hurt, 4=Kill)]
@@ -7,6 +7,7 @@
 -- DESCRIPTION: [@TRIGGER=1(1=None, 2=Linked/IfUsed)]
 -- DESCRIPTION: [@VISIBILITY!=2(1=Invisible, 2=Visible)] to hide/unhide forcewall.
 -- DESCRIPTION: [@PROMPT_DISPLAY=1(1=Local,2=Screen)]
+-- DESCRIPTION: [LOCAL_PROMPT_Y=50(0,100)]
 -- DESCRIPTION: [NAVMESH_BLOCK!=0] Block NPC
 -- DESCRIPTION:	<Sound0> loop active sound
 -- DESCRIPTION:	<Sound1> for impact	
@@ -20,19 +21,21 @@ local state = {}
 local trigger = {}
 local visibility = {}
 local prompt_display = {}
+local local_prompt_y = {}
 local navmesh_block = {}
 
 local status = {}
 local doonce = {}
 local colobj = {}
 	
-function forcewall_properties(e, prompt_text, force_mode, state, trigger, visibility, prompt_display, navmesh_block)
+function forcewall_properties(e, prompt_text, force_mode, state, trigger, visibility, prompt_display, local_prompt_y, navmesh_block)
 	forcewall[e].prompt_text = prompt_text
 	forcewall[e].force_mode = force_mode
 	forcewall[e].state = state
 	forcewall[e].trigger = trigger	
 	forcewall[e].visibility = visibility
 	forcewall[e].prompt_display	= prompt_display
+	forcewall[e].local_prompt_y = local_prompt_y
 	forcewall[e].navmesh_block = navmesh_block or 0
 end 
 
@@ -44,6 +47,7 @@ function forcewall_init(e)
 	forcewall[e].trigger = 1		
 	forcewall[e].visibility = 1
 	forcewall[e].prompt_display = 1
+	forcewall[e].local_prompt_y = 50	
 	forcewall[e].navmesh_block = 0
 	
 	status[e] = "init"
@@ -85,7 +89,10 @@ function forcewall_main(e)
 			rayX, rayY, rayZ = U.Rotate3D(rayX, rayY, rayZ, paX, paY, paZ)
 			colobj[e]=(IntersectAll(px,py,pz, px+rayX, py+rayY, pz+rayZ,e))		
 			if colobj[e] > 0 then
-				if forcewall[e].prompt_display == 1 then PromptLocal(e,forcewall[e].prompt_text) end
+				if forcewall[e].prompt_display == 1 then
+					PromptLocal(e,forcewall[e].prompt_text)
+					PromptLocalOffset(0,forcewall[e].local_prompt_y,0)
+				end				
 				if forcewall[e].prompt_display == 2 then Prompt(forcewall[e].prompt_text) end
 				if forcewall[e].force_mode == 1 and g_PlayerHealth > 0 then
 					PlaySound(e,1)

@@ -1,9 +1,9 @@
--- Quest Giver v13 by Necrym59 and Lee
+-- Quest Giver v14 by Necrym59 and Lee
 -- DESCRIPTION: When player is within [RANGE=100] distance, will show [QUEST_PROMPT$="Press E to Interact"] 
 -- DESCRIPTION: When E is pressed, player will be shown [@@QUEST_SCREEN$="HUD Screen 8"(0=hudscreenlist)]
 -- DESCRIPTION: with [@QuestChoice=1(0=QuestList)] and play [SPEECH1$=""]
 -- DESCRIPTION: and will play <Sound0> when quest is completed.
--- DESCRIPTION: [!SpawnQuestObj=1] when quest accepted.
+-- DESCRIPTION: [@SPAWN_QUEST_OBJECT=1(1=On,2=Off)] when quest accepted.
 
 master_interpreter_core = require "scriptbank\\masterinterpreter"
 local U = require "scriptbank\\utillib"
@@ -12,17 +12,18 @@ local U = require "scriptbank\\utillib"
 g_ActivateQuestComplete = {}
 
 local lower = string.lower
-local g_quest_giver 	= {}
-local IsCharacter		= {}
-local quest_objno		= {}
-local quest_recno		= {}
-local quest_quantity	= {}
-local check_quantity	= {}
-local check_timer		= {}
-local play_once			= {}
-local doonce			= {}
-local anim_once			= {}
-local prompt_once		= {}
+local g_quest_giver 		= {}
+local IsCharacter			= {}
+local quest_objno			= {}
+local quest_recno			= {}
+local quest_quantity		= {}
+local check_quantity		= {}
+local check_timer			= {}
+local spawn_quest_object	= {}
+local play_once				= {}
+local doonce				= {}
+local anim_once				= {}
+local prompt_once			= {}
 
 function quest_giver_init_file(e,scriptfile)
 	g_quest_giver[e] = {}
@@ -42,12 +43,12 @@ function quest_giver_init_file(e,scriptfile)
 	g_ActivateQuestComplete = 0	
 end
 
-function quest_giver_properties(e, range, questprompt, questscreen, questchoice, spawnquestobj)
+function quest_giver_properties(e, range, questprompt, questscreen, questchoice, spawn_quest_object)
 	g_quest_giver[e]['range'] = range
 	g_quest_giver[e]['questprompt'] = questprompt
 	g_quest_giver[e]['questscreen'] = questscreen
 	g_quest_giver[e]['questchoice'] = questchoice
-	g_quest_giver[e]['spawnquestobj'] = spawnquestobj
+	g_quest_giver[e]['spawn_quest_object'] = spawn_quest_object
 	g_quest_giver[e]['questtitle'] = ""
 	g_quest_giver[e]['questtype'] = ""
 	g_quest_giver[e]['questobject'] = ""
@@ -159,10 +160,10 @@ function quest_giver_main(e)
 				end
 				
 				if quest_objno[e] > 0 then		
-					if g_quest_giver[e]['spawnquestobj'] ~= 0 then
+					if g_quest_giver[e]['spawn_quest_object'] ~= 0 then
 						if GetEntitySpawnAtStart(quest_objno[e]) == 0 then
 							Spawn(quest_objno[e])
-							g_quest_giver[e]['spawnquestobj'] = 0
+							g_quest_giver[e]['spawn_quest_object'] = 0
 						end
 					end
 				end

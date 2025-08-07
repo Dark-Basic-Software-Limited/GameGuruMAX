@@ -1,8 +1,8 @@
--- Quest Poster v17 by Necrym59 and Lee
+-- Quest Poster v18 by Necrym59 and Lee
 -- DESCRIPTION: When player is within [RANGE=100] distance, show [QUEST_PROMPT$="Press E to view this quest"] and 
 -- DESCRIPTION: when E is pressed, player will be shown the [@@QUEST_SCREEN$="HUD Screen 8"(0=hudscreenlist)].
 -- DESCRIPTION: Select the [@QuestChoice=1(0=QuestList)]
--- DESCRIPTION: [!SpawnQuestObj=1] when quest accepted.
+-- DESCRIPTION: [@SPAWN_QUEST_OBJECT=1(1=On,2=Off)] when quest accepted.
 -- DESCRIPTION: [@PROMPT_DISPLAY=1(1=Local,2=Screen)]
 -- DESCRIPTION: [@ITEM_HIGHLIGHT=0(0=None,1=Shape,2=Outline,3=Icon)]
 -- DESCRIPTION: [HIGHLIGHT_ICON_IMAGEFILE$="imagebank\\icons\\pickup.png"]
@@ -15,30 +15,31 @@ g_tEnt = {}
 g_ActivateQuestComplete = {}
 
 local lower = string.lower
-local g_quest_poster 	= {}
-local quest_objno		= {}
-local quest_recno		= {}
-local quest_quantity	= {}
-local check_quantity	= {}
-local check_timer		= {}
-local play_once			= {}
-local doonce			= {}
-local tEnt 				= {}
-local selectobj 		= {}
-local prompt_display 	= {}
-local item_highlight 	= {}
-local highlight_icon 	= {}
-local status 			= {}
-local hl_icon 			= {}
-local hl_imgwidth 		= {}
-local hl_imgheight 		= {}
+local g_quest_poster 		= {}
+local quest_objno			= {}
+local quest_recno			= {}
+local quest_quantity		= {}
+local check_quantity		= {}
+local check_timer			= {}
+local play_once				= {}
+local doonce				= {}
+local tEnt 					= {}
+local selectobj 			= {}
+local spawn_quest_object	= {}
+local prompt_display 		= {}
+local item_highlight 		= {}
+local highlight_icon 		= {}
+local status 				= {}
+local hl_icon 				= {}
+local hl_imgwidth 			= {}
+local hl_imgheight 			= {}
 
-function quest_poster_properties(e, range, questprompt, questscreen, questchoice, spawnquestobj, prompt_display, item_highlight, highlight_icon_imagefile)
+function quest_poster_properties(e, range, questprompt, questscreen, questchoice, spawn_quest_object, prompt_display, item_highlight, highlight_icon_imagefile)
 	g_quest_poster[e]['range'] = range
 	g_quest_poster[e]['questprompt'] = questprompt
 	g_quest_poster[e]['questscreen'] = questscreen
 	g_quest_poster[e]['questchoice'] = questchoice
-	g_quest_poster[e]['spawnquestobj'] = spawnquestobj
+	g_quest_poster[e]['spawn_quest_object'] = spawn_quest_object
 	g_quest_poster[e]['prompt_display'] = prompt_display
 	g_quest_poster[e]['item_highlight'] = item_highlight	
 	g_quest_poster[e]['highlight_icon'] = highlight_icon_imagefile
@@ -61,7 +62,7 @@ function quest_poster_init(e)
 	g_quest_poster[e]['questprompt'] = "Press E to view this quest"
 	g_quest_poster[e]['questscreen'] = "HUD Screen 8"
 	g_quest_poster[e]['questchoice'] = ""
-	g_quest_poster[e]['spawnquestobj'] = 1
+	g_quest_poster[e]['spawn_quest_object'] = 1
 	g_quest_poster[e]['prompt_display'] = 1
 	g_quest_poster[e]['item_highlight'] = 0	
 	g_quest_poster[e]['highlight_icon'] = "imagebank\\icons\\pickup.png"
@@ -179,10 +180,10 @@ function quest_poster_main(e)
 				end
 				
 				if quest_objno[e] > 0 then		
-					if g_quest_poster[e]['spawnquestobj'] ~= 0 then
+					if g_quest_poster[e]['spawn_quest_object'] ~= 0 then
 						if GetEntitySpawnAtStart(quest_objno[e]) == 0 then
 							Spawn(quest_objno[e])
-							g_quest_poster[e]['spawnquestobj'] = 0
+							g_quest_poster[e]['spawn_quest_object'] = 0
 						end
 					end
 				end

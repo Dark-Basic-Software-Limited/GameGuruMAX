@@ -1,4 +1,4 @@
--- Aircraft v39 by Necrym59
+-- Aircraft v41 by Necrym59
 -- DESCRIPTION: Creates a controllable aircraft from an object.
 -- DESCRIPTION: Attach to an object. Set Physics On, Polygon Collision.
 -- DESCRIPTION: [@VEHICLE_TYPE=1(1=Plane,2=Helicopter,3=VTOL-Vehicle)]
@@ -14,6 +14,8 @@
 -- DESCRIPTION: [PILOT_Z=-15(-500,500)]
 -- DESCRIPTION: [MAX_SPEED=30(1,500)]
 -- DESCRIPTION: [VELOCITY=1(1,20)]
+-- DESCRIPTION: [#HOVER_AMOUNT=15.5(0.1,100.0)]
+-- DESCRIPTION: [#HOVER_OSCILLATION=20.0(0.1,100.0)]
 -- DESCRIPTION: [@FX_ANIMATION$=-1(0=AnimSetList)]
 -- DESCRIPTION: [FX_MODULATION=60(1,100)]
 -- DESCRIPTION: [SHOW_READOUTS!=1]
@@ -100,8 +102,10 @@ local sangle_y		= {}
 local sangle_z		= {}
 local QPressed		= {}
 local EPressed		= {}
+local hovonce		= {}
+local currhight		= {}
 
-function aircraft_properties(e, vehicle_type, use_range, prompt_text, use_text1, use_text2, lz_text, display_x, display_y, pilot_x, pilot_y, pilot_z, max_speed, velocity, fx_animation, fx_modulation, show_readouts, particle_no, can_bailout, weapon_name, weapon_ammo, use_weapon, crosshair_imagefile)
+function aircraft_properties(e, vehicle_type, use_range, prompt_text, use_text1, use_text2, lz_text, display_x, display_y, pilot_x, pilot_y, pilot_z, max_speed, velocity, hover_amount, hover_oscillation, fx_animation, fx_modulation, show_readouts, particle_no, can_bailout, weapon_name, weapon_ammo, use_weapon, crosshair_imagefile)
 	vehicle[e].vehicle_type = vehicle_type
 	vehicle[e].use_range = use_range
 	vehicle[e].prompt_text = prompt_text
@@ -115,6 +119,8 @@ function aircraft_properties(e, vehicle_type, use_range, prompt_text, use_text1,
 	vehicle[e].pilot_z = pilot_z
 	vehicle[e].max_speed = max_speed
 	vehicle[e].velocity = velocity
+	vehicle[e].hover_amount = hover_amount
+	vehicle[e].hover_oscillation = hover_oscillation
 	vehicle[e].fx_animation = "=" .. tostring(fx_animation)
 	vehicle[e].fx_modulation = fx_modulation or 1
 	vehicle[e].show_readouts = show_readouts or 1
@@ -145,6 +151,8 @@ function aircraft_init(e)
 	vehicle[e].pilot_z = -15
 	vehicle[e].max_speed = 30
 	vehicle[e].velocity = 0
+	vehicle[e].hover_amount = 5.5
+	vehicle[e].hover_oscillation = 10.0
 	vehicle[e].fx_animation = ""
 	vehicle[e].fx_modulation = 60
 	vehicle[e].show_readouts = 1
@@ -163,6 +171,8 @@ function aircraft_init(e)
 	vlift      		= 0
 	tilt			= 0
 	playonce[e]     = 0
+	hovonce[e]		= 0
+	currhight[e] 	= 0
 	doonce[e]		= 0
 	armonce[e]		= 0
 	nheightangle[e]	= 0
@@ -184,7 +194,7 @@ function aircraft_init(e)
 	EPressed[e]		= {}	
 end
 
-local function AttachPlayer(h,xa,ya,za)
+local function AttachPlayer(h,xa,ya,za)	
 	local xo, yo, zo = U.Rotate3D( h.pp.xo, h.pp.yo, h.pp.zo, xa, ya, za )
 	cx, cy, cz =  h.pos.x + xo, h.pos.y + yo, h.pos.z + zo
 	SetCameraPosition ( 0, cx, cy, cz )
@@ -528,6 +538,18 @@ function aircraft_main(e)
 							Hide(vehicle[e].particle_no)
 						end
 					end
+					if flying == 1 and h.pos.y > terrain[e] + 20 and h.vec.z <= 15 and g_KeyPressSPACE == 0 and g_KeyPressSHIFT == 0 then
+						if hovonce[e] == 0 then 
+							currhight[e] = h.pos.y
+							hovonce[e] = 1
+						end	
+						local nhoverheight = vehicle[e].hover_amount
+						nheightangle[e] = nheightangle[e] + (GetAnimationSpeed(h.ent)/vehicle[e].hover_oscillation)
+						local fFinalY = (currhight[e] - nhoverheight) + (math.cos(nheightangle[e])*nhoverheight)
+						h.pos.y = fFinalY
+					else
+						hovonce[e] = 0
+					end					
 				end
 				--(VTOL Aircraft)-----------------------------------------------------------------------------------
 				if vehicle[e].vehicle_type == 3 then
@@ -652,6 +674,18 @@ function aircraft_main(e)
 							Hide(vehicle[e].particle_no)
 						end
 					end
+					if flying == 1 and h.pos.y > terrain[e] + 20 and h.vec.z <= 15 and g_KeyPressSPACE == 0 and g_KeyPressSHIFT == 0 then
+						if hovonce[e] == 0 then 
+							currhight[e] = h.pos.y
+							hovonce[e] = 1
+						end	
+						local nhoverheight = vehicle[e].hover_amount
+						nheightangle[e] = nheightangle[e] + (GetAnimationSpeed(h.ent)/vehicle[e].hover_oscillation)
+						local fFinalY = (currhight[e] - nhoverheight) + nhoverheight + (math.cos(nheightangle[e])*nhoverheight)
+						h.pos.y = fFinalY
+					else
+						hovonce[e] = 0
+					end					
 				end
 				--Flight Collision Check ----------------------------------------------------------------
 				if flying == 1 then
@@ -734,18 +768,7 @@ function aircraft_main(e)
 					end
 				end
 				if g_LandingZone == 1 then Prompt(vehicle[e].lz_text) end
-
-				if vehicle[e].vehicle_type == 2 and flying == 1 and h.pos.y > terrain[e] + 20 and h.vec.z <= 0 and g_KeyPressSPACE == 0 and g_KeyPressSHIFT == 0 then
-					local nhoverheight = 0.5
-					nheightangle[e] = nheightangle[e] + (GetAnimationSpeed(h.ent)/30.0)
-					local fFinalY = h.pos.y - nhoverheight + (math.cos(nheightangle[e])*nhoverheight)
-					CollisionOff(h.ent)
-					GravityOff(h.ent)
-					ResetPosition(h.ent,h.pos.x,fFinalY,h.pos.z)
-					GravityOn(h.ent)
-					CollisionOn(h.ent)
-				end
-
+				
 				local pitchQ = Q.FromEuler( rad( omy ) * timeDiff, 0, 0 )
 				local rollQ  = Q.FromEuler( 0, 0, -rad( omx ) * timeDiff )
 				h.quat = Q.Mul( h.quat, pitchQ )
@@ -820,7 +843,7 @@ function aircraft_main(e)
 							SetCameraOverride(3)
 							ActivateMouse()
 							cmode = 1
-						end
+					end
 						if vehicle[e].vehicle_type == 2 then
 							cmode = 2
 						end
@@ -845,8 +868,8 @@ function aircraft_main(e)
 										--SetWeaponPoolAmmo(poolindex,amqty + 500)											
 									end
 								end
-								SetWeaponArmsVisible(1,1,1)
-								SetGamePlayerStateRightMouseHold(2)
+								SetWeaponArmsVisible(1,1,1,2)								
+								SetGamePlayerStateRightMouseHold(2)								
 							end
 						end
 						h.inCab = true

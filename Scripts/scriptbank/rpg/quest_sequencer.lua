@@ -1,4 +1,4 @@
--- Quest Sequencer v12 by Necrym59
+-- Quest Sequencer v14 by Necrym59
 -- DESCRIPTION: Will sequentially run the next Quest/Mission in order at completion of each.
 -- DESCRIPTION: If a quests Quest Status = END_SEQ then the Quest Sequencer itself is destroyed when completed.
 -- DESCRIPTION: [QUEST_START_TEXT$="Quest Sequence Activated"]
@@ -6,6 +6,7 @@
 -- DESCRIPTION: [@QUEST_READOUT=1(1=Title, 2=Description1)] 
 -- DESCRIPTION: [@@READOUT_USER_GLOBAL$=""(0=globallist)]] user global name (eg: MyReadout)
 -- DESCRIPTION: [@QuestChoice=1(0=QuestList)]
+-- DESCRIPTION: [@SPAWN_QUEST_OBJECT=1(1=On,2=Off)] when quest accepted.
 -- DESCRIPTION: [HIDE_OBJECT!=0]
 -- DESCRIPTION: <Sound1> when quest completed.
 
@@ -20,6 +21,7 @@ local quest_prompt			= {}
 local quest_endtext			= {}
 local quest_readout			= {}
 local readout_user_global	= {}
+local spawn_quest_object	= {}
 local hide_object			= {}
 local quest_objno			= {}
 local quest_recno			= {}
@@ -32,13 +34,14 @@ local promptonce			= {}
 local qactivate				= {}
 local status				= {}
 
-function quest_sequencer_properties(e, quest_start_text, quest_end_text, quest_readout, readout_user_global, questchoice, hide_object)
+function quest_sequencer_properties(e, quest_start_text, quest_end_text, quest_readout, readout_user_global, questchoice, spawn_quest_object, hide_object)
 	g_quest_sequence[e].questprompt = quest_start_text
 	g_quest_sequence[e].questendtext = quest_end_text	
 	g_quest_sequence[e].quest_readout = quest_readout or 1
 	g_quest_sequence[e].readout_user_global = readout_user_global
 	g_quest_sequence[e].questchoice = questchoice
 	g_quest_sequence[e].hide_object = hide_object or 0
+	g_quest_sequence[e].spawn_quest_object = spawn_quest_object	
 	g_quest_sequence[e].questtitle = ""
 	g_quest_sequence[e].questtype = ""
 	g_quest_sequence[e].questobject = ""
@@ -63,6 +66,7 @@ function quest_sequencer_init(e)
 	g_quest_sequence[e].readout_user_global = ""
 	g_quest_sequence[e].questchoice = ""
 	g_quest_sequence[e].hide_object = 0	
+	g_quest_sequence[e].spawn_quest_object = 1	
 
 	quest_objno[e] = 0
 	quest_recno[e] = 0
@@ -151,7 +155,16 @@ function quest_sequencer_main(e)
 						ActivateIfUsed(e)
 						doonce[e] = 1
 					end
-				end	
+				end
+				
+				if quest_objno[e] > 0 then		
+					if g_quest_poster[e]['spawn_quest_object'] ~= 0 then
+						if GetEntitySpawnAtStart(quest_objno[e]) == 0 then
+							Spawn(quest_objno[e])
+							g_quest_poster[e]['spawn_quest_object'] = 0
+						end
+					end
+				end				
 
 				if g_quest_sequence[e].questtype == "activate" then
 					-- ACTIVATE
