@@ -1659,6 +1659,7 @@ GetGamePlayerControlJetpackParticleEmitterIndex: iValue = GetGamePlayerControlJe
 SetGamePlayerControlJetpackThrust: SetGamePlayerControlJetpackThrust ( iValue ) -- sets the player control data to specified value
 GetGamePlayerControlJetpackThrust: iValue = GetGamePlayerControlJetpackThrust() -- gets the specified player control data value
 
+SetPlayerRun: SetPlayerRun(1) -- 1: enable or 0: disable player's ability to run. 
 SetPlayerWeapons: SetPlayerWeapons(0) disabled player weapons, SetPlayerWeapons(1) restores them
 SetAttachmentVisible: SetAttachmentVisible(e,1). 1 sets the entities attachment to be visible (such as their weapon), 0 switches it off
 SetFlashLight: SetFlashLight(1), 1 switches the flash light on, 0 off
@@ -1667,6 +1668,8 @@ SetOcclusion: SetOcclusion(100), control the occluder from script! set the occlu
 
 SetFont: SetFont ( "myFont : 1) To change in game font. Fonts 1-3 are the default ones used.
 NOTE: You can place your texture atlas bitmap font file in the Files\fontbank\ folder with the name FPSCR-Font-XX.png where XX is the unique name for your font. When you want to use it, simply call the command SetFont ( "XX", YY ) where XX is the unique name above and YY is the index you want to 'overwrite'. Remember to include the 'FPSCR-Font-XX-Subimages.fnt' file which describes the coordinates within the texture atlas image for the specific bitmap fonts contained therein.
+
+Include(file) -- to include a LUA script file from scriptbank.
 
 GetFirstEntitySpawn: GetFirstEntitySpawn() -- useful for scripts (such as the radar) that need to deal with entities that can come into existence at any time (returns 0 if no new entity)
 GetNextEntitySpawn: GetNextEntitySpawn() -- returns the next new spawn in the list, 0 if the end of the list is reached
