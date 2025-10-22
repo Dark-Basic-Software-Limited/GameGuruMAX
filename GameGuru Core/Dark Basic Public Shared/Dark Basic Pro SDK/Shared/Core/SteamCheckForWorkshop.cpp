@@ -82,6 +82,9 @@ bool CheckForWorkshopFile ( LPSTR VirtualFilename )
 					|| pestrcasestr(szEncryptedFilename, "metallic.png")
 					|| pestrcasestr(szEncryptedFilename, "_arm.png")
 					|| pestrcasestr(szEncryptedFilename, "emissive.png")
+					|| pestrcasestr(szEncryptedFilename, "baseColor.png")
+					|| pestrcasestr(szEncryptedFilename, "surface.png")
+					|| pestrcasestr(szEncryptedFilename, "normalmap.png")
 					|| pestrcasestr(szEncryptedFilename, "albedo.png"))
 				{
 					//PE: Check if a .dds version exists. and if so use it.
@@ -116,6 +119,9 @@ bool CheckForWorkshopFile ( LPSTR VirtualFilename )
 					|| pestrcasestr(szEncryptedFilename, "metallic.png")
 					|| pestrcasestr(szEncryptedFilename, "_arm.png")
 					|| pestrcasestr(szEncryptedFilename, "emissive.png")
+					|| pestrcasestr(szEncryptedFilename, "baseColor.png")
+					|| pestrcasestr(szEncryptedFilename, "surface.png")
+					|| pestrcasestr(szEncryptedFilename, "normalmap.png")
 					|| pestrcasestr(szEncryptedFilename, "albedo.png"))
 				{
 					//PE: Check if a .dds version exists. and if so use it.
