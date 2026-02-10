@@ -344,7 +344,8 @@ inline char *dbReturnString(char *oldstr, const char *newstr) {
 
 	l = strlen(newstr) + 1;
 
-	g_pGlob->CreateDeleteString(reinterpret_cast<char**>(&p), l);
+	//g_pGlob->CreateDeleteString(reinterpret_cast<char**>(&p), l);
+	g_pGlob->CreateDeleteString(reinterpret_cast<char**>(&p), (DWORD)l);
 	memcpy(reinterpret_cast<void *>(p), reinterpret_cast<const void *>(newstr), l);
 
 	return p;

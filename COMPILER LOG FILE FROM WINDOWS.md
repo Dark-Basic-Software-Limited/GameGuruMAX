@@ -1,4 +1,4 @@
-Rebuild started at 16:35...
+Rebuild started at 19:50...
 1>------ Rebuild All started: Project: PhotonMultiplayer, Configuration: Release x64 ------
 2>------ Rebuild All started: Project: GGVR, Configuration: Release x64 ------
 3>------ Rebuild All started: Project: InfiniteVegetation, Configuration: Release x64 ------
@@ -27,36 +27,70 @@ Rebuild started at 16:35...
 26>------ Rebuild All started: Project: Basic2D, Configuration: Release x64 ------
 27>------ Rebuild All started: Project: Animation, Configuration: Release x64 ------
 1>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-1>stdafx.cpp
-3>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-3>cl : command line  warning D9002: ignoring unknown option '/arch:SSE'
-3>stdafx.cpp
-3>cl : command line  warning D9002: ignoring unknown option '/arch:SSE'
-3>SimonReloaded.cpp
-3>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-3>(compiling source file '/SimonReloaded.cpp')
-5>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-5>stdafx.cpp
-5>DarkLUA.cpp
 2>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+4>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+9>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+8>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
 2>GGVR.cpp
+1>stdafx.cpp
+10>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+4>Core.cpp
+5>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
 2>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(60,9): warning C4005: 'MAX_PATH': macro redefinition
-2>(compiling source file '../../DarkSDKMore/GGVR/GGVR.cpp')
+2>(compiling source file 'GGVR.cpp')
 2>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\preprocessor-moreflags.h(11,9):
 2>    see previous definition of 'MAX_PATH'
-2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-2>(compiling source file '../../DarkSDKMore/GGVR/GGVR.cpp')
-7>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-7>stdafx.cpp
-7>CPU3D.cpp
-4>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-4>Core.cpp
-10>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+9>cVectorC.cpp
+3>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
 10>CTextC.cpp
-10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-10>(compiling source file '../../Shared/Text/CTextC.cpp')
+12>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+5>stdafx.cpp
+11>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+3>stdafx.cpp
+8>cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
+8>bChunk.cpp
+12>SteamCheckForWorkshop.cpp
+7>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+6>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+16>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+11>dxdiaginfo.cpp
+15>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+13>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+7>stdafx.cpp
+18>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+6>AIThread.cpp
+19>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+16>CMemblocks.cpp
+20>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+17>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+14>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+15>SteamCheckForWorkshop.cpp
+13>SteamCheckForWorkshop.cpp
+23>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+21>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+18>CInputC.cpp
+19>DDSTextureLoader.cpp
+17>CLightC.cpp
+22>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+26>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+14>CError.cpp
+24>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+8>bDNA.cpp
+20>CFTPC.cpp
+23>ConvX.cpp
+25>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+21>SteamCheckForWorkshop.cpp
+22>DBDLLCore.cpp
+26>CBasic2DC.cpp
+27>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+24>CCameraC.cpp
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(46,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(84,59): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+25>SteamCheckForWorkshop.cpp
+7>CPU3D.cpp
+1>CClient.cpp
+5>DarkLUA.cpp
+3>SimonReloaded.cpp
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(165,16): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(223,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(298,32): warning C4312: 'type cast': conversion from 'unsigned int' to 'char *' of greater size
@@ -66,156 +100,44 @@ Rebuild started at 16:35...
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(418,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(425,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 10>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Text\CTextC.cpp(444,31): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-9>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-9>cVectorC.cpp
-6>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-6>AIThread.cpp
-12>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-12>SteamCheckForWorkshop.cpp
-8>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-8>cl : command line  warning D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
-8>bChunk.cpp
-14>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-14>CError.cpp
-16>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-16>CMemblocks.cpp
-11>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-11>dxdiaginfo.cpp
-19>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-20>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-20>CFTPC.cpp
-18>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-15>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-15>SteamCheckForWorkshop.cpp
-25>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-26>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-24>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-18>CInputC.cpp
+27>CAnimation.cpp
 6>Beacon.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-3>    see declaration of 'StackString'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-3>    see declaration of 'StackString'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-3>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-3>    Conversion requires a second user-defined-conversion operator or constructor
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-3>    see declaration of 'StackString<capacity>::push_back'
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-3>    while trying to match the argument list '(const char *)'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-3>    The target type has no constructors
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-3>    failure was because type 'StackString' is not a literal type
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-3>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-3>    failure was because type 'StackString' is not a literal type
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-3>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-19>DDSTextureLoader.cpp
-22>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-26>CBasic2DC.cpp
-9>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-9>(compiling source file '../../Shared/Vectors/cVectorC.cpp')
-24>CCameraC.cpp
-25>SteamCheckForWorkshop.cpp
-13>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-3>    see declaration of 'std'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-3>    see declaration of 'std'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-3>    see declaration of 'std'
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-1>CClient.cpp
-23>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-17>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-21>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bDNA.cpp(257,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bDNA.cpp(506,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+8>bFile.cpp
+10>Text.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Text.lib
+10>Done building project "Text.vcxproj".
 7>cThread.cpp
-13>SteamCheckForWorkshop.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-22>DBDLLCore.cpp
-23>ConvX.cpp
-9>cVectorManagerC.cpp
-16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-16>(compiling source file '../../Shared/Memblocks/CMemblocks.cpp')
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-14>CGfxC.cpp
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-14>(compiling source file '../../Shared/Error/CError.cpp')
-2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(174,20): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-8>bDNA.cpp
-21>SteamCheckForWorkshop.cpp
-17>CLightC.cpp
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/Core.cpp')
+11>CSystemC.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Core.cpp(110,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+9>cVectorManagerC.cpp
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(519,22): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(531,66): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(174,20): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(201,53): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(522,35): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(642,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-20>(compiling source file '../../Shared/FTP/CFTPC.cpp')
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(709,5): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(709,43): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(811,18): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(816,16): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(837,15): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1365,98): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1426,28): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1455,61): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1928,26): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1961,15): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+18>CError.cpp
+4>EAX.cpp
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(73,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(82,20): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(82,37): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
-4>EAX.cpp
-27>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/Beacon.cpp')
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(82,55): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(88,18): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(88,35): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(88,53): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
+2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(522,35): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+2>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\GGVR\GGVR.cpp(642,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+14>CGfxC.cpp
+4>CpuUsage.cpp
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(94,17): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(110,18): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(118,26): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
@@ -232,478 +154,82 @@ Rebuild started at 16:35...
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(271,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\FTP\CFTPC.cpp(272,36): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
 20>ftp.cpp
-4>CpuUsage.cpp
-10>Text.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Text.lib
-10>Done building project "Text.vcxproj".
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-12>CError.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
+26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Basic2D\CBasic2DC.cpp(43,9): warning C4311: 'type cast': pointer truncation from 'DWORD *' to 'DWORD'
+26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Basic2D\CBasic2DC.cpp(43,9): warning C4302: 'type cast': truncation from 'DWORD *' to 'DWORD'
+26>CError.cpp
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bFile.cpp(34,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 15>DBO2X.cpp
+12>CError.cpp
+13>ADPCMtoWAV.cpp
 16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Memblocks\CMemblocks.cpp(153,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-18>(compiling source file '../../Shared/Input/CInputC.cpp')
-27>CAnimation.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-7>SoftwareCulling.cpp
+8>btBulletFile.cpp
+17>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Light\CLightC.cpp(13,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Memblocks\CMemblocks.cpp(1003,28): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
 16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Memblocks\CMemblocks.cpp(1007,24): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
 16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Memblocks\CMemblocks.cpp(1055,28): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
 16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Memblocks\CMemblocks.cpp(1059,24): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bDNA.cpp(257,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bDNA.cpp(506,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(519,22): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(531,66): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(709,5): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(709,43): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(811,18): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(816,16): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(837,15): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1365,98): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1426,28): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1455,61): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1928,26): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Input\CInputC.cpp(1961,15): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
-18>CError.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-26>(compiling source file '../../Shared/Basic2D/CBasic2DC.cpp')
-11>CSystemC.cpp
-2>GGVR.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\GGVR.lib
-16>CError.cpp
-8>bFile.cpp
-6>CollisionTree.cpp
-26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Basic2D\CBasic2DC.cpp(43,9): warning C4311: 'type cast': pointer truncation from 'DWORD *' to 'DWORD'
-26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Basic2D\CBasic2DC.cpp(43,9): warning C4302: 'type cast': truncation from 'DWORD *' to 'DWORD'
-26>CError.cpp
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-3>    type is 'const std::vector<std::string,std::allocator<T>> []'
-3>        with
-3>        [
-3>            T=std::string
-3>        ]
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<T>> []': illegal sizeof operand
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         with
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         [
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:             T=std::string
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         ]
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-3>(compiling source file '/SimonReloaded.cpp')
-2>Done building project "GGVR.vcxproj".
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLCore.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-3>(compiling source file '/SimonReloaded.cpp')
-3>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-3>    type is 'const DirectX::XMVECTOR'
-24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-14>(compiling source file '../../Shared/Setup/CGfxC.cpp')
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-1>(compiling source file '/CClient.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-17>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-17>(compiling source file '../../Shared/Light/CLightC.cpp')
-1>CServer.cpp
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletFileLoader\bFile.cpp(34,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-13>ADPCMtoWAV.cpp
 19>globstruct.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-20>(compiling source file '../../Shared/FTP/ftp.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-3>(compiling source file '/SimonReloaded.cpp')
-9>CError.cpp
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-5>    see declaration of 'StackString'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-5>    see declaration of 'StackString'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-5>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-5>    Conversion requires a second user-defined-conversion operator or constructor
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-5>    see declaration of 'StackString<capacity>::push_back'
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-5>    while trying to match the argument list '(const char *)'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-5>    The target type has no constructors
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-5>    failure was because type 'StackString' is not a literal type
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-5>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-5>    failure was because type 'StackString' is not a literal type
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-5>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
+17>CLightManagerC.cpp
+16>CError.cpp
+7>SoftwareCulling.cpp
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 22>(compiling source file '../../Shared/Core/DBDLLCore.cpp')
-23>(compiling source file '../../Shared/ConvX/ConvX.cpp')
-8>btBulletFile.cpp
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-12>(compiling source file '../../Shared/Error/CError.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../../DarkSDKMore/DarkLUA/DarkLUA.cpp')
+2>GGVR.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\GGVR.lib
+1>CServer.cpp
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\ConvX\ConvX.cpp(782,27): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+2>Done building project "GGVR.vcxproj".
+6>CollisionTree.cpp
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\ConvX\ConvX.cpp(1167,14): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\ConvX\ConvX.cpp(1505,11): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\ConvX\ConvX.cpp(1917,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/CollisionTree.cpp')
-12>CSpriteManagerC.cpp
-21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-3>Done building project "SimonReloaded.vcxproj" -- FAILED.
-17>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Light\CLightC.cpp(13,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(225,1):
-5>    see declaration of 'std'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(225,1):
-5>    see declaration of 'std'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(225,1):
-5>    see declaration of 'std'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-27>(compiling source file '../../Shared/Animation/CAnimation.cpp')
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-18>(compiling source file '../../Shared/Error/CError.cpp')
-18>globstruct.cpp
 23>DBOBlock.cpp
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-14>(compiling source file '../../Shared/Setup/CGfxC.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-17>CLightManagerC.cpp
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-24>    see declaration of 'StackString'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-24>    see declaration of 'StackString'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-24>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-24>    Conversion requires a second user-defined-conversion operator or constructor
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-24>    see declaration of 'StackString<capacity>::push_back'
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-24>    while trying to match the argument list '(const char *)'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-24>    The target type has no constructors
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-24>    failure was because type 'StackString' is not a literal type
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-24>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-24>    failure was because type 'StackString' is not a literal type
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-24>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-25>CError.cpp
-11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-11>(compiling source file '../../Shared/System/CSystemC.cpp')
-16>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-16>(compiling source file '../../Shared/Error/CError.cpp')
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\CpuUsage.cpp(58,7): warning C4996: 'GetVersionExA': was declared deprecated
-16>Generating Code...
-26>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-26>(compiling source file '../../Shared/Error/CError.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-4>OSCpu.cpp
-20>CError.cpp
-26>Generating Code...
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-24>    see declaration of 'std'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-24>    see declaration of 'std'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-24>    see declaration of 'std'
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(176,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(256,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(439,23): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(444,12): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(480,23): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(486,12): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(525,23): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(530,12): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(445,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(447,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(458,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(460,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(487,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(489,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(500,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(502,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(531,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(533,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
+18>globstruct.cpp
 21>CFileC.cpp
-7>Generating Code...
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(918,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1065,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1067,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1076,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1083,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1089,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1093,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1100,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1090,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-15>DBOAssImp.cpp
+26>Generating Code...
 8>btBulletWorldImporter.cpp
-6>Container.cpp
 11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\System\CSystemC.cpp(120,9): warning C4101: 'dwStore': unreferenced local variable
-13>Generating Code...
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
 11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\System\CSystemC.cpp(411,29): warning C4244: 'return': conversion from 'SIZE_T' to 'int', possible loss of data
+25>CError.cpp
+13>Generating Code...
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+27>(compiling source file '../../Shared/Animation/CAnimation.cpp')
 11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\System\CSystemC.cpp(447,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\System\CSystemC.cpp(454,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\System\CSystemC.cpp(728,75): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
 11>CError.cpp
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-19>(compiling source file '../../Shared/Core/globstruct.cpp')
-1>LoadBalancingListener.cpp
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-9>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-9>(compiling source file '../../Shared/Error/CError.cpp')
-16>Memblocks.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Memblocks.lib
-16>Done building project "Memblocks.vcxproj".
+9>CError.cpp
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\CpuUsage.cpp(58,7): warning C4996: 'GetVersionExA': was declared deprecated
+12>CSpriteManagerC.cpp
+4>OSCpu.cpp
 19>Generating Code...
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1138,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1139,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1140,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1140,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1141,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1141,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,45): warning C4838: conversion from 'float' to 'UINT' requires a narrowing conversion
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,45): warning C4244: 'initializing': conversion from 'float' to 'UINT', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,59): warning C4838: conversion from 'float' to 'UINT' requires a narrowing conversion
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,59): warning C4244: 'initializing': conversion from 'float' to 'UINT', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1183,36): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1184,37): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+16>Generating Code...
+13>CSoundC.cpp
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1600,27): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1601,28): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1613,57): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1686,49): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1686,73): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
+20>CError.cpp
+26>Basic2D.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Basic2D.lib
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(257,32): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
+26>Done building project "Basic2D.vcxproj".
+27>CError.cpp
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+14>(compiling source file '../../Shared/Setup/CGfxC.cpp')
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(361,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(362,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-9>Generating Code...
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(632,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-27>(compiling source file '../../Shared/Animation/CAnimation.cpp')
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(700,37): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(781,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(848,36): warning C4311: 'type cast': pointer truncation from 'HICON' to 'LONG'
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(848,36): warning C4302: 'type cast': truncation from 'HICON' to 'LONG'
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(2249,16): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(2250,17): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(3323,19): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4135,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4136,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4147,24): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4212,11): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4214,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(485,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(499,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(542,45): warning C4305: 'argument': truncation from 'double' to 'float'
@@ -712,72 +238,72 @@ Rebuild started at 16:35...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(585,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(589,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(593,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,197): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,192): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,187): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,182): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,225): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,220): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,215): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,210): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,195): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,190): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,185): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,180): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,197): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,192): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,187): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(634,182): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,223): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,218): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,213): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,208): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,194): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,189): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,184): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,179): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,195): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,190): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,185): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(645,180): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,222): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,217): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,212): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,207): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,196): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,191): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,186): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,181): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,194): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,189): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,184): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(655,179): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,224): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,219): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,214): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,209): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,193): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,188): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,183): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,178): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,196): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,191): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,186): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(674,181): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,221): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,216): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,211): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,206): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,193): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,188): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,183): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,178): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,193): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,188): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,183): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(685,178): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,221): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,216): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,211): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,206): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,193): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,188): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,183): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(696,178): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(707,30): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,201): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,196): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,191): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,186): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,229): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,224): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,219): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,214): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,201): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,196): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,191): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(711,186): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(726,30): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,193): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,188): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,183): warning C4305: 'argument': truncation from 'double' to 'float'
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,178): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,221): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,216): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,211): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,206): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,193): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,188): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,183): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(729,178): warning C4305: 'argument': truncation from 'double' to 'float'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(734,30): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(765,33): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(794,33): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
@@ -872,66 +398,6 @@ Rebuild started at 16:35...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4001,13): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4023,19): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4027,5): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-5>    type is 'const std::vector<std::string,std::allocator<std::string>> []'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<std::string>> []': illegal sizeof operand
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-13>CSoundC.cpp
-18>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-18>(compiling source file '../../Shared/Core/globstruct.cpp')
-18>Generating Code...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4055,19): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4059,5): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4085,27): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
@@ -964,6 +430,17 @@ Rebuild started at 16:35...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4312,5): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4319,26): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4326,24): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
+1>LoadBalancingListener.cpp
+18>Generating Code...
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(439,23): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(444,12): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(480,23): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(486,12): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(525,23): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(530,12): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1067,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1076,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBO2X.cpp(1089,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4334,26): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4342,21): warning C4312: 'type cast': conversion from 'unsigned long' to 'LPSTR' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(4364,4): warning C4312: 'type cast': conversion from 'unsigned long' to 'unsigned long *' of greater size
@@ -1059,73 +536,20 @@ Rebuild started at 16:35...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(6212,45): warning C4312: 'reinterpret_cast': conversion from 'unsigned long' to 'char *' of greater size
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(6212,6): warning C4311: 'reinterpret_cast': pointer truncation from 'char *' to 'unsigned long'
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCore.cpp(6212,6): warning C4302: 'reinterpret_cast': truncation from 'char *' to 'unsigned long'
-25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-25>(compiling source file '../../Shared/Error/CError.cpp')
-25>CBitmapC.cpp
-19>CImageC.cpp
-14>globstruct.cpp
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-5>    type is 'const DirectX::XMVECTOR'
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1138,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1139,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1140,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1140,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1141,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1141,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,45): warning C4838: conversion from 'float' to 'UINT' requires a narrowing conversion
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,45): warning C4244: 'initializing': conversion from 'float' to 'UINT', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,59): warning C4838: conversion from 'float' to 'UINT' requires a narrowing conversion
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1167,59): warning C4244: 'initializing': conversion from 'float' to 'UINT', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1183,36): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1184,37): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1600,27): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1601,28): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1613,57): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1686,49): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1686,73): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
-20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-20>(compiling source file '../../Shared/Error/CError.cpp')
-26>Basic2D.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Basic2D.lib
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-26>Done building project "Basic2D.vcxproj".
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-15>(compiling source file '../../Shared/DBOFormat/DBOAssImp.cpp')
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-12>(compiling source file '../../Shared/Sprites/CSpriteManagerC.cpp')
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-12>(compiling source file '../../Shared/Sprites/CSpriteManagerC.cpp')
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
+19>CImageC.cpp
+15>DBOAssImp.cpp
+17>CError.cpp
+6>Container.cpp
+22>DBDLLCoreInternal.cpp
+7>Generating Code...
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(53,14): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(68,14): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(86,17): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
@@ -1169,120 +593,6 @@ Rebuild started at 16:35...
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1427,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1436,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1454,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
-22>DBDLLCoreInternal.cpp
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-24>    type is 'const std::vector<std::string,std::allocator<T>> []'
-24>        with
-24>        [
-24>            T=std::string
-24>        ]
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<T>> []': illegal sizeof operand
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         with
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         [
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:             T=std::string
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         ]
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-20>HTTPComm.cpp
-27>CError.cpp
-23>DBOData.cpp
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-24>    type is 'const DirectX::XMVECTOR'
-17>CError.cpp
-18>Controller.cpp
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(304,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(324,35): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-11>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-11>(compiling source file '../../Shared/Error/CError.cpp')
-9>Vectors.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Vectors.lib
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(804,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-1>(compiling source file '/LoadBalancingListener.cpp')
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(807,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-1>(compiling source file '/LoadBalancingListener.cpp')
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(829,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-1>(compiling source file '/LoadBalancingListener.cpp')
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(469,41): warning C4305: 'argument': truncation from 'double' to 'float'
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(469,36): warning C4305: 'argument': truncation from 'double' to 'float'
-9>Done building project "Vectors.vcxproj".
-11>Generating Code...
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(206,7): warning C4288: nonstandard extension used: 'i': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(91,6):
 8>    definition of 'i' used
@@ -1333,6 +643,10 @@ Rebuild started at 16:35...
 8>    definition of 'i' used
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(128,11):
 8>    definition of 'i' ignored
+16>Memblocks.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Memblocks.lib
+3>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+16>Done building project "Memblocks.vcxproj".
+11>Generating Code...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(286,7): warning C4288: nonstandard extension used: 'i': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(91,6):
 8>    definition of 'i' used
@@ -1353,127 +667,62 @@ Rebuild started at 16:35...
 8>    definition of 'i' used
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp(128,11):
 8>    definition of 'i' ignored
-6>DarkAI.cpp
+23>DBOData.cpp
+18>Controller.cpp
+25>CBitmapC.cpp
+9>Generating Code...
+3>(compiling source file '/SimonReloaded.cpp')
+8>btMultiBodyWorldImporter.cpp
+3>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\SimonReloaded\SimonReloaded.cpp(395,40): warning C4101: 'fLow': unreferenced local variable
+3>(compiling source file '/SimonReloaded.cpp')
+3>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\SimonReloaded\SimonReloaded.cpp(395,58): warning C4101: 'fNewHigh': unreferenced local variable
+3>(compiling source file '/SimonReloaded.cpp')
+3>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\SimonReloaded\SimonReloaded.cpp(395,45): warning C4101: 'fHigh': unreferenced local variable
+3>(compiling source file '/SimonReloaded.cpp')
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(632,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(700,37): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(781,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(848,36): warning C4311: 'type cast': pointer truncation from 'HICON' to 'LONG'
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(848,36): warning C4302: 'type cast': truncation from 'HICON' to 'LONG'
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(2249,16): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(2250,17): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(3323,19): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4135,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4136,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4147,24): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4212,11): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Setup\CGfxC.cpp(4214,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+20>HTTPComm.cpp
+27>Generating Code...
+1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(804,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+1>(compiling source file '/LoadBalancingListener.cpp')
+1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(807,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+1>(compiling source file '/LoadBalancingListener.cpp')
+1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(829,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+1>(compiling source file '/LoadBalancingListener.cpp')
 1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(886,87): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 1>(compiling source file '/LoadBalancingListener.cpp')
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(913,1): warning C4715: 'GetVideoPlaying': not all control paths return a value
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(927,1): warning C4715: 'GetVideoPosition': not all control paths return a value
+14>globstruct.cpp
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+12>(compiling source file '../../Shared/Sprites/CSpriteManagerC.cpp')
 1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(915,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 1>(compiling source file '/LoadBalancingListener.cpp')
 1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\LoadBalancingListener.cpp(962,86): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 1>(compiling source file '/LoadBalancingListener.cpp')
-12>CSpritesC.cpp
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/OSCpu.cpp')
+27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1217,1): warning C4715: 'DB_LoadAnimationCore': not all control paths return a value
+11>System.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\System.lib
+11>Done building project "System.vcxproj".
+1>MPAudio.cpp
+21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(378,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+17>Generating Code...
+9>Vectors.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Vectors.lib
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(27,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(27,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(93,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(93,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(101,14): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(101,14): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(107,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(107,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(112,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(112,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-4>OSCpuInfo.cpp
-1>MPAudio.cpp
-21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-21>(compiling source file '../../Shared/File/CFileC.cpp')
-8>btMultiBodyWorldImporter.cpp
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(325,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-20>globstruct.cpp
-14>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-14>(compiling source file '../../Shared/Core/globstruct.cpp')
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(458,24): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(463,24): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(475,25): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(506,20): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(729,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1051,22): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1062,23): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1209,23): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1290,24): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1301,24): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1320,26): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1469,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1470,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1471,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1472,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1484,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1485,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1486,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1487,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1504,24): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1515,26): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1609,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1720,48): warning C4244: '=': conversion from 'double' to 'DWORD', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1730,38): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1835,25): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1837,55): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1850,25): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1852,53): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1870,25): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1872,52): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1536,11): warning C4101: 'cFindTexture': unreferenced local variable
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1905,20): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1925,20): warning C4018: '<': signed/unsigned mismatch
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(2034,20): warning C4018: '<': signed/unsigned mismatch
-25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-25>(compiling source file '../../Shared/Bitmap/CBitmapC.cpp')
-24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\CCameraC.cpp(1100,41): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\CCameraC.cpp(1100,49): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-14>Generating Code...
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLCoreInternal.cpp')
-24>CCameraManagerC.cpp
-21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(378,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCoreInternal.cpp(132,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-1>p2pauth.cpp
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-13>(compiling source file '../../Shared/Sound/CSoundC.cpp')
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-27>(compiling source file '../../Shared/Error/CError.cpp')
-11>System.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\System.lib
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(893,13): warning C4244: 'initializing': conversion from 'intptr_t' to 'long', possible loss of data
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(1073,13): warning C4244: 'initializing': conversion from 'intptr_t' to 'long', possible loss of data
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(1150,6): warning C4311: 'type cast': pointer truncation from 'HINSTANCE' to 'DWORD'
@@ -1515,7 +764,20 @@ Rebuild started at 16:35...
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(2735,22): warning C4312: 'type cast': conversion from 'DWORD' to 'LPSTR' of greater size
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(3020,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\File\CFileC.cpp(3149,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-11>Done building project "System.vcxproj".
+9>Done building project "Vectors.vcxproj".
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(304,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(324,35): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(469,41): warning C4305: 'argument': truncation from 'double' to 'float'
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpriteManagerC.cpp(469,36): warning C4305: 'argument': truncation from 'double' to 'float'
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLCoreInternal.cpp(132,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 22>DBDLLDisplay.cpp
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\CSoundC.cpp(1764,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\CSoundC.cpp(1778,42): warning C4244: 'argument': conversion from 'float' to 'LONG', possible loss of data
@@ -1527,38 +789,33 @@ Rebuild started at 16:35...
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\CSoundC.cpp(1914,73): warning C4302: 'type cast': truncation from 'LPVOID' to 'DWORD'
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\CSoundC.cpp(2134,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\CSoundC.cpp(2135,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-27>Generating Code...
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(927,1): warning C4715: 'GetVideoPosition': not all control paths return a value
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(913,1): warning C4715: 'GetVideoPlaying': not all control paths return a value
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\DBOFORMAT\DBOData.cpp(113,22): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
-23>DBOEffects.cpp
-17>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-17>(compiling source file '../../Shared/Error/CError.cpp')
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(101,14): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(107,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(107,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(112,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpu.cpp(112,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 21>CError.cpp
-15>CObjectManagerC.cpp
-25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bitmap\CBitmapC.cpp(267,55): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bitmap\CBitmapC.cpp(267,63): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
-5>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Guru-WickedMAX\tracers\TracerManager.h(3,10): error C1083: Cannot open include file: 'wiGraphicsDevice.h': No such file or directory
-5>(compiling source file '../DarkLUA/DarkLUA.cpp')
-17>Generating Code...
-27>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Animation\CAnimation.cpp(1217,1): warning C4715: 'DB_LoadAnimationCore': not all control paths return a value
+6>DarkAI.cpp
+4>OSCpuInfo.cpp
 13>CSoundManagerC.cpp
-25>Generating Code...
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btMultiBodyWorldImporter.cpp')
-7>CPU3DTest.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\CPU3D.lib
-7>Done building project "CPU3DTest.vcxproj".
-5>Done building project "DarkLUA.vcxproj" -- FAILED.
+24>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+24>(compiling source file '../../Shared/Camera/CCameraC.cpp')
+12>CSpritesC.cpp
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\DBOFORMAT\DBOData.cpp(113,22): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+20>globstruct.cpp
 18>Input.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Input.lib
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/DarkAI.cpp')
 18>Done building project "Input.vcxproj".
+27>mfplat.lib(MFPlat.DLL) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in mf.lib(MF.dll); second definition ignored
+27>Animation.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Animation.lib
+27>Done building project "Animation.vcxproj".
+23>DBOEffects.cpp
+1>p2pauth.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(325,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(458,24): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(463,24): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(475,25): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(506,20): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(729,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp(142,52): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp(142,52):
 8>    the template instantiation context (the oldest one first) is
@@ -1588,26 +845,98 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp(233,52): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp(235,52): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp(242,42): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-20>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-20>(compiling source file '../../Shared/Core/globstruct.cpp')
+8>btWorldImporter.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1051,22): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1062,23): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1209,23): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1290,24): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1301,24): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1320,26): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1469,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1470,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1471,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1472,108): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1484,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1485,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1486,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1487,102): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1504,24): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1515,26): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1609,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1720,48): warning C4244: '=': conversion from 'double' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1730,38): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1835,25): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1837,55): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1850,25): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1852,53): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1870,25): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1872,52): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1536,11): warning C4101: 'cFindTexture': unreferenced local variable
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1905,20): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(1925,20): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOAssImp.cpp(2034,20): warning C4018: '<': signed/unsigned mismatch
+25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bitmap\CBitmapC.cpp(267,55): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+25>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bitmap\CBitmapC.cpp(267,63): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\CCameraC.cpp(1100,41): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\CCameraC.cpp(1100,49): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+14>Generating Code...
+5>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+5>(compiling source file 'DarkLUA.cpp')
+17>Light.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Light.lib
+17>Done building project "Light.vcxproj".
+25>Generating Code...
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 19>(compiling source file '../../Shared/Image/CImageC.cpp')
+15>CObjectManagerC.cpp
+21>globstruct.cpp
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1195,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1222,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1428,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1947,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,32): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,40): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,101): warning C4838: conversion from 'D3D11_BIND_FLAG' to 'UINT' requires a narrowing conversion
+22>DBDLLEXT.cpp
 20>Generating Code...
-8>btWorldImporter.cpp
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2995,30): warning C4018: '<': signed/unsigned mismatch
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2997,31): warning C4018: '<': signed/unsigned mismatch
+25>Bitmap.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Bitmap.lib
+25>Done building project "Bitmap.vcxproj".
+14>Setup.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Setup.lib
+14>Done building project "Setup.vcxproj".
+7>CPU3DTest.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\CPU3D.lib
+7>Done building project "CPU3DTest.vcxproj".
+13>dsutil.cpp
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1257,71): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1307,71): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1308,79): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1310,67): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1314,76): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+23>DBOExternals.cpp
+1>PhotonMultiplayer.cpp
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(2636,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(2637,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1315,84): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1317,72): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
+4>OSHardDrive.cpp
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 12>(compiling source file '../../Shared/Sprites/CSpritesC.cpp')
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-12>(compiling source file '../../Shared/Sprites/CSpritesC.cpp')
+5>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Guru-WickedMAX\tracers\TracerManager.h(3,10): error C1083: Cannot open include file: 'wiGraphicsDevice.h': No such file or directory
+5>(compiling source file 'DarkLUA.cpp')
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(3115,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(3133,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(3157,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DarkAI.cpp(3169,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLDisplay.cpp')
+6>DBPro Functions.cpp
+8>VHACD.cpp
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(613,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(615,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(620,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
@@ -1617,364 +946,36 @@ Rebuild started at 16:35...
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(635,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(636,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 12>Generating Code...
-27>mfplat.lib(MFPlat.DLL) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in mf.lib(MF.dll); second definition ignored
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOEffects.cpp')
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1195,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-6>DBPro Functions.cpp
-14>Setup.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Setup.lib
-27>Animation.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Animation.lib
-27>Done building project "Animation.vcxproj".
-14>Done building project "Setup.vcxproj".
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1222,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1428,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(1947,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,32): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,40): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2420,101): warning C4838: conversion from 'D3D11_BIND_FLAG' to 'UINT' requires a narrowing conversion
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2995,30): warning C4018: '<': signed/unsigned mismatch
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(2997,31): warning C4018: '<': signed/unsigned mismatch
-12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(1150,1): warning C4717: 'MAXSprite': recursive on all control paths, function will cause runtime stack overflow
-4>OSHardDrive.cpp
-1>PhotonMultiplayer.cpp
-25>Bitmap.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Bitmap.lib
-22>DBDLLEXT.cpp
-17>Light.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Light.lib
-25>Done building project "Bitmap.vcxproj".
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-19>    see declaration of 'StackString'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-19>    see declaration of 'StackString'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-19>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-19>    Conversion requires a second user-defined-conversion operator or constructor
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-19>    see declaration of 'StackString<capacity>::push_back'
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-19>    while trying to match the argument list '(const char *)'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-19>    The target type has no constructors
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-19>    failure was because type 'StackString' is not a literal type
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-19>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-19>    failure was because type 'StackString' is not a literal type
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-19>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-17>Done building project "Light.vcxproj".
-21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-21>(compiling source file '../../Shared/Error/CError.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-19>    see declaration of 'std'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-19>    see declaration of 'std'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-19>    see declaration of 'std'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-1>(compiling source file '/PhotonMultiplayer.cpp')
-23>DBOExternals.cpp
-21>globstruct.cpp
+5>Done building project "DarkLUA.vcxproj" -- FAILED.
 20>FTP.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\FTP.lib
+12>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\CSpritesC.cpp(1150,1): warning C4717: 'MAXSprite': recursive on all control paths, function will cause runtime stack overflow
 20>Done building project "FTP.vcxproj".
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-13>dsutil.cpp
-24>CDataC.cpp
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1257,71): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1307,71): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1308,79): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1310,67): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-15>    see declaration of 'StackString'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-15>    see declaration of 'StackString'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/DBPro%20Functions.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-12>Sprites.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Sprites.lib
-12>Done building project "Sprites.vcxproj".
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1314,76): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1315,84): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp(1317,72): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-15>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-15>    Conversion requires a second user-defined-conversion operator or constructor
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-15>    see declaration of 'StackString<capacity>::push_back'
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-15>    while trying to match the argument list '(const char *)'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-15>    The target type has no constructors
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-15>    failure was because type 'StackString' is not a literal type
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-15>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-15>    failure was because type 'StackString' is not a literal type
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-15>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-24>Generating Code...
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLEXT.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-15>    see declaration of 'std'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-15>    see declaration of 'std'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-15>    see declaration of 'std'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-8>VHACD.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOExternals.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-19>    type is 'const std::vector<std::string,std::allocator<std::string>> []'
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<std::string>> []': illegal sizeof operand
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-23>DBOFile.cpp
-21>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-21>(compiling source file '../../Shared/Core/globstruct.cpp')
-22>DBDLLExtCalls.cpp
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-19>    type is 'const DirectX::XMVECTOR'
-6>DynamicPathFinder.cpp
 21>Generating Code...
-1>PhotonView.cpp
-24>Done building project "Camera.vcxproj" -- FAILED.
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-13>(compiling source file '../../Shared/Sound/dsutil.cpp')
+23>DBOFile.cpp
+22>DBDLLExtCalls.cpp
+13>dxutil.cpp
+12>Sprites.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Sprites.lib
 19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
 19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-19>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-19>(compiling source file '../../Shared/Image/CImageC.cpp')
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-13>dxutil.cpp
+12>Done building project "Sprites.vcxproj".
+21>File.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\File.lib
+1>PhotonView.cpp
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3537,22): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3537,27): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3537,46): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3537,73): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
+21>Done building project "File.vcxproj".
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1434,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1434,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         with
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         [
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:             T=float
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         ]
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1452,91): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1459,14): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
+6>DynamicPathFinder.cpp
+23>DBOFormat.cpp
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3550,23): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3550,28): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(3550,47): warning C4838: conversion from 'LONG' to 'UINT' requires a narrowing conversion
@@ -1990,6 +991,7 @@ Rebuild started at 16:35...
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4204,108): warning C4474: 'sprintf' : too many arguments passed for format string
 19>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4204,108):
 19>    placeholders and their parameters expect 4 variadic arguments, but 5 were provided
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4524,15): warning C4101: 'info': unreferenced local variable
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4556,9): warning C4311: 'type cast': pointer truncation from 'HICON' to 'DWORD'
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4556,9): warning C4302: 'type cast': truncation from 'HICON' to 'DWORD'
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(4562,19): warning C4312: 'type cast': conversion from 'DWORD' to 'HICON' of greater size
@@ -2005,105 +1007,9 @@ Rebuild started at 16:35...
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5477,69): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5478,72): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5586,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/OSHardDrive.cpp')
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(413,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(413,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(432,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(432,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(483,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(483,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5933,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
 19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5939,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-19>CError.cpp
-4>OSComputerNames.cpp
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-23>DBOFormat.cpp
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-15>    type is 'const std::vector<std::string,std::allocator<T>> []'
-15>        with
-15>        [
-15>            T=std::string
-15>        ]
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<T>> []': illegal sizeof operand
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         with
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         [
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:             T=std::string
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         ]
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-21>File.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\File.lib
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1434,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1434,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         with
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         [
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:             T=float
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1438,41): warning C4244:         ]
-21>Done building project "File.vcxproj".
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLExtCalls.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-15>    type is 'const DirectX::XMVECTOR'
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\PhotonView.cpp(40,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-1>(compiling source file '/PhotonView.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1452,91): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1459,14): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\CImageC.cpp(5916,11): warning C4101: 'hRes': unreferenced local variable
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1490,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1490,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1494,44): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
@@ -2116,185 +1022,52 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1501,42): warning C4244:         [
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1501,42): warning C4244:             T=float
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\Extras\VHACD\src\VHACD.cpp(1501,42): warning C4244:         ]
-1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\PhotonView.cpp(66,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-1>(compiling source file '/PhotonView.cpp')
-1>ServerBrowser.cpp
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/DynamicPathFinder.cpp')
-8>vhacdICHull.cpp
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\dxutil.cpp(51,62): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(30,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(145,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(146,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(413,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(413,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(432,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
+8>vhacdICHull.cpp
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\dxutil.cpp(374,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sound\dxutil.cpp(398,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 13>CError.cpp
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
-15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(432,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(483,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSHardDrive.cpp(483,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
+4>OSComputerNames.cpp
+1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\PhotonView.cpp(40,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+22>DBDLLGDI.cpp
+1>(compiling source file '/PhotonView.cpp')
+1>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\PhotonMultiplayer\PhotonView.cpp(66,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+1>(compiling source file '/PhotonView.cpp')
+1>ServerBrowser.cpp
+8>vhacdManifoldMesh.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(30,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(145,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(146,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(1324,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\DynamicPathFinder.cpp(1334,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>Entity.cpp
-19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-19>(compiling source file '../../Shared/Error/CError.cpp')
-22>DBDLLGDI.cpp
+13>CDataC.cpp
 1>ShouldISend.cpp
-19>Generating Code...
-15>cOcclusion.cpp
-19>Done building project "Image.vcxproj" -- FAILED.
-8>vhacdManifoldMesh.cpp
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/OSComputerNames.cpp')
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/Entity.cpp')
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    see declaration of 'StackString'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    see declaration of 'StackString'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-23>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-23>    Conversion requires a second user-defined-conversion operator or constructor
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-23>    see declaration of 'StackString<capacity>::push_back'
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-23>    while trying to match the argument list '(const char *)'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-23>    The target type has no constructors
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-23>    failure was because type 'StackString' is not a literal type
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-23>    failure was because type 'StackString' is not a literal type
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
+15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+15>(compiling source file '../../Shared/Objects/CObjectManagerC.cpp')
+6>Entity.cpp
+13>OggVorbis.cpp
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(79,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(124,19): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(180,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+8>vhacdMesh.cpp
+22>globstruct.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSComputerNames.cpp(44,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSComputerNames.cpp(44,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSComputerNames.cpp(54,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSComputerNames.cpp(54,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 4>OSDisplay.cpp
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-13>(compiling source file '../../Shared/Error/CError.cpp')
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLGDI.cpp')
-13>CDataC.cpp
-15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-15>(compiling source file '../../Shared/Objects/Occlusion/cOcclusion.cpp')
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(79,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 1>timer.cpp
-8>vhacdMesh.cpp
-13>OggVorbis.cpp
 1>voicechat.cpp
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(124,19): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\DBDLLGDI.cpp(180,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-22>globstruct.cpp
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1103,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1104,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1108,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+22>CError.cpp
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1233,47): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1234,49): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(1235,62): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
@@ -2372,138 +1145,26 @@ Rebuild started at 16:35...
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(4864,37): warning C4477: 'sprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
 6>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Entity.cpp(4864,37):
 6>    consider using '%zd' in the format string
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-15>GameFXCalls.cpp
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-6>EntityBuffer.cpp
-1>Generating Code...
-15>Generating Code...
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-23>    type is 'const std::vector<std::string,std::allocator<std::string>> []'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<std::string>> []': illegal sizeof operand
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-23>    type is 'const DirectX::XMVECTOR'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
 8>vhacdVolume.cpp
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/globstruct.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
+13>OggVorbisEncoderAudio.cpp
+1>Generating Code...
+6>EntityBuffer.cpp
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(42,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
 23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-22>CError.cpp
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/OSDisplay.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
-4>OSDialog.cpp
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(76,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(222,20): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(277,19): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+13>OggVorbisEncoderEncode.cpp
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderEncode.cpp(151,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderEncode.cpp(152,20): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+13>OggVorbisEncoderMain.cpp
+13>OggVorbisEncoderPlatform.cpp
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(298,27): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(331,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(844,35): warning C4838: conversion from 'INT' to 'UINT' requires a narrowing conversion
+3>SimonReloaded.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\InfiniteVegetation.lib
+3>Done building project "SimonReloaded.vcxproj".
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(844,42): warning C4838: conversion from 'INT' to 'UINT' requires a narrowing conversion
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(2933,22): warning C4018: '<': signed/unsigned mismatch
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(3130,25): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
@@ -2511,34 +1172,24 @@ Rebuild started at 16:35...
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7411,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7488,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7561,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-23>DBOFrame.cpp
-13>OggVorbisEncoderAudio.cpp
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(42,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(76,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(222,20): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderAudio.cpp(277,19): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
-13>OggVorbisEncoderEncode.cpp
-8>btAxisSweep3.cpp
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderEncode.cpp(151,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-13>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\Sound\OggVorbisEncoderEncode.cpp(152,20): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-13>OggVorbisEncoderMain.cpp
-13>OggVorbisEncoderPlatform.cpp
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Error/CError.cpp')
-6>EntityThread.cpp
 22>Generating Code...
+4>OSDialog.cpp
+8>btAxisSweep3.cpp
+13>Generating Code...
+8>btBroadphaseProxy.cpp
+8>btCollisionAlgorithm.cpp
+6>EntityThread.cpp
+8>btDbvt.cpp
 1>PhotonMultiplayer.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\PhotonMultiplayer.lib
 1>Done building project "PhotonMultiplayer.vcxproj".
-8>btBroadphaseProxy.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOFrame.cpp')
-8>btCollisionAlgorithm.cpp
-23>DBOMesh.cpp
-8>btDbvt.cpp
-13>Generating Code...
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/OSDialog.cpp')
+24>CCameraManagerC.cpp
 8>btDbvtBroadphase.cpp
+13>Sound.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Sound.lib
+22>DBDLLCoreEncryptCall.cpp
+8>btDispatcher.cpp
+13>Done building project "Sound.vcxproj".
+8>btOverlappingPairCache.cpp
+8>btQuantizedBvh.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSDialog.cpp(49,24): warning C4312: 'type cast': conversion from 'unsigned long' to 'char *' of greater size
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSDialog.cpp(51,24): warning C4312: 'type cast': conversion from 'unsigned long' to 'char *' of greater size
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSDialog.cpp(53,24): warning C4312: 'type cast': conversion from 'unsigned long' to 'char *' of greater size
@@ -2550,248 +1201,26 @@ Rebuild started at 16:35...
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSDialog.cpp(82,9): warning C4311: 'type cast': pointer truncation from 'char *' to 'unsigned long'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSDialog.cpp(82,9): warning C4302: 'type cast': truncation from 'char *' to 'unsigned long'
 4>OSMemory.cpp
-8>btDispatcher.cpp
-22>DBDLLCoreEncryptCall.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-8>btOverlappingPairCache.cpp
 6>Grid.cpp
-8>btQuantizedBvh.cpp
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,2): error C2955: 'StackString': use of class template requires template argument list
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    see declaration of 'StackString'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2133: 'ret': unknown size
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14): error C2512: 'StackString': no appropriate default constructor available
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    see declaration of 'StackString'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6): error C2662: 'void StackString<capacity>::push_back(const char *)': cannot convert 'this' pointer from 'StackString' to 'StackString<capacity> &'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-23>    Reason: cannot convert from 'StackString' to 'StackString<capacity>'
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,2):
-23>    Conversion requires a second user-defined-conversion operator or constructor
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(94,17):
-23>    see declaration of 'StackString<capacity>::push_back'
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(403,6):
-23>    while trying to match the argument list '(const char *)'
-13>Sound.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Sound.lib
-13>Done building project "Sound.vcxproj".
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2): error C2440: 'return': cannot convert from 'StackString' to 'StackString'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(404,2):
-23>    The target type has no constructors
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16): error C3615: constexpr function 'extract_function_name' cannot result in a constant expression
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(400,16):
-23>    failure was because type 'StackString' is not a literal type
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(402,14):
-23>    failure was because type 'StackString' is not a literal type
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\CommonInclude.h(87,8):
-23>    type 'StackString' is not a literal type because it is not an aggregate type, a closure type, or does not have a constexpr constructor that is not a copy or move constructor
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPlatform.h(39,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(23,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,9): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(150,21): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,11): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(221,23): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2039: 'scoped_lock': is not a member of 'std'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\deque(23,1):
-23>    see declaration of 'std'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,9): error C2065: 'scoped_lock': undeclared identifier
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C2146: syntax error: missing ';' before identifier 'lck'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(247,21): error C3861: 'lck': identifier not found
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(284,31): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(285,30): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAllocator.h(535,57): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphicsDevice.h(11,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-6>Hero.cpp
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/DBDLLCoreEncryptCall.cpp')
-4>FileBlocks.cpp
-15>Done building project "Objects.vcxproj" -- FAILED.
-8>Generating Code...
+19>CError.cpp
 22>cMatrix.cpp
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(36,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(38,30): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiMath.h(39,25): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiAudio.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiJobSystem.h(15,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVideo.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(9,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(10,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEventHandler.h(11,23): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(26,33): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h(33,33): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPrimitive.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Decl.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiHelper.h(17,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(497,36): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(611,36): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\shaders\ShaderInterop_Renderer.h(794,40): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEnums.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiImage.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRandom.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFont.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiFFTGenerator.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRectPacker.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,47): error C2864: 'wi::scene::MaterialComponent::shaderTypeDefines': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(163,69):
-23>    type is 'const std::vector<std::string,std::allocator<T>> []'
-23>        with
-23>        [
-23>            T=std::string
-23>        ]
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070: 'const std::vector<std::string,std::allocator<T>> []': illegal sizeof operand
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         with
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         [
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:             T=std::string
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,37): error C2070:         ]
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(177,34): error C2338: static_assert failed: 'These values must match!'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-6>(compiling source file '../../DarkSDKMore/DarkAI/Hero.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,32): error C2864: 'wi::scene::AnimationComponent::INVALID_VECTOR': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene_Components.h(1784,60):
-23>    type is 'const DirectX::XMVECTOR'
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNoise.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(13,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTerrain.h(48,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h(22,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(16,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(114,42): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(179,41): error C7525: inline variables require at least '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-6>LeeThread.cpp
+8>Generating Code...
+24>CDataC.cpp
+6>Hero.cpp
+24>Generating Code...
+19>Generating Code...
 22>cVector2D.cpp
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRenderer.h(27,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiVersion.h(4,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiBacklog.h(18,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInput.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiRawInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiXInput.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiSDLInput.h(10,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiTextureHelper.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiPhysics.h(9,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiInitializer.h(3,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiLua.h(19,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiProfiler.h(20,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiArguments.h(6,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGPUSortLib.h(5,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiNetwork.h(7,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiShaderCompiler.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiConfig.h(8,11): error C2429: language feature 'nested-namespace-definition' requires compiler flag '/std:c++17'
-23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1646,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1708,26): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
-23>DBORawMesh.cpp
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/FileBlocks.cpp')
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileBlocks.cpp(172,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-4>FileMapping.cpp
+4>FileBlocks.cpp
+15>cOcclusion.cpp
+24>CCameraDataC.cpp
 22>cVector3D.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/DBOFormat/DBORawMesh.cpp')
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(64,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(72,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(73,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(97,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(115,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>LUAScript.cpp
-6>Path.cpp
-23>NVMeshMenderD3DX.cpp
+6>LeeThread.cpp
+19>DIB.C
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\DIB.C(437,16): warning C4013: 'GG_CreateFile' undefined; assuming extern returning int
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\DIB.C(437,15): warning C4047: '=': 'HANDLE' differs in levels of indirection from 'int'
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\DIB.C(551,15): warning C4047: '=': 'HANDLE' differs in levels of indirection from 'int'
+19>ICONS.C
+24>DBCameraGraphics.cpp
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(713,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(714,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(715,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
@@ -2800,48 +1229,57 @@ Rebuild started at 16:35...
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(782,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(787,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(792,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileBlocks.cpp(172,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>GameFXCalls.cpp
 22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\KMaths\cVector3D.cpp(1017,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 22>cVector4D.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/Path.cpp')
+15>Generating Code...
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(156,18): warning C4013: 'GG_CreateFile' undefined; assuming extern returning int
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(156,16): warning C4047: '=': 'HANDLE' differs in levels of indirection from 'int'
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(386,42): warning C4311: 'type cast': pointer truncation from 'LPTSTR' to 'DWORD'
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(396,34): warning C4312: 'type cast': conversion from 'LONG' to 'HWND' of greater size
+4>FileMapping.cpp
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(396,14): warning C4244: '=': conversion from 'LRESULT' to 'LONG', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(398,25): warning C4312: 'type cast': conversion from 'LONG' to 'HWND' of greater size
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(486,27): warning C4244: '=': conversion from 'LRESULT' to 'DWORD', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(538,76): warning C4113: 'BOOL (__cdecl *)(HANDLE,LPCTSTR,LPTSTR,LONG)' differs in parameter lists from 'ENUMRESNAMEPROCA'
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(545,31): warning C4244: '=': conversion from 'LRESULT' to 'UINT', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(586,35): warning C4244: '=': conversion from 'LRESULT' to 'LONG', possible loss of data
+19>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Image\icons\ICONS.C(847,16): warning C4047: '=': 'HANDLE' differs in levels of indirection from 'int'
+19>Generating Code...
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(64,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(72,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(73,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(97,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\LeeThread.cpp(115,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>LUAScript.cpp
+6>Path.cpp
+23>DBOFrame.cpp
+19>Image.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Image.lib
+19>Done building project "Image.vcxproj".
+22>RenderList.cpp
+24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\DBCameraGraphics.cpp(165,22): warning C4244: '=': conversion from 'DWORD' to 'FLOAT', possible loss of data
+24>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Camera\DBCameraGraphics.cpp(166,22): warning C4244: '=': conversion from 'DWORD' to 'FLOAT', possible loss of data
+24>Generating Code...
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Path.cpp(57,28): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+24>Camera.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Camera.lib
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Path.cpp(219,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Path.cpp(227,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Path.cpp(241,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>PathFinderAdvanced.cpp
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-4>(compiling source file '../../DarkSDKMore/Enhancements/FileMapping.cpp')
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(243,52): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>DBOMesh.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(226,27): warning C4804: '>': unsafe use of type 'bool' in operation
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(238,10): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(240,10): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
-22>RenderList.cpp
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(315,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,45): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,31): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(529,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(599,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(681,49): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(694,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,50): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,36): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,58): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,39): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,32): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(242,10): warning C4244: 'return': conversion from 'double' to 'DWORD', possible loss of data
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(313,22): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\FileMapping.cpp(383,77): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 4>IPC.cpp
-23>CError.cpp
+22>SteamCheckForWorkshop.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\IPC.cpp(49,25): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\IPC.cpp(49,25): warning C4302: 'type cast': truncation from 'LPVOID' to 'DWORD'
 4>cZip.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-6>(compiling source file '../../DarkSDKMore/DarkAI/PathFinderAdvanced.cpp')
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(40,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/Error/CError.cpp')
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(726,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(937,20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(1122,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
@@ -2866,98 +1304,189 @@ Rebuild started at 16:35...
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(3659,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(3673,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\PathFinderAdvanced.cpp(3890,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-23>globstruct.cpp
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-22>(compiling source file '../../Shared/Core/RenderList.cpp')
-6>Polygon.cpp
-22>SteamCheckForWorkshop.cpp
-6>StateAttack.cpp
-4>Generating Code...
-23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-23>(compiling source file '../../Shared/Core/globstruct.cpp')
-23>Generating Code...
 8>Compiling...
 8>btSimpleBroadphase.cpp
+6>Polygon.cpp
+8>btActivatingCollisionAlgorithm.cpp
+6>StateAttack.cpp
+22>Generating Code...
+8>btBox2dBox2dCollisionAlgorithm.cpp
+4>Generating Code...
+8>btBoxBoxCollisionAlgorithm.cpp
+24>BSCMAKE : warning BK4503: minor error in .SBR file 'x64\Release\CCameraC.sbr' ignored
+24>BSCMAKE : warning BK4503: minor error in .SBR file 'x64\Release\CCameraC.sbr' ignored
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpuInfo.cpp(404,1): warning C4700: uninitialized local variable 'CPUSignature' used
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpuInfo.cpp(1507,1): warning C4700: uninitialized local variable 'edx2' used
+15>CObjectsC.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpuInfo.cpp(1507,1): warning C4700: uninitialized local variable 'eax2' used
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpuInfo.cpp(1507,1): warning C4700: uninitialized local variable 'edx1' used
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\OSCpuInfo.cpp(1507,1): warning C4700: uninitialized local variable 'eax1' used
-22>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Core\SteamCheckForWorkshop.cpp(41,7): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
-8>btActivatingCollisionAlgorithm.cpp
-22>Generating Code...
+8>btBoxBoxDetector.cpp
+23>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+8>btCollisionDispatcher.cpp
+23>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
+22>DBDLLCore.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\DBDLLCore.lib
+22>Done building project "DBDLLCore.vcxproj".
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1646,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1708,26): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 6>StateAttackFromCover.cpp
-8>btBox2dBox2dCollisionAlgorithm.cpp
 4>adler32.c
-8>btBoxBoxCollisionAlgorithm.cpp
+8>btCollisionDispatcherMt.cpp
 4>aescrypt.c
 4>aeskey.c
 4>aestab.c
-8>btBoxBoxDetector.cpp
+8>btCollisionObject.cpp
 4>compress.c
-8>btCollisionDispatcher.cpp
 4>crc32.c
 4>deflate.c
 4>entropy.c
-22>DBDLLCore.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\DBDLLCore.lib
-22>Done building project "DBDLLCore.vcxproj".
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateAttackFromCover.cpp(44,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-8>btCollisionDispatcherMt.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateAttackFromCover.cpp(154,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>StateChaseAttack.cpp
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionObject.cpp(40,20): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
 4>fileenc.c
-8>btCollisionObject.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateAttackFromCover.cpp(44,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateAttackFromCover.cpp(154,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+8>btCollisionWorld.cpp
 4>gzclose.c
 4>gzlib.c
-23>Done building project "ConvX.vcxproj" -- FAILED.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzlib.c(251,9): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzlib.c(266,24): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+6>StateChaseAttack.cpp
 4>gzread.c
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzread.c(41,15): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzread.c(608,11): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
 4>gzwrite.c
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzwrite.c(89,23): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzwrite.c(92,38): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzwrite.c(108,33): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzwrite.c(111,42): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\gzwrite.c(581,9): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
 4>hmac.c
 4>infback.c
 4>inffast.c
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
 4>inflate.c
 4>inftrees.c
 4>ioapi.c
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
+8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
+8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\ioapi.c(122,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 4>ioapi_buf.c
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionObject.cpp(40,20): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
-8>btCollisionWorld.cpp
 4>Generating Code...
-6>Generating Code...
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.cpp(1331,51): warning C4305: 'argument': truncation from 'double' to 'btScalar'
 8>btCollisionWorldImporter.cpp
+6>Generating Code...
+15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+15>(compiling source file '../../Shared/Objects/CObjectsC.cpp')
+24>Done building project "Camera.vcxproj".
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\types.h(3452,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>(compiling source file '../../Shared/Objects/CObjectsC.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
+15>(compiling source file '../../Shared/Objects/CObjectsC.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
+15>(compiling source file '../../Shared/Objects/CObjectsC.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(342,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(506,17): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(550,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(592,29): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(660,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(806,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(808,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(810,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(817,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(819,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(826,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(828,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(830,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(837,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(839,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(841,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(846,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(899,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(909,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(916,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(926,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(928,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(964,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1017,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1021,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1023,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1025,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1027,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1029,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1031,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1033,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1035,46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1048,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1063,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1092,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1110,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1143,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1145,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(1829,29): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(2887,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(2887,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(2995,22): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(3317,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(3968,13): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(3969,13): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(3970,13): warning C4244: 'initializing': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(4540,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(5817,19): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(5842,34): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6090,13): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectVariable *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6131,13): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectVariable *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6172,13): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectVariable *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6217,13): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectVariable *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6266,13): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectVariable *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6373,40): warning C4312: 'type cast': conversion from 'DWORD' to 'ID3DX11EffectTechnique *' of greater size
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6405,10): warning C4311: 'type cast': pointer truncation from 'ID3DX11EffectTechnique *' to 'DWORD'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6405,10): warning C4302: 'type cast': truncation from 'ID3DX11EffectTechnique *' to 'DWORD'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(6697,29): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7321,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7321,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7550,21): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7563,68): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7623,26): warning C4018: '>=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7623,64): warning C4018: '<=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7687,27): warning C4018: '>=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7687,65): warning C4018: '<=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7713,31): warning C4018: '>=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7713,69): warning C4018: '<=': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7804,21): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(7911,27): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(8529,40): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9274,9): warning C4311: 'type cast': pointer truncation from 'sMesh *' to 'DWORD'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9274,9): warning C4302: 'type cast': truncation from 'sMesh *' to 'DWORD'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9352,16): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9353,17): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9356,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9356,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9441,16): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9442,17): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9445,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9445,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9540,16): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9541,17): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9544,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9544,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9867,17): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9868,18): warning C4244: 'initializing': conversion from 'DWORD' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9874,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(9875,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(10440,15): warning C4311: 'type cast': pointer truncation from 'ID3D11Resource *' to 'int'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(10440,15): warning C4302: 'type cast': truncation from 'ID3D11Resource *' to 'int'
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(10593,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(10627,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CObjectsC.cpp(10656,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 8>btCompoundCollisionAlgorithm.cpp
 4>Compiling...
 4>ioapi_mem.c
-4>iowin32.c
-6>Compiling...
-6>StateDefend.cpp
 8>btCompoundCompoundCollisionAlgorithm.cpp
+4>iowin32.c
+8>btConvex2dConvex2dAlgorithm.cpp
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\iowin32.c(124,17): warning C4013: 'GG_CreateFile' undefined; assuming extern returning int
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\iowin32.c(124,15): warning C4047: '=': 'HANDLE' differs in levels of indirection from 'int'
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\iowin32.c(131,47): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
@@ -2971,27 +1500,29 @@ Rebuild started at 16:35...
 4>prng.c
 4>pwd2key.c
 4>sha1.c
-8>btConvex2dConvex2dAlgorithm.cpp
 4>trees.c
 4>uncompr.c
 4>unzip.c
 4>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\Enhancements\Zlib\unzip.c(1368,84): warning C4244: '=': conversion from '__int64' to 'uInt', possible loss of data
+6>Compiling...
+6>StateDefend.cpp
+8>btConvexConcaveCollisionAlgorithm.cpp
 4>zip.c
 4>zutil.c
 4>Generating Code...
-8>btConvexConcaveCollisionAlgorithm.cpp
 8>btConvexConvexAlgorithm.cpp
-6>StateDiving.cpp
 8>btConvexPlaneCollisionAlgorithm.cpp
+23>DBORawMesh.cpp
 8>btDefaultCollisionConfiguration.cpp
+6>StateDiving.cpp
+8>btEmptyCollisionAlgorithm.cpp
 4>Main.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Enhancements.lib
 4>Done building project "Main.vcxproj".
-8>btEmptyCollisionAlgorithm.cpp
-6>StateFallBack.cpp
 8>btGhostObject.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btGhostObject.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
+23>NVMeshMenderD3DX.cpp
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btGhostObject.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btGhostObject.cpp')
@@ -2999,66 +1530,154 @@ Rebuild started at 16:35...
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btGhostObject.cpp')
 8>btHashedSimplePairCache.cpp
 8>Generating Code...
+6>StateFallBack.cpp
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateFallBack.cpp(93,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(243,52): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(315,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
 6>StateGoToDest.cpp
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,45): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,31): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(529,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(599,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(681,49): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(694,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,50): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,36): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,58): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,39): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+23>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,32): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+23>CError.cpp
+15>CommonC.cpp
 6>StateIdle.cpp
+23>globstruct.cpp
+23>Generating Code...
 6>StateInvestigate.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(269,15): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(776,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(779,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(780,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(784,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(1026,32): warning C4018: '>': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CommonC.cpp(1031,36): warning C4018: '>': signed/unsigned mismatch
+15>CPositionC.cpp
 6>StateLeaping.cpp
-6>StateManual.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(893,38): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(918,38): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(942,38): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(953,36): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(964,36): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\CPositionC.cpp(975,36): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+15>CError.cpp
 8>Compiling...
 8>btInternalEdgeUtility.cpp
-6>StatePatrol.cpp
+6>StateManual.cpp
+15>3DCol.cpp
 8>btManifoldResult.cpp
 8>btSimulationIslandManager.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp')
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\BoxCollision\3DCol.cpp(67,2): warning C5033: 'register' is no longer a supported storage class
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\BoxCollision\3DCol.cpp(68,2): warning C5033: 'register' is no longer a supported storage class
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Objects\BoxCollision\3DCol.cpp(69,2): warning C5033: 'register' is no longer a supported storage class
+6>StatePatrol.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionDispatch/btSimulationIslandManager.cpp')
 8>btSphereBoxCollisionAlgorithm.cpp
-6>StatePeekFromCorner.cpp
+15>cBoxCol.cpp
 8>btSphereSphereCollisionAlgorithm.cpp
 8>btSphereTriangleCollisionAlgorithm.cpp
 8>btUnionFind.cpp
+23>ConvX.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\ConvX.lib
+23>Done building project "ConvX.vcxproj".
 8>SphereTriangleDetector.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StatePeekFromCorner.cpp(41,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 8>btBox2dShape.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StatePeekFromCorner.cpp(122,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>StateSearchArea.cpp
+6>StatePeekFromCorner.cpp
+15>CCollision.cpp
 8>btBoxShape.cpp
 8>btBvhTriangleMeshShape.cpp
 8>btCapsuleShape.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateSearchArea.cpp(113,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>StateSet.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StatePeekFromCorner.cpp(41,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 8>btCollisionShape.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StatePeekFromCorner.cpp(122,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>StateSearchArea.cpp
+15>PolyPool.cpp
 8>btCompoundShape.cpp
-6>StateStrafeAttack.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\StateMachine\StateSearchArea.cpp(113,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+15>DBOBlock.cpp
+6>StateSet.cpp
 8>btConcaveShape.cpp
 8>btConeShape.cpp
 8>btConvex2dShape.cpp
 8>btConvexHullShape.cpp
-6>StateWaitInCover.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(53,14): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(68,14): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(86,17): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(117,17): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(173,18): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+6>StateStrafeAttack.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(211,19): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(249,18): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(284,16): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(310,14): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(365,18): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(410,18): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(455,18): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(650,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(681,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(712,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(798,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(950,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(977,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(992,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1034,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1085,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1093,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1102,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1111,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1120,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1128,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1136,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1144,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1169,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1206,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1271,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1279,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1286,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1294,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1302,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1310,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1322,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1344,57): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1388,58): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1400,61): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1427,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1436,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOBlock.cpp(1454,56): warning C4244: '=': conversion from '__int64' to 'DWORD', possible loss of data
+15>DBOData.cpp
 8>btConvexInternalShape.cpp
 8>btConvexPointCloudShape.cpp
 8>Generating Code...
+6>StateWaitInCover.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\SHARED\DBOFORMAT\DBOData.cpp(113,22): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+15>DBOEffects.cpp
+15>DBOExternals.cpp
 6>Team.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Team.cpp(472,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-6>TeamController.cpp
 8>Compiling...
 8>btConvexPolyhedron.cpp
+15>DBOFile.cpp
 8>btConvexShape.cpp
-6>TreeFace.cpp
-6>TreeNode.cpp
-6>World.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\Team.cpp(472,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+15>DBOFormat.cpp
+6>TeamController.cpp
 8>btConvexTriangleMeshShape.cpp
 8>btCylinderShape.cpp
 8>btEmptyShape.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 8>btHeightfieldTerrainShape.cpp
-6>(compiling source file '../../DarkSDKMore/DarkAI/World.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp(205,62): warning C4244: '=': conversion from 'const double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp(842,42): warning C4244: 'argument': conversion from 'const int' to 'const btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp(842,71): warning C4244: 'argument': conversion from 'const int' to 'const btScalar', possible loss of data
@@ -3075,9 +1694,7 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp(578,70): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp(582,71): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
 8>btMiniSDF.cpp
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(821,33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(822,70): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(945,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+6>TreeFace.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMiniSDF.h(67,16): warning C4244: 'argument': conversion from 'double' to 'const btScalar', possible loss of data
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionShapes/btMiniSDF.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMiniSDF.h(75,16): warning C4244: 'argument': conversion from 'double' to 'const btScalar', possible loss of data
@@ -3138,12 +1755,18 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMiniSDF.cpp(516,23): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMiniSDF.cpp(517,23): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
 8>btMinkowskiSumShape.cpp
+6>TreeNode.cpp
+6>World.cpp
+8>btMultimaterialTriangleMeshShape.cpp
+8>btMultiSphereShape.cpp
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(821,33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(822,70): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(945,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(981,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 6>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\DarkSDKMore\DarkAI\World.cpp(1164,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 6>Zone.cpp
-8>btMultimaterialTriangleMeshShape.cpp
-8>btMultiSphereShape.cpp
-6>Generating Code...
+15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+15>(compiling source file '../../Shared/DBOFormat/DBOFormat.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp(84,18): warning C4288: nonstandard extension used: 'i': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp(80,8):
 8>    definition of 'i' used
@@ -3154,7 +1777,17 @@ Rebuild started at 16:35...
 8>    definition of 'i' used
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp(110,14):
 8>    definition of 'i' ignored
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(298,27): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(331,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 8>btOptimizedBvh.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(844,35): warning C4838: conversion from 'INT' to 'UINT' requires a narrowing conversion
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(844,42): warning C4838: conversion from 'INT' to 'UINT' requires a narrowing conversion
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(2933,22): warning C4018: '<': signed/unsigned mismatch
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(3130,25): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(3131,23): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7411,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7488,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOFormat.cpp(7561,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 8>btPolyhedralConvexShape.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\LinearMath\btGrahamScan2dConvexHull.h(104,7): warning C4288: nonstandard extension used: 'i': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.cpp')
@@ -3187,6 +1820,7 @@ Rebuild started at 16:35...
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\LinearMath\btGrahamScan2dConvexHull.h(84,11):
 8>    definition of 'i' ignored
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\LinearMath\btGrahamScan2dConvexHull.h(108,37): warning C4288: nonstandard extension used: 'i': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+6>Generating Code...
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.cpp')
 8>    D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\LinearMath\btGrahamScan2dConvexHull.h(103,6):
 8>    definition of 'i' used
@@ -3216,16 +1850,18 @@ Rebuild started at 16:35...
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionShapes/btSdfCollisionShape.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btMiniSDF.h(75,16): warning C4244: 'argument': conversion from 'double' to 'const btScalar', possible loss of data
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/CollisionShapes/btSdfCollisionShape.cpp')
-6>DarkMind.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\DarkAI.lib
-6>Done building project "DarkMind.vcxproj".
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionShapes\btSdfCollisionShape.cpp(92,13): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
 8>btShapeHull.cpp
 8>btSphereShape.cpp
 8>btStaticPlaneShape.cpp
 8>btStridingMeshInterface.cpp
+6>DarkMind.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\DarkAI.lib
+6>Done building project "DarkMind.vcxproj".
 8>btTetrahedronShape.cpp
 8>btTriangleBuffer.cpp
 8>Generating Code...
+15>DBOFrame.cpp
+15>DBOMesh.cpp
 8>Compiling...
 8>btTriangleCallback.cpp
 8>btTriangleIndexVertexArray.cpp
@@ -3246,7 +1882,11 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.cpp')
 8>btGImpactQuantizedBvh.cpp
+15>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
+15>(compiling source file '../../Shared/DBOFormat/DBOMesh.cpp')
 8>btGImpactShape.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1646,18): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\DBOMesh.cpp(1708,26): warning C4267: 'initializing': conversion from 'size_t' to 'DWORD', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../../../SDK/BULLET/bullet-3.19/src/BulletCollision/Gimpact/btGImpactShape.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
@@ -3264,6 +1904,8 @@ Rebuild started at 16:35...
 8>btConvexCast.cpp
 8>btGjkConvexCast.cpp
 8>Generating Code...
+15>DBORawMesh.cpp
+15>NVMeshMenderD3DX.cpp
 8>Compiling...
 8>btGjkEpa2.cpp
 8>btGjkEpaPenetrationDepthSolver.cpp
@@ -3278,7 +1920,22 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp(373,21): warning C4244: 'argument': conversion from 'double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp(411,9): warning C4244: 'return': conversion from 'double' to 'btScalar', possible loss of data
 8>btMinkowskiPenetrationDepthSolver.cpp
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(243,52): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(315,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,45): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(491,31): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(529,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(599,32): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(681,49): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(694,50): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,50): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(706,36): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,58): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(876,39): warning C4267: 'initializing': conversion from 'size_t' to 'const unsigned int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+15>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\DBOFormat\Extras\NVMeshMenderD3DX.cpp(922,32): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
 8>btPersistentManifold.cpp
+15>globstruct.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp(362,46): warning C4244: '=': conversion from 'const double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp(363,48): warning C4244: '=': conversion from 'const double' to 'btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp(374,70): warning C4244: '=': conversion from 'const double' to 'btScalar', possible loss of data
@@ -3299,6 +1956,7 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp(402,70): warning C4244: '=': conversion from 'const double' to 'btScalar', possible loss of data
 8>btPolyhedralContactClipping.cpp
 8>btRaycastCallback.cpp
+15>Generating Code...
 8>btSubSimplexConvexCast.cpp
 8>btVoronoiSimplexSolver.cpp
 8>btKinematicCharacterController.cpp
@@ -3328,6 +1986,8 @@ Rebuild started at 16:35...
 8>btHingeConstraint.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp(304,14): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
 8>Generating Code...
+15>Objects.vcxproj -> D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Lib64\Release\Basic3D.lib
+15>Done building project "Objects.vcxproj".
 8>Compiling...
 8>btNNCGConstraintSolver.cpp
 8>btPoint2PointConstraint.cpp
@@ -3416,8 +2076,6 @@ Rebuild started at 16:35...
 8>btThreadSupportPosix.cpp
 8>btThreadSupportWin32.cpp
 8>BulletPhysics.CPP
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-8>(compiling source file '../../Shared/Bullet/BulletPhysics.CPP')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/BulletPhysics.CPP')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4302: 'type cast': truncation from 'void *' to 'int'
@@ -3466,8 +2124,6 @@ Rebuild started at 16:35...
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProJointManager.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProJointManager.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\Globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProJointManager.cpp')
 8>DBProJoints.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProJoints.cpp')
@@ -3486,8 +2142,6 @@ Rebuild started at 16:35...
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProMotionState.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProMotionState.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\Globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProMotionState.cpp')
 8>DBProRagDoll.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDoll.cpp')
@@ -3497,8 +2151,6 @@ Rebuild started at 16:35...
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDoll.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDoll.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\Globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDoll.cpp')
 8>DBProRagDollBone.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDollBone.cpp')
@@ -3507,8 +2159,6 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDollBone.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDollBone.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\Globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagDollBone.cpp')
 8>Generating Code...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bullet\GGTerrainPhysicsShape.cpp(117,1): warning C4172: returning address of local variable or temporary
@@ -3523,8 +2173,6 @@ Rebuild started at 16:35...
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagdollManager.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagdollManager.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\Globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProRagdollManager.cpp')
 8>DBProToBullet.cpp
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(217,47): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProToBullet.cpp')
@@ -3533,8 +2181,6 @@ Rebuild started at 16:35...
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProToBullet.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\BULLET\bullet-3.19\src\BulletCollision\CollisionDispatch\btCollisionWorld.h(394,59): warning C4302: 'type cast': truncation from 'void *' to 'int'
-8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProToBullet.cpp')
-8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 8>(compiling source file '../../Shared/Bullet/Ragdoll/DBProToBullet.cpp')
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bullet\Ragdoll\DBProToBullet.cpp(168,102): warning C4244: 'argument': conversion from 'double' to 'const btScalar', possible loss of data
 8>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Bullet\Ragdoll\DBProToBullet.cpp(168,72): warning C4244: 'argument': conversion from 'double' to 'const btScalar', possible loss of data
@@ -3639,8 +2285,6 @@ Rebuild started at 16:35...
 28>    D:\PROTOTIME\WickedEngineDX12\WickedEngine\Utility\stb_rect_pack.h(87,9):
 28>    see previous definition of 'STBRP__MAXVAL'
 28>imgui_gg_dx11.cpp
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Imgui/imgui_gg_dx11.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Imgui\imgui_gg_dx11.cpp(707,62): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Imgui\imgui_gg_dx11.cpp(707,62): warning C4244: 'initializing': conversion from 'float' to 'LONG', possible loss of data
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Imgui\imgui_gg_dx11.cpp(707,100): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
@@ -3823,8 +2467,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Common-File.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-File.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Common-File.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-File.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -3846,8 +2488,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Fonts.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/Common-Fonts.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Fonts.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Fonts.cpp')
@@ -3880,8 +2520,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Common-Images.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Images.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Common-Images.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Images.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -3906,8 +2544,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Common-Input.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Input.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Common-Input.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Input.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -3925,8 +2561,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Common-Keys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Keys.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Common-Keys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Keys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -3943,8 +2577,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Sounds.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/Common-Sounds.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Sounds.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Sounds.cpp')
@@ -3989,8 +2621,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Common-Strings.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common-Strings.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Common-Strings.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common-Strings.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4007,8 +2637,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Common.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/Common.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Common.cpp')
@@ -4320,16 +2948,12 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Source\Common.cpp(5617,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Source\Common.cpp(6059,19): warning C4018: '>': signed/unsigned mismatch
 28>cStr.cpp
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/cStr.cpp')
 28>G-Entity.cpp
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3452,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/G-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/G-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/G-Entity.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/G-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/G-Entity.cpp')
@@ -4350,8 +2974,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/G-Gun.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/G-Gun.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/G-Gun.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/G-Gun.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4371,8 +2993,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/G-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/G-Lighting.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/G-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/G-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4391,8 +3011,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-AudioVolume.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-AudioVolume.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-AudioVolume.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-AudioVolume.cpp')
@@ -4418,8 +3036,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Bulletholes.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Bulletholes.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Bulletholes.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Bulletholes.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4439,8 +3055,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlus.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlus.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlus.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlus.cpp')
@@ -4469,8 +3083,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlusTTS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlusTTS.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlusTTS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-CharacterCreatorPlusTTS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4497,8 +3109,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-CharacterSound.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-CharacterSound.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-CharacterSound.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-CharacterSound.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4515,8 +3125,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-DAINew.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-DAINew.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-DAINew.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-DAINew.cpp')
@@ -4537,8 +3145,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Debug.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Debug.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Debug.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Debug.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4555,8 +3161,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Decal.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Decal.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Decal.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Decal.cpp')
@@ -4575,8 +3179,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-EBE.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-EBE.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-EBE.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-EBE.cpp')
@@ -4914,8 +3516,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Entity.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -4934,8 +3534,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Explosion&Fire.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Explosion&Fire.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Explosion&Fire.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Explosion&Fire.cpp')
@@ -5017,8 +3615,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Game.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Game.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Game.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Game.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -5037,8 +3633,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-GridEdit.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-GridEdit.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-GridEdit.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-GridEdit.cpp')
@@ -5067,8 +3661,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-GridEditB.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-GridEditB.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-GridEditB.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-GridEditB.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -5095,8 +3687,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Gun.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Gun.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Gun.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Gun.cpp')
@@ -5706,8 +4296,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-HUD.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-HUD.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-HUD.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-HUD.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -5750,8 +4338,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Importer.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Importer.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Importer.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Importer.cpp')
@@ -6985,8 +5571,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Interactive.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Interactive.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Interactive.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Interactive.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7013,8 +5597,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Lighting.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Lighting.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7033,8 +5615,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-LUA-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-LUA-Entity.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-LUA-Entity.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-LUA-Entity.cpp')
@@ -7055,8 +5635,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-LUA-General.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-LUA-General.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-LUA-General.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-LUA-General.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7075,8 +5653,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-LUA.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-LUA.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-LUA.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-LUA.cpp')
@@ -7098,8 +5674,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-MapFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-MapFile.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-MapFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-MapFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7118,8 +5692,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Material.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Material.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Material.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Material.cpp')
@@ -7141,8 +5713,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-MPPhoton.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-MPPhoton.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-MPPhoton.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-MPPhoton.cpp')
@@ -7272,8 +5842,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-OBS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-OBS.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-OBS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-OBS.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7294,8 +5862,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Panel.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Panel.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Panel.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Panel.cpp')
@@ -7344,8 +5910,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Particles.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Particles.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Particles.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Particles.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7389,8 +5953,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Physics.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Physics.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Physics.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Physics.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7410,8 +5972,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Postprocess.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Postprocess.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Postprocess.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Postprocess.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7430,8 +5990,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Ragdoll.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Ragdoll.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Ragdoll.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Ragdoll.cpp')
@@ -7486,8 +6044,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-RPG.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-RPG.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-RPG.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-RPG.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7520,8 +6076,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Sky.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Sky.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Sky.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Sky.cpp')
@@ -7700,8 +6254,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Sliders.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Sliders.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Sliders.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Sliders.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7794,8 +6346,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-TerrainNew.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-TerrainNew.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-TerrainNew.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-TerrainNew.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -7813,8 +6363,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Titles.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Titles.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Titles.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Titles.cpp')
@@ -7982,8 +6530,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Object.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Object.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-UndoSys-Object.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Object.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8006,8 +6552,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Terrain.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-UndoSys-Terrain.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Terrain.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-UndoSys-Terrain.cpp')
@@ -8033,8 +6577,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-UndoSys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-UndoSys.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-UndoSys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-UndoSys.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8057,8 +6599,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Visuals.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Visuals.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Visuals.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Visuals.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8077,8 +6617,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Waypoint.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Waypoint.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Waypoint.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Waypoint.cpp')
@@ -8236,8 +6774,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Weapon.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Weapon.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Weapon.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Weapon.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8279,8 +6815,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-WelcomeSystem.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-WelcomeSystem.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-WelcomeSystem.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-WelcomeSystem.cpp')
@@ -8369,8 +6903,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/M-Widget.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Widget.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/M-Widget.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Widget.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8393,8 +6925,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/M-Workshop.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file '../GameGuru/Source/M-Workshop.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Workshop.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/M-Workshop.cpp')
@@ -8428,8 +6958,6 @@ Rebuild started at 16:35...
 28>(compiling source file '../GameGuru/Source/Types.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file '../GameGuru/Source/Types.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file '../GameGuru/Source/Types.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file '../GameGuru/Source/Types.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8458,8 +6986,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file 'GameGuruMain.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file 'GameGuruMain.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file 'GameGuruMain.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file 'GameGuruMain.cpp')
@@ -8556,8 +7082,6 @@ Rebuild started at 16:35...
 28>(compiling source file 'GGTerrain/GGTerrainFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
 28>(compiling source file 'GGTerrain/GGTerrainFile.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file 'GGTerrain/GGTerrainFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file 'GGTerrain/GGTerrainFile.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Include\CFTPC.h(19,10): warning C4005: 'DARKSDK': macro redefinition
@@ -8599,8 +7123,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
 28>(compiling source file 'Wicked-MAX/BulletDebugDrawer.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\Types.h(4243,28): warning C4305: '=': truncation from 'double' to 'float'
-28>(compiling source file 'Wicked-MAX/BulletDebugDrawer.cpp')
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
 28>(compiling source file 'Wicked-MAX/BulletDebugDrawer.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Dark Basic Public Shared\Dark Basic Pro SDK\Shared\Sprites\cspritemanagerc.h(35,67): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 28>(compiling source file 'Wicked-MAX/BulletDebugDrawer.cpp')
@@ -8839,8 +7361,6 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGUI.h(937,8): warning C4003: not enough arguments for function-like macro invocation 'IsMinimized'
 28>(compiling source file 'Wicked-MAX/BulletDebugDrawer.cpp')
 28>wickedcalls.cpp
-28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\SDK\DirectX\globstruct.h(347,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-28>(compiling source file 'wickedcalls.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\types.h(3452,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 28>(compiling source file 'wickedcalls.cpp')
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\GameGuru\Include\types.h(3954,32): warning C4305: 'initializing': truncation from 'double' to 'float'
@@ -8850,5 +7370,5 @@ Rebuild started at 16:35...
 28>D:\PROTOTIME\GameGuruMAXDX12\GameGuru Core\Guru-WickedMAX\master.h(6,10): error C1083: Cannot open include file: 'WickedEngine.h': No such file or directory
 28>(compiling source file 'wickedcalls.cpp')
 28>Done building project "Template_Windows.vcxproj" -- FAILED.
-========== Rebuild All: 21 succeeded, 7 failed, 0 skipped ==========
-========== Rebuild completed at 16:40 and took 04:46.007 minutes ==========
+========== Rebuild All: 26 succeeded, 2 failed, 0 skipped ==========
+========== Rebuild completed at 19:55 and took 04:58.715 minutes ==========
