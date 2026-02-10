@@ -16,6 +16,21 @@ This report provides a breakdown of the lines of code (LOC) in the project, incl
 | **GameGuru Launcher MAX** | 6 | 295 | 252 |
 | **TOTAL** | **1,546** | **806,870** | **711,495** |
 
+## Top 10 Largest Files (C/C++ Headers & Source)
+
+The following files contain the most lines of code, excluding generated asset headers.
+
+1.  **GameGuru Core/GameGuru/Source/M-GridEditB.cpp** (52,425 lines)
+2.  **GameGuru Core/GameGuru/Source/M-GridEdit.cpp** (26,523 lines)
+3.  **GameGuru Core/Dark Basic Public Shared/Dark Basic Pro SDK/DarkSDKMore/DarkLUA/DarkLUA.cpp** (16,673 lines)
+4.  **GameGuru Core/GameGuru/Source/M-Importer.cpp** (12,988 lines)
+5.  **GameGuru Core/GameGuru/Source/M-TerrainNew.cpp** (12,239 lines)
+6.  **GameGuru Core/Guru-WickedMAX/GGTerrain/GGTerrain.cpp** (11,414 lines)
+7.  **GameGuru Core/Dark Basic Public Shared/Dark Basic Pro SDK/Shared/Objects/CObjectsC.cpp** (11,241 lines)
+8.  **GameGuru Core/GameGuru/Include/Types.h** (10,824 lines)
+9.  **GameGuru Core/GameGuru/Source/M-Entity.cpp** (10,036 lines)
+10. **GameGuru Core/GameGuru/Include/gameguru.h** (8,787 lines)
+
 ## Notes
 
 - **Source Code Included:** The counts include `.cpp`, `.c`, `.cc`, `.h`, `.hpp`, and `.lua` files.
