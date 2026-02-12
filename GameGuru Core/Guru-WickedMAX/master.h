@@ -3,7 +3,7 @@
 //
 // Classes to handle editor and rendering
 //
-#include "WickedEngine.h"
+#include "../../../WickedEngineDX12/WickedEngine/WickedEngine.h"
 
 class MasterRenderer : public RenderPath3D
 {

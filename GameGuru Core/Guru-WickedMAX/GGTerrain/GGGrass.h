@@ -2,8 +2,8 @@
 #define _H_GGRASS
 
 #include <stdint.h>
-#include "wiGraphicsDevice.h"
-#include "wiScene.h"
+#include "../../../../WickedEngineDX12/WickedEngine/wiGraphicsDevice.h"
+#include "../../../../WickedEngineDX12/WickedEngine/wiScene.h"
 
 #include "Shaders/GGGrassConstants.hlsli"
 

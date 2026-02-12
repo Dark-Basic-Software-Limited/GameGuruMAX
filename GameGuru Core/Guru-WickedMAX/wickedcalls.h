@@ -26,8 +26,8 @@ enum GGRENDERLAYERS
 // pre-declare Wicked classes
 //struct wi::Resource; DX12 duplicate in wi::Resource.h
 #undef WICKEDENGINE
-#include "D:\PROTOTIME\WickedEngineDX12\WickedEngine\WickedEngine.h"
-//#include "D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiGraphics.h"
+#include "../../../WickedEngineDX12/WickedEngine/WickedEngine.h"
+//#include "../../../WickedEngineDX12/WickedEngine/wiGraphics.h"
 //#include "D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiScene.h"
 //#include "D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiECS.h"
 //#include "D:\PROTOTIME\WickedEngineDX12\WickedEngine\wiEmittedParticle.h"

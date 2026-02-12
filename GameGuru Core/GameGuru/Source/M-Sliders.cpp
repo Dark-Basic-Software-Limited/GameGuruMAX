@@ -92,7 +92,7 @@ void sliders_loop ( void )
 	}
 	if (g.tabmode == 0) {
 		if (bImGuiInTestGame) {
-			wiProfiler::ResetPeek();
+			//wiProfiler::ResetPeek(); // Not available in current WickedEngine
 		}
 	}
 	return;
@@ -299,7 +299,7 @@ void sliders_draw ( void )
 			// Resolution
 			cstr pHardwareDetailInfo;
 			pHardwareDetailInfo = "Graphics Card:";
-			pHardwareDetailInfo += wiRenderer::GetDevice()->GetGraphicsCardName();
+			pHardwareDetailInfo += wi::graphics::GetDevice()->GetGraphicsCardName();
 			pHardwareDetailInfo += "  Resolution:";
 			pHardwareDetailInfo += cstr(Str(GetDisplayWidth())) + "x" + cstr(Str(GetDisplayHeight()));
 			pastebitmapfontcenter(pHardwareDetailInfo.Get(),GetDisplayWidth()/2,GetDisplayHeight()-55,1,255);

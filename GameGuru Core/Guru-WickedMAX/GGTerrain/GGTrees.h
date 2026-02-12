@@ -2,8 +2,8 @@
 #define _H_GGTREES
 
 #include <stdint.h>
-#include "wiGraphicsDevice.h"
-#include "wiScene.h"
+#include "../../../../WickedEngineDX12/WickedEngine/wiGraphicsDevice.h"
+#include "../../../../WickedEngineDX12/WickedEngine/wiScene.h"
 
 #define GGTREES_PAINT_SPRAY         0
 #define GGTREES_PAINT_ADD           1

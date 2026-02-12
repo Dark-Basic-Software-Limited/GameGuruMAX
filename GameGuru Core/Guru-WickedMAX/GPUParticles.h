@@ -5,8 +5,8 @@
 #pragma once
 
 #ifndef NOTFORMAINENGINE
-#include "wiGraphicsDevice.h"
-#include "wiScene.h"
+#include "../../../WickedEngineDX12/WickedEngine/wiGraphicsDevice.h"
+#include "../../../WickedEngineDX12/WickedEngine/wiScene.h"
 #endif
 
 namespace GPUParticles

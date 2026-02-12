@@ -3,7 +3,7 @@
 //#define DISABLETEMP
 
 #include "stdafx.h"
-#include "WickedEngine.h"
+#include "../../../../WickedEngineDX12/WickedEngine/WickedEngine.h"
 #include "TracerManager.h"
 #include "wiResourceManager.h"
 #include "wiTimer.h"
@@ -123,7 +123,7 @@ namespace Tracers
 
     void Tracer_LoadTextureDDS(const char* filename, Texture* tex)
     {
-        GraphicsDevice* device = wiRenderer::GetDevice();
+        GraphicsDevice* device = wi::graphics::GetDevice();
 
         char filePath[MAX_PATH];
         strcpy_s(filePath, MAX_PATH, filename);
@@ -184,7 +184,7 @@ namespace Tracers
 #ifdef DISABLETEMP
         return;
 #endif
-        GraphicsDevice* device = wiRenderer::GetDevice();
+        GraphicsDevice* device = wi::graphics::GetDevice();
         //PE: Load tracer texture
         //PE: Moved to gunfolder/tracer.dds
         //Tracer_LoadTextureDDS("files/gamecore/tracers/tracer1.dds", &tracerTexture[0]);
@@ -316,7 +316,7 @@ namespace Tracers
         wiScene::CameraComponent& camera = wiScene::GetCamera();
         const XMMATRIX myViewProj = camera.GetViewProjection();
         
-        GraphicsDevice* device = wiRenderer::GetDevice();
+        GraphicsDevice* device = wi::graphics::GetDevice();
         device->EventBegin("tracer Draw", cmd);
         device->BindPipelineState(&tracerPSO, cmd);
 
@@ -418,12 +418,12 @@ namespace Tracers
         bd.Usage = USAGE_IMMUTABLE;
         bd.ByteWidth = sizeof(vertices);
         bd.BindFlags = BIND_VERTEX_BUFFER;
-        wiRenderer::GetDevice()->CreateBuffer(&bd, &data, &quadVB);
+        wi::graphics::GetDevice()->CreateBuffer(&bd, &data, &quadVB);
 
         data.pSysMem = indices;
         bd.ByteWidth = sizeof(indices);
         bd.BindFlags = BIND_INDEX_BUFFER;
-        wiRenderer::GetDevice()->CreateBuffer(&bd, &data, &quadIB);
+        wi::graphics::GetDevice()->CreateBuffer(&bd, &data, &quadIB);
     }
 
     void CreatePipelineState()
@@ -444,7 +444,7 @@ namespace Tracers
         };
         desc.il = &layout;
 
-        wiRenderer::GetDevice()->CreatePipelineState(&desc, &tracerPSO);
+        wi::graphics::GetDevice()->CreatePipelineState(&desc, &tracerPSO);
     }
 
 }

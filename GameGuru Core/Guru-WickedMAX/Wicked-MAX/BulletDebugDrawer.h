@@ -2,6 +2,7 @@
 #define _H_BULLET_DEBUG_DRAWER
 
 // We upgraded to BYLLET3 but this header does not know about WICKEDENGINE
+#define BT_NO_SIMD_OPERATOR_OVERLOADS
 #include "../../SDK/BULLET/bullet-3.19/src/LinearMath/btIDebugDraw.h"
 #include <vector>
 
