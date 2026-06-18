@@ -5829,7 +5829,7 @@ void mapeditorexecutable_loop(void)
 					iStandaloneCycle = 0;
 					strcpy(cTriggerMessage, "Save Standalone Done");
 					bTriggerMessage = true;
-					bExport_Standalone_Window = false; //Close window.
+					bExport_Standalone_Window = false; //Close window.				
 
 					void InjectIconToExe(char *icon, char *exe, int intresourcenumber);
 					char projectico[MAX_PATH];

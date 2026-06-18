@@ -2121,38 +2121,43 @@ void MasterRenderer::Update(float dt)
 			gpup_update(dt, cmd);
 			wiProfiler::EndRange(range);
 
-			// terrain processing (if used)
-			if (t.visuals.bEnableEmptyLevelMode == false)
+			// we can skip all terrain activity when building a standalone
+			extern bool bExport_Standalone_Window;
+			if (bExport_Standalone_Window == false)
 			{
-				extern int g_iDisableTerrainSystem;
-				auto range3 = wiProfiler::BeginRangeCPU("Update - Terrain");
-				extern bool bImGuiRenderTargetFocus;
-				PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTerrain_Update");
-				GGTerrain_Update(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd, bImGuiRenderTargetFocus);
-				if (g_iDisableTerrainSystem == 0)
+				// terrain processing (if used)
+				if (t.visuals.bEnableEmptyLevelMode == false)
 				{
-					PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTrees_Update");
-					GGTrees_Update(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd, bImGuiRenderTargetFocus);
-					GGTrees_UpdateFrustumCulling(&camera);
-					PIXScopedEvent(PIX_COLOR_DEFAULT, "GGGrass_Update");
-					GGGrass_Update(&camera, cmd, bImGuiRenderTargetFocus);
+					extern int g_iDisableTerrainSystem;
+					auto range3 = wiProfiler::BeginRangeCPU("Update - Terrain");
+					extern bool bImGuiRenderTargetFocus;
+					PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTerrain_Update");
+					GGTerrain_Update(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd, bImGuiRenderTargetFocus);
+					if (g_iDisableTerrainSystem == 0)
+					{
+						PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTrees_Update");
+						GGTrees_Update(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd, bImGuiRenderTargetFocus);
+						GGTrees_UpdateFrustumCulling(&camera);
+						PIXScopedEvent(PIX_COLOR_DEFAULT, "GGGrass_Update");
+						GGGrass_Update(&camera, cmd, bImGuiRenderTargetFocus);
+					}
+					wiProfiler::EndRange(range3);
 				}
-				wiProfiler::EndRange(range3);
-			}
-			else
-			{
-				// still need for terrain globals to update local params (for editable_size reading)
-				PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTerrain_Update_EmptyLevel");
-				GGTerrain_Update_EmptyLevel(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd);
+				else
+				{
+					// still need for terrain globals to update local params (for editable_size reading)
+					PIXScopedEvent(PIX_COLOR_DEFAULT, "GGTerrain_Update_EmptyLevel");
+					GGTerrain_Update_EmptyLevel(camera.Eye.x, camera.Eye.y, camera.Eye.z, cmd);
+				}
 			}
 			
-#ifdef WICKEDPARTICLESYSTEM
+			#ifdef WICKEDPARTICLESYSTEM
 			auto range4 = wiProfiler::BeginRangeCPU("Update - Emitters");
 			WickedCall_UpdateEmitters();
 			wiProfiler::EndRange(range4);
-#endif
+			#endif
 
-      // now just prepared IMGUI, but actual render called from Wicked hook
+			// now just prepared IMGUI, but actual render called from Wicked hook
 			auto range2 = wiProfiler::BeginRangeCPU("Update - Render");
 			GuruLoopRender();
 			wiProfiler::EndRange(range2);

@@ -350,7 +350,9 @@
       <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
     </Manifest>
     <PostBuildEvent>
-      <Command>signtool sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /f "$(SIGN_CERT)" -p $(SIGN_PASSWORD) "$(TargetPath)"</Command>
+      <Command>
+      </Command>
+      <Message>commented out: signtool sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /f "$(SIGN_CERT)" -p $(SIGN_PASSWORD) "$(TargetPath)"</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForDEV|x64'">
