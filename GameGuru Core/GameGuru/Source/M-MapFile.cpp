@@ -2827,8 +2827,22 @@ void mapfile_addallentityrelatedfiles ( int entid, entityeleproftype* pEleProf )
 			//PE: We can now have variabletype == 7 that contain media.
 			if (tempeleprof.PropertiesVariable.VariableType[i] == 2 || tempeleprof.PropertiesVariable.VariableType[i] == 7)
 			{
-				// Check if the string contains a file.
+				// CHeck if the string specifies a folder within the "imagebank\"
 				int variableLength = strlen(tempeleprof.PropertiesVariable.VariableValue[i]);
+				if (variableLength > 9 && (strnicmp(tempeleprof.PropertiesVariable.VariableValue[i], "imagebank", 9) == NULL) )
+				{
+					// and to avoid adding the whole imagebank, only add if a known 'grouped folder' used by specific behaviors such as imagepanel.lua
+					LPSTR pRelativePathOfImageBankFolder = tempeleprof.PropertiesVariable.VariableValue[i];
+					char pFinalFolder[MAX_PATH];
+					for (int n = 1; n < 10; n++)
+					{
+						sprintf(pFinalFolder, "%s\\set%d\\", pRelativePathOfImageBankFolder, n);
+						addfoldertocollection(pFinalFolder);
+					}
+					continue;
+				}
+				
+				// Check if the string contains a file.
 				if (variableLength > 4 && ( tempeleprof.PropertiesVariable.VariableValue[i][variableLength - 4] == '.' || tempeleprof.PropertiesVariable.VariableValue[i][variableLength - 3] == '.') )
 				{
 					// can specify a textfile, but needs to be specified as relative
@@ -4152,14 +4166,17 @@ void scanscriptfileandaddtocollection ( char* tfile_s , char *pPath)
 					}
 					tscriptname_s = Left(tscriptname_s.Get(), tt);
 
-					if (addtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get()) == true) {
+					if (addtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get()) == true) 
+					{
 						//Newly added , also scan this entry.
 						if (pPath)
 						{
 							scanscriptfileandaddtocollection(cstr(cstr(pPath)+cstr("scriptbank\\") + tscriptname_s).Get(), pPath);
 						}
 						else
+						{
 							scanscriptfileandaddtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get());
+						}
 					}
 				}
 			}
@@ -4197,13 +4214,14 @@ void scanscriptfileandaddtocollection ( char* tfile_s , char *pPath)
 					}
 					tscriptname_s = Left(tscriptname_s.Get(), tt);
 
-					if (addtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get()) == true) {
+					if (addtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get()) == true) 
+					{
 						//Newly added , also scan this entry.
 						if (pPath)
 						{
 							scanscriptfileandaddtocollection(cstr(cstr(pPath) + cstr("scriptbank\\") + tscriptname_s).Get(), pPath);
 						}
-							scanscriptfileandaddtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get());
+						scanscriptfileandaddtocollection(cstr(cstr("scriptbank\\") + tscriptname_s).Get());
 					}
 				}
 			}

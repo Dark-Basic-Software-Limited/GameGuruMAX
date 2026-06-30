@@ -159,6 +159,8 @@ bool g_bOneTimeMessage = false;
 uint32_t iOccludedTerrainChunks = 0;
 int OCCLODSTART = 6;
 int ggterrain_update_enabled = 1;
+int ggterrain_safe_gpu_singlethread = 0; // 1 = build terrain GPU buffers on main thread only (fixes intermittent DEVICE LOST)
+
 extern bool bTriggerMessage;
 extern char cTriggerMessage[MAX_PATH];
 
@@ -2676,6 +2678,19 @@ public:
 
 	static void AddChunk( GGTerrainChunk* pChunk )
 	{
+		extern int ggterrain_safe_gpu_singlethread;
+		if (ggterrain_safe_gpu_singlethread)
+		{
+			// Safe mode: generate on the calling (main) thread. No worker thread
+			// ever calls a D3D device method, so the cross-thread race is gone.
+			pChunk->pNextChunk = 0;
+			pChunk->Generate();            // pure CPU
+			pChunk->GenerateGPUBuffers();  // D3D CreateBuffer, now on main thread (as its comment requires)
+			MemoryBarrier();
+			pChunk->SetGenerating(0);
+			return;
+		}
+
 		waitingLock.Acquire();
 
 #ifdef _DEBUG

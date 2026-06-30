@@ -3114,6 +3114,10 @@ void FPSC_LoadSETUPINI (bool bUseMySystemFolder)
 
 					extern int g_iEnablePIXMarkers;
 					t.tryfield_s = "enablepixmarkers"; if (t.field_s == t.tryfield_s) g_iEnablePIXMarkers = t.value1;
+
+					// DOCDOC: terrainsafegpu = Set to 1 to build terrain GPU buffers on the main thread only. Slower terrain streaming, but fixes intermittent DEVICE LOST GPU crashes.
+					extern int ggterrain_safe_gpu_singlethread;
+					t.tryfield_s = "terrainsafegpu"; if (t.field_s == t.tryfield_s) ggterrain_safe_gpu_singlethread = t.value1;
 				}
 			}
 		}

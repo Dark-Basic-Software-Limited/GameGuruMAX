@@ -2514,6 +2514,7 @@ void animsystem_animationtoolui(int objectnumber)
 								cstr SaveAnimSet_s = g.fpscrootdir_s + "\\Files\\charactercreatorplus\\animations\\sets\\" + pAnimSetFile + ".dbo";
 								char pSaveAnimSetDBO[MAX_PATH];
 								strcpy (pSaveAnimSetDBO, SaveAnimSet_s.Get());
+								GG_GetRealPath(pSaveAnimSetDBO, 1);
 								if (FileExist(pSaveAnimSetDBO) == 1) DeleteFileA(pSaveAnimSetDBO);
 								GG_SetWritablesToRoot(true);
 								SaveObject(pSaveAnimSetDBO, objectnumber);
@@ -2899,13 +2900,13 @@ LPSTR animsystem_getweapontype (LPSTR pSelectedWeapon, LPSTR pAnimSetOverride)
 	return pWeaponType;
 }
 
-void animsystem_weaponproperty (int characterbasetype, bool readonly, entityeleproftype* edit_grideleprof, bool bForShooting, bool bForMelee)
+void animsystem_weaponproperty (int characterbasetype, bool bFromCharacterCreator, entityeleproftype* edit_grideleprof, bool bForShooting, bool bForMelee)
 {
 	// weapon selection for character properties (object editing and character creator use this)
 	LPSTR pAttachmentTitle = "Weapon";
 	cstr sCurrentWeapon = edit_grideleprof->hasweapon_s;
 	extern char* imgui_setpropertylist2c_v2(int, int, char*, char*, char*, int, bool, bool, bool, bool, int);
-	edit_grideleprof->hasweapon_s = imgui_setpropertylist2c_v2(t.group, t.controlindex, edit_grideleprof->hasweapon_s.Get(), pAttachmentTitle, t.strarr_s[209].Get(), 1, readonly, true, bForShooting, bForMelee, 0);
+	edit_grideleprof->hasweapon_s = imgui_setpropertylist2c_v2(t.group, t.controlindex, edit_grideleprof->hasweapon_s.Get(), pAttachmentTitle, t.strarr_s[209].Get(), 1, false, true, bForShooting, bForMelee, 0);
 	LPSTR pSelectedWeapon = edit_grideleprof->hasweapon_s.Get();
 	if (stricmp(pSelectedWeapon, sCurrentWeapon.Get()) != NULL)
 	{
@@ -2950,33 +2951,36 @@ void animsystem_weaponproperty (int characterbasetype, bool readonly, entityelep
 				}
 			}
 		}
-		bool bCanTakeWeapon = false;
-		if (bThisWeaponIsInLevel == true)
+		if (bFromCharacterCreator == false)
 		{
-			bCanTakeWeapon = edit_grideleprof->cantakeweapon;
-			if (ImGui::Checkbox("Player Can Take Weapon", &bCanTakeWeapon))
+			bool bCanTakeWeapon = false;
+			if (bThisWeaponIsInLevel == true)
 			{
-				edit_grideleprof->cantakeweapon = bCanTakeWeapon;
+				bCanTakeWeapon = edit_grideleprof->cantakeweapon;
+				if (ImGui::Checkbox("Player Can Take Weapon", &bCanTakeWeapon))
+				{
+					edit_grideleprof->cantakeweapon = bCanTakeWeapon;
+				}
+				if (ImGui::IsItemHovered()) ImGui::SetTooltip("Tick to allow the player to take the weapon when this character dies");
 			}
-			if (ImGui::IsItemHovered()) ImGui::SetTooltip("Tick to allow the player to take the weapon when this character dies");
-		}
-		else
-		{
-			// weapon is not physically in the level so cannot be dropped
-			edit_grideleprof->cantakeweapon = false;
-			ImGui::Text("NOTE: Weapon object is not in this level so cannot be dropped");
-			if (ImGui::IsItemHovered()) ImGui::SetTooltip("This weapon can be dropped if you physically add the weapon object associated with this weapon to the level");
-		}
-		if (bCanTakeWeapon)
-		{
-			// only if weapon shoots, no sense for melee weapons
-			t.findgun_s = Lower(edit_grideleprof->hasweapon_s.Get());
-			gun_findweaponindexbyname ();
-			int gunid = t.foundgunid;
-			if (g.firemodes[gunid][0].settings.reloadqty != 0 || g.firemodes[gunid][1].settings.reloadqty != 0 )
+			else
 			{
-				ImGui::TextCenter("Taken Weapon Ammo");
-				ImGui::MaxSliderInputInt("##ammo", &edit_grideleprof->quantity, 0, 1000, "The amount of ammo the weapon will have when picked up");
+				// weapon is not physically in the level so cannot be dropped
+				edit_grideleprof->cantakeweapon = false;
+				ImGui::Text("NOTE: Weapon object is not in this level so cannot be dropped");
+				if (ImGui::IsItemHovered()) ImGui::SetTooltip("This weapon can be dropped if you physically add the weapon object associated with this weapon to the level");
+			}
+			if (bCanTakeWeapon)
+			{
+				// only if weapon shoots, no sense for melee weapons
+				t.findgun_s = Lower(edit_grideleprof->hasweapon_s.Get());
+				gun_findweaponindexbyname ();
+				int gunid = t.foundgunid;
+				if (g.firemodes[gunid][0].settings.reloadqty != 0 || g.firemodes[gunid][1].settings.reloadqty != 0)
+				{
+					ImGui::TextCenter("Taken Weapon Ammo");
+					ImGui::MaxSliderInputInt("##ammo", &edit_grideleprof->quantity, 0, 1000, "The amount of ammo the weapon will have when picked up");
+				}
 			}
 		}
 	}

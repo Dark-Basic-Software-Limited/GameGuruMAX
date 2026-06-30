@@ -16496,7 +16496,7 @@ void process_entity_library_v2(void)
 			if (ImGui::InputText("##cSearchAllEntities", &cSearchAllEntities[i][0], MAX_PATH, ImGuiInputTextFlags_EnterReturnsTrue))
 			{
 				bUpdateSearchSorting = true;
-				phonetic_find = soundexall(cSearchAllEntities[i]);
+				phonetic_find = "";// strange results from PHONETICA!! soundexall(cSearchAllEntities[i]);
 
 				if (strlen(cSearchAllEntities[i]) > 1)
 				{
@@ -16540,7 +16540,7 @@ void process_entity_library_v2(void)
 			if (sOldSearch != sNewSearch)
 			{
 				sOldSearch = sNewSearch;
-				phonetic_find = soundexall(cSearchAllEntities[i]);
+				phonetic_find = "";// strange results from PHONETICA!! soundexall(cSearchAllEntities[i]);
 				bUpdateSearchSorting = true;
 				bUpdateSearchScrollbar = true;
 			}
@@ -17604,11 +17604,16 @@ void process_entity_library_v2(void)
 									}
 								}
 
-								if (i == 0 && strlen(cSearchAllEntities[i]) > 0) {
+								if (i == 0 && strlen(cSearchAllEntities[i]) > 0) 
+								{
+									// when we DEFINATELY have a search term entered, we MUST assume NOT VISIBLE until proven otherwise
+									bIsVisible = false;
+									bDisplayEverythingHere = false; // this is NO question we do not want to make everything visible if we have a search term!
 
+									// now see if we are VISIBLE
 									if (iDisplayLibraryType == 4 && stricmp(cSearchAllEntities[i], "global") == 0 )
 									{
-										bDisplayEverythingHere = false;
+										//bDisplayEverythingHere = false; // see above
 										if (pestrcasestr(dir_name.c_str(), "global"))
 										{
 											bIsVisible = true;
@@ -17616,8 +17621,12 @@ void process_entity_library_v2(void)
 									}
 									else
 									{
-										if (pestrcasestr(myfiles->m_sBetterSearch.Get(), cSearchAllEntities[i]))
+										// might be better but users cannot see the hidden meta data so are confused with pattern matches! 
+										//if (pestrcasestr(myfiles->m_sBetterSearch.Get(), cSearchAllEntities[i]))
+										//	bIsVisible = true;
+										if (pestrcasestr(myfiles->m_sName.Get(), cSearchAllEntities[i]))
 											bIsVisible = true;
+
 										if (!bIsVisible) // else current_sortby == 4)
 										{
 											if (bAdvancedFPEFeatures && myfiles->m_sFPEKeywords.Len() > 0)
@@ -17632,11 +17641,11 @@ void process_entity_library_v2(void)
 										if (pestrcasestr(cSearchAllEntities[i], "Game Elements"))
 											bIsVisible = true;
 									}
-
 								}
 
 								if (bDisplayEverythingHere)
 									bIsVisible = true;
+
 								if (bHideEverythingHere)
 									bIsVisible = false;
 
@@ -26726,6 +26735,7 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 			}
 			if (bUseKeyMentioned == true) edit_grideleprof->usekey_s = imgui_setpropertystring2_v2(t.group, edit_grideleprof->usekey_s.Get(), t.strarr_s[436].Get(), t.strarr_s[225].Get(), readonly);
 			bool readonly = false;
+			bool bFromCharacterCreator = false;
 			bool bMustUpdateAnimations = false;
 			extern bool g_bNowPopulateWithCorrectAnimSet;
 			if (bShootingWeaponMentioned == true || bMeleeWeaponMentioned == true)
@@ -26733,7 +26743,7 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 				bool btmp = g_bNowPopulateWithCorrectAnimSet;
 				g_bNowPopulateWithCorrectAnimSet = false;
 				extern void animsystem_weaponproperty (int, bool, entityeleproftype*, bool, bool);
-				animsystem_weaponproperty(t.entityprofile[entid].characterbasetype, readonly, edit_grideleprof, bShootingWeaponMentioned, bMeleeWeaponMentioned);
+				animsystem_weaponproperty(t.entityprofile[entid].characterbasetype, bFromCharacterCreator, edit_grideleprof, bShootingWeaponMentioned, bMeleeWeaponMentioned);
 				//PE: We changed weapon so must update animations.
 				if (g_bNowPopulateWithCorrectAnimSet)
 				{
@@ -35556,6 +35566,7 @@ void SetIconSetCheck(bool bInstant)
 		if (pref.current_style == 25 || pref.current_style == 3)
 		{
 			LoadImage("editors\\uiv3\\entity_particle.png", ENTITY_PARTICLE);
+			LoadImage("editors\\uiv3\\entity_new_particle.png", ENTITY_NEW_PARTICLE);
 			LoadImage("editors\\uiv3\\entity_light.png", ENTITY_LIGHT);
 			LoadImage("editors\\uiv3\\entity_probe.png", ENTITY_PROBE);
 			LoadImage("editors\\uiv3\\entity_cover.png", ENTITY_COVER);
@@ -35622,6 +35633,7 @@ void SetIconSetCheck(bool bInstant)
 		else
 		{
 			LoadImage("editors\\uiv3\\entity_particle2.png", ENTITY_PARTICLE);
+			LoadImage("editors\\uiv3\\entity_new_particle2.png", ENTITY_NEW_PARTICLE);
 			LoadImage("editors\\uiv3\\entity_light2.png", ENTITY_LIGHT);
 			LoadImage("editors\\uiv3\\entity_probe2.png", ENTITY_PROBE);
 			LoadImage("editors\\uiv3\\entity_cover2.png", ENTITY_COVER);

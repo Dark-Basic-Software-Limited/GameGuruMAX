@@ -276,6 +276,14 @@ DARKSDK void SetupMouseEx ( DWORD dwForeOrBackGround )
 		InputDestructor ( );
 	}
 
+	// wow, this is a rare one
+	if (m_lpDIMouse == NULL)
+	{
+		Error1("Unable to access mouse for input library");
+		InputDestructor ();
+		return;
+	}
+
 	// request background and non exclusive mode
 	if ( FAILED ( hr = m_lpDIMouse->SetCooperativeLevel ( g_phWnd, DISCL_NONEXCLUSIVE | DISCL_BACKGROUND ) ) )
 	{

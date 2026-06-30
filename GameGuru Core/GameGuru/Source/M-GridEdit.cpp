@@ -9856,20 +9856,21 @@ void mapeditorexecutable_loop(void)
 							if (bIfUsedMentioned == true) t.grideleprof.ifused_s = imgui_setpropertystring2(t.group, t.grideleprof.ifused_s.Get(), t.strarr_s[437].Get(), t.strarr_s[226].Get());
 							if (bUseKeyMentioned == true) t.grideleprof.usekey_s = imgui_setpropertystring2(t.group, t.grideleprof.usekey_s.Get(), t.strarr_s[436].Get(), t.strarr_s[225].Get());
 							bool readonly = false;
+							bool bFromCharacterCreator = false;
 							if (bShootingWeaponMentioned == true || bMeleeWeaponMentioned == true)
 							{
 								extern void animsystem_weaponproperty (int, bool, entityeleproftype*, bool, bool);
-								animsystem_weaponproperty(t.entityprofile[t.gridentity].characterbasetype, readonly, &t.grideleprof, bShootingWeaponMentioned, bMeleeWeaponMentioned);
+								animsystem_weaponproperty(t.entityprofile[t.gridentity].characterbasetype, bFromCharacterCreator, &t.grideleprof, bShootingWeaponMentioned, bMeleeWeaponMentioned);
 							}
 							else if (bUnarmedMentioned)
 							{
 								extern void animsystem_weaponproperty(int, bool, entityeleproftype*, bool, bool);
-								animsystem_weaponproperty(t.entityprofile[t.gridentity].characterbasetype, readonly, &t.grideleprof, false, false);
+								animsystem_weaponproperty(t.entityprofile[t.gridentity].characterbasetype, bFromCharacterCreator, &t.grideleprof, false, false);
 							}
 							if (iAnimationSetMentioned > 0)
 							{
 								extern void animsystem_animationsetproperty (int, bool, entityeleproftype*, int, int);
-								animsystem_animationsetproperty(t.entityprofile[t.gridentity].characterbasetype, readonly, &t.grideleprof, iAnimationSetMentioned, -1);
+								animsystem_animationsetproperty(t.entityprofile[t.gridentity].characterbasetype, bFromCharacterCreator, &t.grideleprof, iAnimationSetMentioned, -1);
 							}
 						}
 
@@ -11859,9 +11860,9 @@ void mapeditorexecutable_loop(void)
 			// number of game element buttson shown
 			entity_icons = 12;
 			if (pref.iObjectEnableAdvanced)
-				entity_icons = 15;
+				entity_icons = 16;
 
-			int entity_images[] = { ENTITY_START, ENTITY_CHECKPOINT, ENTITY_FLAG, ENTITY_TRIGGERZONE, ENTITY_WIN, ENTITY_LIGHT,ENTITY_VIDEO,ENTITY_MUSIC,ENTITY_SOUND,ENTITY_PARTICLE,ENTITY_IMAGE, ENTITY_TEXT, ENTITY_PROBE, ENTITY_COVER, ENTITY_BEHAVIOR };
+			int entity_images[] = { ENTITY_START, ENTITY_CHECKPOINT, ENTITY_FLAG, ENTITY_TRIGGERZONE, ENTITY_WIN, ENTITY_LIGHT,ENTITY_VIDEO,ENTITY_MUSIC,ENTITY_SOUND,ENTITY_PARTICLE,ENTITY_IMAGE, ENTITY_TEXT, ENTITY_PROBE, ENTITY_COVER, ENTITY_BEHAVIOR, ENTITY_NEW_PARTICLE };
 			static cstr entity_scripts[] = {
 				"_markers\\Player Start.fpe",
 				"_markers\\Player Checkpoint.fpe",
@@ -11877,7 +11878,8 @@ void mapeditorexecutable_loop(void)
 				"_markers\\Text Zone.fpe",
 				"_markers\\Probe.fpe",
 				"_markers\\Cover Zone.fpe",
-				"_markers\\Behavior.fpe" //global Behaviors
+				"_markers\\Behavior.fpe", //global Behaviors
+				"_markers\\NewParticles.fpe"
 			};
 			static cstr entity_tooltip[] = {
 				"Add Player Start Position",
@@ -11889,12 +11891,13 @@ void mapeditorexecutable_loop(void)
 				"Add Video Zone",
 				"Add Music Zone",
 				"Add Audio Zone",
-				"Add Particle",
+				"Add Legacy Particle",
 				"Add Image Zone",
 				"Add Text Zone",
 				"Add Environment Probe",
 				"Add Cover Zone",
-				"Add Global Behavior"
+				"Add Global Behavior",
+				"Add New Particle"
 			};
 
 			int offset = 0;
