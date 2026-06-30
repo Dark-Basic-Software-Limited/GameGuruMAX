@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Turret v7 by Necrym59
+-- Turret v8 by Necrym59
 -- DESCRIPTION: Allows the use of gun-turret mode using a designated weapon.
 -- DESCRIPTION: Attach to an object used as the gun turret placeholder.
 -- DESCRIPTION: [USE_RANGE=80(1,100)]
@@ -43,6 +43,7 @@ local tEnt 			= {}
 local selectobj 	= {}
 local freezeangy	= {}
 local last_gun		= {}
+local ammoleft		= {}
 
 function turret_properties(e, use_range, prompt_text, horizontal_view_limit, vertical_view_limit, weapon_name, weapon_ammo, use_crosshair, crosshair_imagefile, prompt_display, item_highlight, highlight_icon_imagefile)
 	turret[e].use_range = use_range
@@ -80,6 +81,7 @@ function turret_init(e)
 	g_tEnt = 0
 	selectobj[e] = 0
 	freezeangy[e] = 0
+	ammoleft[e] = -1
 end
 
 function turret_main(e)
@@ -131,28 +133,26 @@ function turret_main(e)
 						
 							--Add Temporary Turret Weapon and Ammo to Player -----------------------------
 							AddPlayerWeapon(turret[e].weapon_name)
+							if ammoleft[e] > -1 then turret[e].weapon_ammo = ammoleft[e] end							
 							--ActivateIfUsed(turret[e].weapon_name)
 							local WeaponID = GetWeaponID(turret[e].weapon_name)
-							SetWeaponSlot (9,WeaponID,WeaponID)
-							ChangePlayerWeapon(turret[e].weapon_name)								
-							for index = 1, 10 do
-								if WeaponID == GetWeaponID(turret[e].weapon_name) then										
-									local poolindex = GetWeaponPoolAmmoIndex(index)
-									local amqty = GetWeaponPoolAmmo(poolindex)
-									SetWeaponPoolAmmo(poolindex,amqty + turret[e].weapon_ammo)
-									break
-								end
-							end
+							SetWeaponSlot(9,WeaponID,WeaponID)
+							ChangePlayerWeapon(turret[e].weapon_name)
+							for index = 1, 10, 1 do								
+								GetWeaponSlot(index)
+								SetWeaponAmmo(index,turret[e].weapon_ammo)
+								SetGamePlayerStateFiringMode(2)
+							end							
 							------------------------------------------------------------------------------
 							if turret[e].use_crosshair == 1 then
 								SetSpritePosition(sp_crosshair[e],50,50)
 								SetGamePlayerStateRightMouseHold(2)
 								SetFreezePosition(g_PlayerPosX,g_PlayerPosY,g_PlayerPosZ)
 								TransportToFreezePositionOnly()								
-							end
+							end		
 							status[e] = "attached"
 							doonce[e] = 1
-						end
+						end						
 					end
 				end
 			end
@@ -169,8 +169,9 @@ function turret_main(e)
 			if (GetGamePlayerStateCamAngleX()>turret[e].vertical_view_limit) then SetGamePlayerStateCamAngleX(turret[e].vertical_view_limit) end
 			if g_KeyPressQ == 1 then
 				PlaySound(e,1)
-				if turret[e].use_crosshair == 1 then SetSpritePosition(sp_crosshair[e],500,500) end
+				if turret[e].use_crosshair == 1 then SetSpritePosition(sp_crosshair[e],500,500) end				
 				SetGamePlayerStateRightMouseHold(0)
+				ammoleft[e] = GetWeaponAmmo(9)
 				RemovePlayerWeapon(9)
 				ChangePlayerWeapon(last_gun[e])				
 				Show(e)

@@ -1,4 +1,4 @@
--- Door Rotate v34 - Necrym59 and AmenMoses and Lee
+-- Door Rotate v35 - Necrym59 and AmenMoses and Lee
 -- DESCRIPTION: Rotates a non-animating door when player interacts with it. When door is initially opened, play <Sound0>. When the door is closing, play <Sound1>.
 -- DESCRIPTION: Customize the [LockedText$="Door is locked. Find a way to unlock it"]
 -- DESCRIPTION: and optionally [!IsUnlocked=1]
@@ -10,7 +10,7 @@
 -- DESCRIPTION: [@PROMPT_DISPLAY=2(1=Local,2=Screen)]
 -- DESCRIPTION: [@ITEM_HIGHLIGHT=0(0=None,1=Shape,2=Outline,3=Icon)]
 -- DESCRIPTION: [HIGHLIGHT_ICON_IMAGEFILE$="imagebank\\icons\\hand.png"]
--- DESCRIPTION: [@LOGIC_TRIGGER=1(1=None,2=On Opening,3=On Closing,4=On Opening+Closing, 5=On Opening+Closed)]
+-- DESCRIPTION: [@LOGIC_TRIGGER=1(1=None,2=On Opening,3=On Closing,4=On Opening+Closing, 5=On Opening+Closed, 6=When Closed)]
 -- DESCRIPTION: <Sound0> for Opening Sound
 -- DESCRIPTION: <Sound1> for Closing Sound
 -- DESCRIPTION: <Sound2> for Closed Sound
@@ -313,7 +313,7 @@ function door_rotate_main(e)
 			door.state = 'Closed'
 			PlaySound(e,2)			
 			door.blocking = 1
-			if door.logic_trigger == 5 then
+			if door.logic_trigger == 5 or door.logic_trigger == 6 then
 				ActivateIfUsed(e)
 				PerformLogicConnections(e)
 			end
