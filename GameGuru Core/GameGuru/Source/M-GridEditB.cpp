@@ -17607,8 +17607,9 @@ void process_entity_library_v2(void)
 								if (i == 0 && strlen(cSearchAllEntities[i]) > 0) 
 								{
 									// when we DEFINATELY have a search term entered, we MUST assume NOT VISIBLE until proven otherwise
-									bIsVisible = false;
-									bDisplayEverythingHere = false; // this is NO question we do not want to make everything visible if we have a search term!
+									///comment out until we find a better FIX!
+									///bIsVisible = false;
+									///bDisplayEverythingHere = false; // this is NO question we do not want to make everything visible if we have a search term!
 
 									// now see if we are VISIBLE
 									if (iDisplayLibraryType == 4 && stricmp(cSearchAllEntities[i], "global") == 0 )
@@ -17621,10 +17622,23 @@ void process_entity_library_v2(void)
 									}
 									else
 									{
+										///comment out until we find a better FIX!
+										/*
 										// might be better but users cannot see the hidden meta data so are confused with pattern matches! 
-										//if (pestrcasestr(myfiles->m_sBetterSearch.Get(), cSearchAllEntities[i]))
-										//	bIsVisible = true;
+										if (pestrcasestr(myfiles->m_sBetterSearch.Get(), cSearchAllEntities[i]))
+										{
+											// but only if it is in brackets denoting a category search
+											char pCatSearch[MAX_PATH];
+											sprintf(pCatSearch, "( %s )", cSearchAllEntities[i]);
+											if (pestrcasestr(myfiles->m_sBetterSearch.Get(), pCatSearch))
+											{
+												bIsVisible = true;
+											}
+										}
 										if (pestrcasestr(myfiles->m_sName.Get(), cSearchAllEntities[i]))
+											bIsVisible = true;
+										*/
+										if (pestrcasestr(myfiles->m_sBetterSearch.Get(), cSearchAllEntities[i]))
 											bIsVisible = true;
 
 										if (!bIsVisible) // else current_sortby == 4)
