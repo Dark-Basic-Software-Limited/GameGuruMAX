@@ -9675,46 +9675,55 @@ void GGTerrain_Update( float playerX, float playerY, float playerZ, wiGraphics::
 	if (true)
 	{
 		// suspect this was the cause of GPU instability due to large stalls!
-		/*
-		terrainlock.lock();
-		if (ggterrain_update_enabled)
+		if (true)
 		{
-			ggterrain.CheckParams();
-			ggterrain.UpdateChunks(playerX, playerZ);
-
-			// wait for the lowest level to complete
-			GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
-			uint32_t timeout = 0;
-			while (pCurrLODs->IsGenerating() && !pCurrLODs->pLevels[pCurrLODs->GetNumLevels() - 1].IsReady() && timeout++ < 300) Sleep(1);
-			if (timeout >= 300)
-			{
-				pCurrLODs->iFlags &= ~GGTERRAIN_LOD_GENERATING; // terrain is not looking correct after this.
-				ggterrain_global_params.bForceUpdate = 1 - ggterrain_global_params.bForceUpdate;
-			}
-		}
-		terrainlock.unlock();
-		*/
-		if (ggterrain_update_enabled)
-		{
+			// this was the original code that did not exhibit issues for public version users (early 2026)
 			terrainlock.lock();
-			ggterrain.CheckParams();
-			ggterrain.UpdateChunks(playerX, playerZ);
-			terrainlock.unlock();
-
-			// wait for the lowest level to complete
-			GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
-			uint32_t timeout = 0;
-			while (pCurrLODs->IsGenerating() && !pCurrLODs->pLevels[pCurrLODs->GetNumLevels() - 1].IsReady() && timeout++ < 300) Sleep(1);
-			if (timeout >= 300)
+			if (ggterrain_update_enabled)
 			{
-				pCurrLODs->iFlags &= ~GGTERRAIN_LOD_GENERATING; // terrain is not looking correct after this.
-				ggterrain_global_params.bForceUpdate = 1 - ggterrain_global_params.bForceUpdate;
+				ggterrain.CheckParams();
+				ggterrain.UpdateChunks(playerX, playerZ);
+
+				// wait for the lowest level to complete
+				GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
+				uint32_t timeout = 0;
+				while (pCurrLODs->IsGenerating() && !pCurrLODs->pLevels[pCurrLODs->GetNumLevels() - 1].IsReady() && timeout++ < 300) Sleep(1);
+				if (timeout >= 300)
+				{
+					pCurrLODs->iFlags &= ~GGTERRAIN_LOD_GENERATING; // terrain is not looking correct after this.
+					ggterrain_global_params.bForceUpdate = 1 - ggterrain_global_params.bForceUpdate;
+				}
 			}
+			terrainlock.unlock();
+		}
+		else
+		{
+			/*
+			// this was the later 2026 code that caused terrain to not update quickly enough
+			if (ggterrain_update_enabled)
+			{
+				terrainlock.lock();
+				ggterrain.CheckParams();
+				ggterrain.UpdateChunks(playerX, playerZ);
+				terrainlock.unlock();
+
+				// wait for the lowest level to complete
+				GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
+				uint32_t timeout = 0;
+				while (pCurrLODs->IsGenerating() && !pCurrLODs->pLevels[pCurrLODs->GetNumLevels() - 1].IsReady() && timeout++ < 300) Sleep(1);
+				if (timeout >= 300)
+				{
+					pCurrLODs->iFlags &= ~GGTERRAIN_LOD_GENERATING; // terrain is not looking correct after this.
+					ggterrain_global_params.bForceUpdate = 1 - ggterrain_global_params.bForceUpdate;
+				}
+			}
+			*/
 		}
 		pCurrLODs = ggterrain.GetCurrentLODs();
 	}
 	else
 	{
+		/* comment out as this new code never worked
 		// replace with approach that does not wait inside a lock:
 		// HOWEVER THIS MESSES UP TERRAIN FOR NOW!!!
 		// --- only hold the lock for the minimum time ---
@@ -9749,6 +9758,7 @@ void GGTerrain_Update( float playerX, float playerY, float playerZ, wiGraphics::
 			}
 		}
 		if (pCurrLODs == nullptr) pCurrLODs = ggterrain.GetCurrentLODs();
+		*/
 	}
 
 	// and continue
