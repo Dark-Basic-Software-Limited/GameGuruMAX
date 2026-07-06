@@ -2558,28 +2558,41 @@ void imgui_download_store( void )
 			else
 				donefiles = (float)real_files_downloaded / real_files_updated;
 			char tmp[32];
-			sprintf(tmp, "Purchases (%ld/%ld) - Files (%ld/%ld)", files_downloaded, download_list.size(), real_files_downloaded, real_files_updated);
+			bool bAllPurchasesUpToDate = false;
+			ImVec2 pOldCursorPos = ImGui::GetCursorPos();
+			if (pDownloadStoreChecksumFile && files_updated == 0)
+			{
+				sprintf(tmp, "All Purchases Up To Date (checksum in 'downloads\\storechecksum.lst' matches last download event)");
+				bAllPurchasesUpToDate = true;
+			}
+			else
+			{
+				sprintf(tmp, "Purchases (%ld/%ld) - Files (%ld/%ld)", files_downloaded, download_list.size(), real_files_downloaded, real_files_updated);
+			}
 			ImGui::ProgressBar(donefiles, ImVec2(ImGui::GetContentRegionAvail().x - 10, 26), tmp);
 
 			float down_gadget_size = ImGui::GetFontSize()*10.0;
 			float w = ImGui::GetWindowContentRegionWidth();
 			ImGui::SetCursorPos(ImGui::GetCursorPos() + ImVec2((w*0.5) - (down_gadget_size*0.5), 0.0f));
 			cStr cLabel = "Update ";
-			cLabel += cStr((int)download_list.size());//cStr(real_files_updated);
+			cLabel += cStr((int)download_list.size());
 			cLabel += " Purchases";
 			if (files_downloaded > 0) cLabel = "Continue Download";
-			if (ImGui::StyleButton(cLabel.Get(), ImVec2(down_gadget_size, 0)))
+			if (bAllPurchasesUpToDate == false || files_downloaded > 0)
 			{
-				//Start download , one in each sync.
-				bPrintFirstEntry = true;
-				bGetNextStep = true;
+				if (ImGui::StyleButton(cLabel.Get(), ImVec2(down_gadget_size, 0)))
+				{
+					//Start download , one in each sync.
+					bPrintFirstEntry = true;
+					bGetNextStep = true;
+				}
+				if (files_downloaded == 0 && ImGui::IsItemHovered()) ImGui::SetTooltip("%s", "Click to download your latest purchases");
 			}
-			if (files_downloaded==0 && ImGui::IsItemHovered()) ImGui::SetTooltip("%s", "Click to download your latest purchases");
-			if (files_updated != total_files && files_downloaded == 0)
+			if ((files_updated != total_files && files_downloaded == 0) || bAllPurchasesUpToDate==true )
 			{
 				float down_gadget_size = ImGui::GetFontSize()*10.0;
 				float w = ImGui::GetWindowContentRegionWidth();
-				ImGui::SetCursorPos(ImGui::GetCursorPos() + ImVec2((w*0.5) - (down_gadget_size*0.5), 0.0f));
+				ImGui::SetCursorPos(ImVec2(pOldCursorPos.x,ImGui::GetCursorPos().y) + ImVec2((w*0.5) - (down_gadget_size*0.5), 0.0f));
 				if (ImGui::StyleButton("Redownload Everything", ImVec2(down_gadget_size, 0)))
 				{
 					int iAction = askBoxCancel("This will delete the status of all downloaded files and you must download everything again, are you sure?", "Confirmation"); //1==Yes 2=Cancel 0=No
