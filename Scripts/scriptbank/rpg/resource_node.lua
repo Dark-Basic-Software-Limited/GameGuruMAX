@@ -1,8 +1,8 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Resource Node v20 by Necrym59
+-- Resource Node v21 by Necrym59 and Lee
 -- DESCRIPTION: Allows to use this object as a resource node to give the player the selected resource item.
 -- DESCRIPTION: [@NODE_TYPE=1(1=Growth, 2=Extraction)]
--- DESCRIPTION: [@NODE_TOOL_NAME$=-1(0=AnyWeaponList)] Specific Weapon/Tool to use - (No Weapon=Any)
+-- DESCRIPTION: [NODE_TOOL_ACTUAL_NAME$=""]
 -- DESCRIPTION: [NODE_RESPAWN_TIME=0(0,100)] Minutes (if 0 then destroyed)
 -- DESCRIPTION: [NODE_RESPAWNS=1(1,20)] number of resource node respawns
 -- DESCRIPTION: [NODE_RESOURCE_QUANTITY=3(1,10)]
@@ -61,9 +61,9 @@ local nodewidth		= {}
 local nodeheight	= {}
 local wait			= {}
 
-function resource_node_properties(e, node_type, node_tool_name, node_respawn_time, node_respawns, node_resource_quantity, resource_spawn_time, resource_spawn_spread, resource_entity_name, node_use_range,  node_use_prompt, node_tool_prompt, node_scaler, hide_node, resource_scaling)
+function resource_node_properties(e, node_type, node_tool_actual_name, node_respawn_time, node_respawns, node_resource_quantity, resource_spawn_time, resource_spawn_spread, resource_entity_name, node_use_range,  node_use_prompt, node_tool_prompt, node_scaler, hide_node, resource_scaling)
 	resnode[e].node_type = node_type
-	resnode[e].node_tool_name = tostring(GetWeaponName(node_tool_name-1))
+	resnode[e].node_tool_name = node_tool_actual_name
 	resnode[e].node_respawn_time = node_respawn_time
 	resnode[e].node_respawns = node_respawns or 1	
 	resnode[e].node_resource_quantity = node_resource_quantity
