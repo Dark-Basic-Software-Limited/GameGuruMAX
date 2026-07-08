@@ -830,13 +830,19 @@ Texture texPagesNormalsRoughnessAO; // R8G8 = normals, B8 = roughness, A8 = ambi
 Texture texReadBackCompute;
 #define NUM_READ_BACK_TEXTURES 3 // must be at least 2 to avoid GPU stalls, 3 seems to be safest
 Texture texReadBackStaging[ NUM_READ_BACK_TEXTURES ];
-//uint32_t currReadBackTex = 0;
+
+#define RESTOREDEC2025TERRAINSYSTEM
+#ifdef RESTOREDEC2025TERRAINSYSTEM
+uint32_t currReadBackTex = 0;
+uint32_t readBackValid = 0;
+#else
 static std::atomic<uint32_t> g_currReadBackTex{ 0 };
 static constexpr uint32_t READBACK_INVALID = 0xFFFFFFFFu;
 std::atomic<uint32_t> g_lastReadBackWrittenIndex{ READBACK_INVALID };
 static std::atomic<uint32_t> g_lastQueuedReadbackIndex{ READBACK_INVALID }; // slot we most recently queued a copy+query for
 static ID3D11Query* g_readbackTimestampQuery[NUM_READ_BACK_TEXTURES] = {};
 static ID3D11Query* g_readbackDisjointQuery = nullptr;
+#endif
 
 // page generator variables
 RenderPass renderPassPhysicalTex;
@@ -7307,6 +7313,9 @@ int GGTerrain_Init( wiGraphics::CommandList cmd )
 	return 1;
 }
 
+#ifdef RESTOREDEC2025TERRAINSYSTEM
+// Terrain System From DEC2025
+#else
 void GGTerrain_RecreateReadbackResources(ID3D11Device* dev)
 {
 	assert(dev != nullptr);
@@ -7347,6 +7356,7 @@ void GGTerrain_RecreateReadbackResources(ID3D11Device* dev)
 	HRESULT hr = dev->CreateQuery(&dj, &g_readbackDisjointQuery);
 	assert(SUCCEEDED(hr) && g_readbackDisjointQuery != nullptr);
 }
+#endif
 
 void GGTerrain_WindowResized()
 {
@@ -7364,12 +7374,17 @@ void GGTerrain_WindowResized()
 	}
 
 	pageGenerationList.Clear();
+
+	#ifdef RESTOREDEC2025TERRAINSYSTEM
+	readBackValid = 0;
+	currReadBackTex = 0;
+	#else
 	g_currReadBackTex = 0;
 	g_lastReadBackWrittenIndex.store(READBACK_INVALID, std::memory_order_release);
-
 	// After recreating texReadBackCompute and texReadBackStaging[]
 	ID3D11Device* d3dDevice = (ID3D11Device*)wiRenderer::GetDevice()->GetDeviceForIMGUI();
 	GGTerrain_RecreateReadbackResources(d3dDevice);
+	#endif
 }
 
 void GGTerrain_DrawPages( CommandList cmd )
@@ -7758,10 +7773,16 @@ void GGTerrain_CheckPageShift()
 	if ( ggterrain.ShouldRegeneratePages() )
 	{
 		pageGenerationList.Clear();
+
+		#ifdef RESTOREDEC2025TERRAINSYSTEM
+		readBackValid = 0;
+		currReadBackTex = 0;
+		#else
 		g_currReadBackTex = 0;
 		g_lastReadBackWrittenIndex.store(READBACK_INVALID, std::memory_order_release);
 		ID3D11Device* d3dDevice = (ID3D11Device*)wiRenderer::GetDevice()->GetDeviceForIMGUI();
 		GGTerrain_RecreateReadbackResources(d3dDevice);
+		#endif
 
 		// wipe out page memory and start again
 		pagesFree.Clear();
@@ -7812,10 +7833,16 @@ void GGTerrain_CheckPageShift()
 	else if ( ggterrain.ShouldShiftPages() )
 	{
 		pageGenerationList.Clear();
+
+		#ifdef RESTOREDEC2025TERRAINSYSTEM
+		readBackValid = 0;
+		currReadBackTex = 0;
+		#else
 		g_currReadBackTex = 0;
 		g_lastReadBackWrittenIndex.store(READBACK_INVALID, std::memory_order_release);
 		ID3D11Device* d3dDevice = (ID3D11Device*)wiRenderer::GetDevice()->GetDeviceForIMGUI();
 		GGTerrain_RecreateReadbackResources(d3dDevice);
+		#endif
 
 		// shift page memory
 		for( uint32_t y = 0; y < physPagesY; y++ )
@@ -8001,11 +8028,13 @@ void GGTerrain_CheckPageShift()
 
 					PageEntry* pPage = pagesFree.PopItem();
 					assert( pPage );
-
-					uint32_t identifier = ((detailLevel + 1) << 16) | (y << 8) | x;
-					pPage->Setup( identifier );
-					int result = GGTerrain_GeneratePage( pPage );
-					assert( result );
+					if (pPage)
+					{
+						uint32_t identifier = ((detailLevel + 1) << 16) | (y << 8) | x;
+						pPage->Setup(identifier);
+						int result = GGTerrain_GeneratePage(pPage);
+						assert(result);
+					}
 				}
 			}
 		}
@@ -8023,7 +8052,11 @@ void GGTerrain_CheckReadBack(wiGraphics::CommandList cmd)
 	GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
 	uint32_t numLODLevels = pCurrLODs->GetNumLevels();
 		
-	if ( true )
+	#ifdef RESTOREDEC2025TERRAINSYSTEM
+	if (readBackValid)
+	#else
+	if (true)
+	#endif
 	{
 		uint32_t texWidth = texReadBackCompute.GetDesc().Width;
 		uint32_t texHeight = texReadBackCompute.GetDesc().Height;
@@ -8034,6 +8067,11 @@ void GGTerrain_CheckReadBack(wiGraphics::CommandList cmd)
 		mapping._flags = Mapping::FLAG_READ;
 		mapping.size = texWidth * texHeight * sizeof(uint32_t);
 
+		#ifdef RESTOREDEC2025TERRAINSYSTEM
+		auto rangeTotal = wiProfiler::BeginRangeCPU("Max - Terrain Read Back (All)");
+		auto range = wiProfiler::BeginRangeCPU("Max - Terrain Read Back Collect");
+		device->Map(&texReadBackStaging[currReadBackTex], &mapping);
+		#else
 		ID3D11DeviceContext* g_d3dImmediateCtx = (ID3D11DeviceContext*)wiRenderer::GetDevice()->GetImmediateForIMGUI();
 		if (!g_d3dImmediateCtx) return;
 
@@ -8077,6 +8115,7 @@ void GGTerrain_CheckReadBack(wiGraphics::CommandList cmd)
 
 		GG_CRASH_CONTEXT_NO_FLAG("GGTerrain_CheckReadBack Check", "frame=%u chosen=%u", wiRenderer::GetDevice()->GetFrameCount(), chosen);
 		device->Map(&texReadBackStaging[chosen], &mapping);
+		#endif
 
 		if ( !mapping.data )
 		{
@@ -8130,7 +8169,12 @@ void GGTerrain_CheckReadBack(wiGraphics::CommandList cmd)
 			}
 		}
 #endif
+
+		#ifdef RESTOREDEC2025TERRAINSYSTEM
+		device->Unmap(&texReadBackStaging[currReadBackTex]);
+		#else
 		device->Unmap( &texReadBackStaging[chosen] );
+		#endif
 
 		wiProfiler::EndRange( range );
 		range = wiProfiler::BeginRangeCPU( "Max - Terrain Read Back Sort" );
@@ -9670,6 +9714,27 @@ void GGTerrain_Update( float playerX, float playerY, float playerZ, wiGraphics::
 
 	if ( !ggterrain_initialised ) return;
 
+	#ifdef RESTOREDEC2025TERRAINSYSTEM
+	terrainlock.lock();
+	if (ggterrain_update_enabled)
+	{
+		ggterrain.CheckParams();
+		ggterrain.UpdateChunks(playerX, playerZ);
+
+		// wait for the lowest level to complete
+		GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
+		uint32_t timeout = 0;
+		while (pCurrLODs->IsGenerating() && !pCurrLODs->pLevels[pCurrLODs->GetNumLevels() - 1].IsReady() && timeout++ < 300) Sleep(1);
+		if (timeout >= 300)
+		{
+			pCurrLODs->iFlags &= ~GGTERRAIN_LOD_GENERATING; // terrain is not looking correct after this.
+			ggterrain_global_params.bForceUpdate = 1 - ggterrain_global_params.bForceUpdate;
+		}
+	}
+	terrainlock.unlock();
+	GGTerrainLODSet* pCurrLODs = ggterrain.GetCurrentLODs();
+	GGTerrainLODSet* pNewLODs = ggterrain.GetNewLODs();
+	#else
 	// terrain generation and chunk updating
 	GGTerrainLODSet* pCurrLODs = nullptr;
 	if (true)
@@ -9760,9 +9825,9 @@ void GGTerrain_Update( float playerX, float playerY, float playerZ, wiGraphics::
 		if (pCurrLODs == nullptr) pCurrLODs = ggterrain.GetCurrentLODs();
 		*/
 	}
-
 	// and continue
 	GGTerrainLODSet* pNewLODs = ggterrain.GetNewLODs();
+	#endif
 
 	// update terrain constants
 	terrainConstantData.terrain_numLODLevels = pCurrLODs->GetNumLevels();
@@ -10443,6 +10508,15 @@ extern "C" void GGTerrain_VirtualTexReadBack(Texture texReadBack, uint32_t sampl
 	device->UnbindResources(50, 1, cmd);
 	device->UnbindUAVs(0, 1, cmd);
 
+	#ifdef RESTOREDEC2025TERRAINSYSTEM
+	device->CopyResource(&texReadBackStaging[currReadBackTex], &texReadBackCompute, cmd);
+	currReadBackTex++;
+	if (currReadBackTex >= NUM_READ_BACK_TEXTURES)
+	{
+		readBackValid = 1; // can only read back once the GPU has completed one cycle of writes
+		currReadBackTex = 0;
+	}
+	#else
 	// --- pick slot index ONCE, without mutating atomic weirdly ---
 	const uint32_t slot = g_currReadBackTex.fetch_add(1, std::memory_order_relaxed) % NUM_READ_BACK_TEXTURES;
 
@@ -10462,6 +10536,7 @@ extern "C" void GGTerrain_VirtualTexReadBack(Texture texReadBack, uint32_t sampl
 		ctx->End(g_readbackDisjointQuery);
 
 	g_lastQueuedReadbackIndex.store(slot, std::memory_order_release);
+	#endif
 
 	wiProfiler::EndRange(range);
 	device->EventEnd(cmd);
