@@ -605,9 +605,9 @@ inline void PointLight(in ShaderEntity light, in Surface surface, inout Lighting
 				{
 #ifdef DISTANCE_BASED_SHADOWS
 					float dist = length(g_xCamera_CamPos - surface.P);
-					shadow *= shadowCube(light, L, Lunnormalized, dist);
+					shadow *= 1.0; //DIAGNOSTIC A-TEST: bypass point-light cube shadow only //shadowCube(light, L, Lunnormalized, dist);
 #else
-					shadow *= shadowCube(light, L, Lunnormalized);
+					shadow *= 1.0; //DIAGNOSTIC A-TEST: bypass point-light cube shadow only //shadowCube(light, L, Lunnormalized);
 #endif
 				}
 			}
