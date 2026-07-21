@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Resource Node v22 by Necrym59 and Lee
+-- Resource Node v24 by Necrym59 and Lee
 -- DESCRIPTION: Allows to use this object as a resource node to give the player the selected resource item.
 -- DESCRIPTION: [@NODE_TYPE=1(1=Growth, 2=Extraction)]
 -- DESCRIPTION: [NODE_TOOL_ACTUAL_NAME$=""]
@@ -63,7 +63,7 @@ local wait			= {}
 
 function resource_node_properties(e, node_type, node_tool_actual_name, node_respawn_time, node_respawns, node_resource_quantity, resource_spawn_time, resource_spawn_spread, resource_entity_name, node_use_range,  node_use_prompt, node_tool_prompt, node_scaler, hide_node, resource_scaling)
 	resnode[e].node_type = node_type
-	resnode[e].node_tool_name = lower(node_tool_actual_name) or ""
+	resnode[e].node_tool_name = string.lower(string.gsub(node_tool_actual_name or "", "/", "\\"))
 	resnode[e].node_respawn_time = node_respawn_time
 	resnode[e].node_respawns = node_respawns or 1	
 	resnode[e].node_resource_quantity = node_resource_quantity
