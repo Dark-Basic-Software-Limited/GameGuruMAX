@@ -1,4 +1,4 @@
--- Imagezone v3 by Lee and Necrym59
+-- Imagezone v4 by Lee and Necrym59 and BoltActionGaming
 -- DESCRIPTION: While the player is within the zone, the image set in [IMAGEFILE$=""] is displayed on screen.
 -- DESCRIPTION: Set [Duration=4000] in milliseconds for how long the image is displayed.
 -- DESCRIPTION: If [!ClickToExit=0] is set, the image will stop displaying after a mouse click is detected.
@@ -37,6 +37,7 @@ function imageinzone_init(e)
 	g_imageinzone[e]['active'] = 1
 	g_imageinzone[e]['spawnatstart'] = 1
 	g_imageinzone[e]['starttime'] = g_Time
+	g_imageinzone[e]['triggered'] = 0 -- Added tracker
 
 	status[e] = "init"
 end
@@ -61,6 +62,7 @@ function imageinzone_main(e)
 						PerformLogicConnections(e)
 						-- Record time when player entered zone so it can be used in the duration to display calculation.
 						g_imageinzone[e]['starttime'] = g_Time
+						g_imageinzone[e]['triggered'] = 1 -- Flag that the zone has successfully run once
 					else 
 						-- Display image for 'duration' milliseconds.
 						if g_Time - g_imageinzone[e]['starttime'] < g_imageinzone[e]['duration'] then 
@@ -108,8 +110,7 @@ function imageinzone_main(e)
 				g_imageinzone[e]['starttime'] = g_Time
 				-- Resetting 'active' will ensure that the imagezone can be used on the next entry, even after clicking to close it.
 				if g_imageinzone[e]['displayonce'] == 0 then g_imageinzone[e]['active'] = 1 end
-				if g_imageinzone[e]['displayonce'] == 1 then
-					g_imageinzone[e]['active'] = 0
+				if g_imageinzone[e]['displayonce'] == 1 and g_imageinzone[e]['triggered'] == 1 then					g_imageinzone[e]['active'] = 0
 					SetActivated(e,0)
 					Destroy(e)
 				end
