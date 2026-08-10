@@ -1,6 +1,7 @@
 //----------------------------------------------------
 //--- GAMEGURU - Headers
 //----------------------------------------------------
+#pragma once
 
 #include "preprocessor-flags.h"
 
@@ -61,6 +62,7 @@
 #include "M-UndoSys.h"
 #include "M-UndoSys-Object.h"
 #include "M-UndoSys-Terrain.h"
+//#include "Selecting.h"
 #include "Types.h"
 
 
@@ -118,6 +120,10 @@ struct sRubberBandType
 	int quatmode;
 	float quatx, quaty, quatz, quatw;
 	float scalex, scaley, scalez;
+	int seedEntityId = 0; // tracks which entity was the seed for this rubber band item
+	// 'int modeUsed' is supposed to be 'SelModes::eModes modeUsed',
+	int modeUsed = 0; // tracks which selection mode was used, which helps group statistics. Maps to enum eModes.
+	//	SelModes::eModes modeUsed = SelModes::eModes::Normal; // tracks which selection mode was used, which helps group statistics. Maps to enum eModes.
 };
 
 struct mysystemtype
