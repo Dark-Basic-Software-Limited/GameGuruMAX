@@ -11891,13 +11891,13 @@ void mapeditorexecutable_loop(void)
 				"Add Video Zone",
 				"Add Music Zone",
 				"Add Audio Zone",
-				"Add Legacy Particle",
+				"Add New Particle",
 				"Add Image Zone",
 				"Add Text Zone",
 				"Add Environment Probe",
 				"Add Cover Zone",
 				"Add Global Behavior",
-				"Add New Particle"
+				"Add WPE Zone"
 			};
 
 			int offset = 0;

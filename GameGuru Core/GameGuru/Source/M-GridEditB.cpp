@@ -18279,6 +18279,7 @@ void process_entity_library_v2(void)
 									if (!bImagesStillInImGuiQueue && !bLargePreview && max_load_persync-- > 0)
 									{
 										//Load preview.
+										bool bItWasAPEThumbJPG = false;
 										std::string sImgName = myfiles->m_sPath.Get();
 										if (iDisplayLibraryType == 2)
 										{
@@ -18289,7 +18290,25 @@ void process_entity_library_v2(void)
 										else if (iDisplayLibraryType > 0)
 										{
 											//Use .jpg as thumbs for other media. 512x288 format.
-											sImgName = sImgName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
+											if (iDisplayLibraryType == 5)
+											{
+												// for particles, we COULD have .pe (one letter short)
+												if (strnicmp(myfiles->m_sName.Get()+strlen(myfiles->m_sName.Get())-3, ".pe", 3) == NULL)
+												{
+													sImgName = sImgName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 3);
+													cstr pCheckIfHaveJPG = (char*)sImgName.c_str();
+													pCheckIfHaveJPG  = pCheckIfHaveJPG + ".jpg";
+													if (FileExist(pCheckIfHaveJPG.Get()))
+													{
+														// only then do we override the lot!
+														bItWasAPEThumbJPG = true;
+													}
+												}
+											}
+											if (bItWasAPEThumbJPG == false)
+											{
+												sImgName = sImgName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
+											}
 											if (iDisplayLibraryType == 4) //Script
 											{
 												if (pref.current_style == 25 || pref.current_style == 3)
@@ -18323,15 +18342,25 @@ void process_entity_library_v2(void)
 											t.addentityfile_s = sFpeName.c_str();
 										}
 										// perhaps make this a common define!
-										CreateBackBufferCacheName(t.addentityfile_s.Get(), thumb_x, thumb_y);
+										if (bItWasAPEThumbJPG == false)
+										{
+											CreateBackBufferCacheName(t.addentityfile_s.Get(), thumb_x, thumb_y);
+										}
 										if (!(strlen(Storyboard.gamename) > 0 && strlen(Storyboard.customprojectfolder) > 0))
 										{
 											GG_SetWritablesToRoot(true);
 										}
 										image_setlegacyimageloading(true);
-										if (FileExist(BackBufferCacheName.Get()))
+										if (FileExist(BackBufferCacheName.Get()) || bItWasAPEThumbJPG==true)
 										{
-											LoadImage((char *)BackBufferCacheName.Get(), myfiles->iPreview);
+											if (bItWasAPEThumbJPG == false)
+											{
+												LoadImage((char*)BackBufferCacheName.Get(), myfiles->iPreview);
+											}
+											else
+											{
+												if (ImageExist(myfiles->iPreview)) DeleteImage(myfiles->iPreview);
+											}
 											if (!ImageExist(myfiles->iPreview))
 											{
 												LoadImage((char *)sImgName.c_str(), myfiles->iPreview);
@@ -18445,7 +18474,6 @@ void process_entity_library_v2(void)
 												//Test
 												float centerx = -1000, centery = 39000, centerz = -1000;
 
-												std::string sParticleName = myfiles->m_sPath.Get();
 												char cTmp[MAX_PATH];
 												cstr savename = myfiles->m_sPath + "\\" + myfiles->m_sName;
 												strcpy(cTmp, savename.Get());
@@ -18462,31 +18490,57 @@ void process_entity_library_v2(void)
 												CreateBackBufferCacheName(cTmp, thumb_x, thumb_y);
 												BackBufferSaveCacheName = BackBufferCacheName;
 
-												sParticleName = sParticleName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
-
 												if (BackBufferParticleEmitter != -1)
 												{
 													gpup_deleteEffect(BackBufferParticleEmitter);
 													BackBufferParticleEmitter = -1;
 												}
-
-												if (BackBufferParticleEmitter == -1)
+												if (PreviewWPERoot != 0)
 												{
-													BackBufferParticleEmitter = gpup_loadEffect(sParticleName.c_str(), 0, 0, 0, 1.0);
-													gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
-													gpup_emitterActive(BackBufferParticleEmitter, 0);
+													WickedCall_PerformEmitterAction(6, PreviewWPERoot);
+													void DeleteEmitterEffects(uint32_t root);
+													DeleteEmitterEffects(PreviewWPERoot);
+													PreviewWPERoot = 0;
 												}
-												float fLive = 10.0f;
-												if (BackBufferParticleEmitter != -1)
-												{
-													gpup_setGlobalPosition(BackBufferParticleEmitter, centerx, centery - 30.0f, centerz);
-													gpup_resetLocalPosition(BackBufferParticleEmitter);
-													gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
-													gpup_emitterActive(BackBufferParticleEmitter, 1);
-													gpup_setEffectAnimationSpeed(BackBufferParticleEmitter, 1.0f);
-													gpup_setEffectOpacity(BackBufferParticleEmitter, 1.0f);
 
-													fLive = gpup_getEffectLifespan(BackBufferParticleEmitter);
+												// legacy or wicked
+												float fLive = 10.0f;
+												std::string sParticleName = myfiles->m_sPath.Get();
+												LPSTR pParticleName = myfiles->m_sName.Get();
+												if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+												{
+													// wicked particle load and set
+													sParticleName = sParticleName + "\\" + myfiles->m_sName.Get();
+													PreviewWPERoot = WickedCall_LoadWPE((char*)sParticleName.c_str());
+													bool WickedCall_ParticleEffectPositionRotation(uint32_t root, float fX, float fY, float fZ, float fXa, float fYa, float fZa);
+													WickedCall_ParticleEffectPositionRotation(PreviewWPERoot, centerx, centery - 30.0f, centerz, 0, 0, 0);
+													//iAction = 1 Burst all. 2 = Pause. - 3 = Resume. - 4 = Restart - 5 - visible - 6 = not visible. - 7 = pause emit - 8 = resume emit
+													void WickedCall_PerformEmitterAction(int iAction, uint32_t emitter_root);
+													WickedCall_PerformEmitterAction(1, PreviewWPERoot);
+													WickedCall_PerformEmitterAction(4, PreviewWPERoot);
+													WickedCall_PerformEmitterAction(5, PreviewWPERoot);
+													fLive = 350.0f;
+												}
+												else
+												{
+													sParticleName = sParticleName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
+													if (BackBufferParticleEmitter == -1)
+													{
+														BackBufferParticleEmitter = gpup_loadEffect(sParticleName.c_str(), 0, 0, 0, 1.0);
+														gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
+														gpup_emitterActive(BackBufferParticleEmitter, 0);
+													}
+													if (BackBufferParticleEmitter != -1)
+													{
+														gpup_setGlobalPosition(BackBufferParticleEmitter, centerx, centery - 30.0f, centerz);
+														gpup_resetLocalPosition(BackBufferParticleEmitter);
+														gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
+														gpup_emitterActive(BackBufferParticleEmitter, 1);
+														gpup_setEffectAnimationSpeed(BackBufferParticleEmitter, 1.0f);
+														gpup_setEffectOpacity(BackBufferParticleEmitter, 1.0f);
+
+														fLive = gpup_getEffectLifespan(BackBufferParticleEmitter);
+													}
 												}
 												//We need to delay the thumb as we cant fast forward the particles.
 												if (fLive < 100.0f)
@@ -19479,34 +19533,61 @@ void process_entity_library_v2(void)
 												bLoopBackBuffer = true;
 
 												float centerx = -1000, centery = 39000, centerz = -1000;
-												std::string sParticleName = myfiles->m_sPath.Get();
-												sParticleName = sParticleName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
 
+												// cleanup
 												if (BackBufferParticleEmitter != -1)
 												{
 													gpup_deleteEffect(BackBufferParticleEmitter);
 													BackBufferParticleEmitter = -1;
 												}
-
-												if (BackBufferParticleEmitter == -1)
+												if (PreviewWPERoot != 0)
 												{
-													BackBufferParticleEmitter = gpup_loadEffect(sParticleName.c_str(), 0, 0, 0, 1.0);
-													gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
-													gpup_emitterActive(BackBufferParticleEmitter, 0);
-												}
-												float fLive = 10.0f;
-												if (BackBufferParticleEmitter != -1)
-												{
-													gpup_setGlobalPosition(BackBufferParticleEmitter, centerx, centery - 30.0f, centerz);
-													gpup_resetLocalPosition(BackBufferParticleEmitter);
-													gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
-													gpup_emitterActive(BackBufferParticleEmitter, 1);
-
-													gpup_setEffectAnimationSpeed(BackBufferParticleEmitter, 1.0f);
-													gpup_setEffectOpacity(BackBufferParticleEmitter, 1.0f);
-
+													WickedCall_PerformEmitterAction(6, PreviewWPERoot);
+													void DeleteEmitterEffects(uint32_t root);
+													DeleteEmitterEffects(PreviewWPERoot);
+													PreviewWPERoot = 0;
 												}
 
+												// legacy or wicked
+												std::string sParticleName = myfiles->m_sPath.Get();
+												LPSTR pParticleName = myfiles->m_sName.Get();
+												if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+												{
+													// wicked particle load and set
+													sParticleName = sParticleName + "\\" + myfiles->m_sName.Get();
+													PreviewWPERoot = WickedCall_LoadWPE((char*)sParticleName.c_str());
+													bool WickedCall_ParticleEffectPositionRotation(uint32_t root, float fX, float fY, float fZ, float fXa, float fYa, float fZa);
+													WickedCall_ParticleEffectPositionRotation(PreviewWPERoot, centerx, centery - 30.0f, centerz, 0, 0, 0);
+													//iAction = 1 Burst all. 2 = Pause. - 3 = Resume. - 4 = Restart - 5 - visible - 6 = not visible. - 7 = pause emit - 8 = resume emit
+													void WickedCall_PerformEmitterAction(int iAction, uint32_t emitter_root);
+													WickedCall_PerformEmitterAction(1, PreviewWPERoot);
+													WickedCall_PerformEmitterAction(4, PreviewWPERoot);
+													WickedCall_PerformEmitterAction(5, PreviewWPERoot);
+												}
+												else
+												{
+													// legacy particle init for library preview
+													sParticleName = sParticleName + "\\" + Left(myfiles->m_sName.Get(), Len(myfiles->m_sName.Get()) - 4);
+													if (BackBufferParticleEmitter == -1)
+													{
+														BackBufferParticleEmitter = gpup_loadEffect(sParticleName.c_str(), 0, 0, 0, 1.0);
+														if (BackBufferParticleEmitter != -1)
+														{
+															gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
+															gpup_emitterActive(BackBufferParticleEmitter, 0);
+														}
+													}
+													float fLive = 10.0f;
+													if (BackBufferParticleEmitter != -1)
+													{
+														gpup_setGlobalPosition(BackBufferParticleEmitter, centerx, centery - 30.0f, centerz);
+														gpup_resetLocalPosition(BackBufferParticleEmitter);
+														gpup_setGlobalScale(BackBufferParticleEmitter, 100.0f);
+														gpup_emitterActive(BackBufferParticleEmitter, 1);
+														gpup_setEffectAnimationSpeed(BackBufferParticleEmitter, 1.0f);
+														gpup_setEffectOpacity(BackBufferParticleEmitter, 1.0f);
+													}
+												}
 											}
 											else
 											{
@@ -19541,6 +19622,14 @@ void process_entity_library_v2(void)
 												{
 													gpup_deleteEffect(BackBufferParticleEmitter);
 													BackBufferParticleEmitter = -1;
+												}
+												// and delete any wicked particle too
+												if (PreviewWPERoot != 0)
+												{
+													WickedCall_PerformEmitterAction(6, PreviewWPERoot);
+													void DeleteEmitterEffects(uint32_t root);
+													DeleteEmitterEffects(PreviewWPERoot);
+													PreviewWPERoot = 0;
 												}
 											}
 										}
@@ -21097,13 +21186,13 @@ void process_entity_library_v2(void)
 				if (selectedmediafile != NULL) buts = 2;
 				fButWidth = vContentSize.x / buts;
 				fButWidth -= 10.0f;
-				LPSTR pParticleEditorTitle = "Particle Editor";
-				LPSTR pParticleEditorTooltip = "Update GameGuru MAX to the latest version to get the Particle Editor Tool";
+				LPSTR pParticleEditorTitle = "Legacy Particle Editor";
+				LPSTR pParticleEditorTooltip = "Update GameGuru MAX to the latest version to get the Legacy Particle Editor Tool";
 				extern bool g_bParticleEditorPresent;
 				if (g_bParticleEditorPresent == true)
 				{
-					pParticleEditorTitle = "Create New Particles";
-					pParticleEditorTooltip = "Create More Particles using the Particle Editor";
+					pParticleEditorTitle = "Create New Legacy Particles";
+					pParticleEditorTooltip = "Create More Legacy Particles using the Particle Editor";
 				}
 				if (ImGui::StyleButton(pParticleEditorTitle, ImVec2(fButWidth, fFontSize*2.0)))
 				{
@@ -25324,6 +25413,7 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 
 				cstr img = Predefined_Particle_Name[i] + cstr(".arx");
 				CreateBackBufferCacheName(img.Get(), 512, 288);
+
 				SetMipmapNum(1); //PE: mipmaps not needed.
 				image_setlegacyimageloading(true);
 				if (!(strlen(Storyboard.gamename) > 0 && strlen(Storyboard.customprojectfolder) > 0))
@@ -25398,9 +25488,28 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 							img = Left(img.Get(), Len(img.Get()) - 4);
 						}
 					}
-					img = img + cstr(".arx");
 
-					CreateBackBufferCacheName(img.Get(), 512, 288);
+					bool bHasAJPG = false;
+					LPSTR pParticleName = Predefined_Particle_Name[iPredefinedParticles].Get();
+					if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+					{
+						BackBufferCacheName = Left(pParticleName, strlen(pParticleName) - 3);
+						BackBufferCacheName = BackBufferCacheName + ".jpg";
+						if (FileExist(BackBufferCacheName.Get()))
+						{
+							bHasAJPG = true;
+						}
+					}
+					else
+					{
+						img = img + cstr(".arx");
+					}
+					if(bHasAJPG==false)
+					{
+						// revert to traditional thumb
+						CreateBackBufferCacheName(img.Get(), 512, 288);
+					}
+
 					if (!(strlen(Storyboard.gamename) > 0 && strlen(Storyboard.customprojectfolder) > 0))
 					{
 						GG_SetWritablesToRoot(true);
@@ -25501,7 +25610,8 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 		{
 		}
 		#endif
-
+		
+		bool bPossibleWickedParticleSelectionChanged = false;
 		ImVec4 tool_selected_col = ImGui::GetStyle().Colors[ImGuiCol_PlotHistogram];
 		bool bDrawsSelection = false;
 		ImRect image_draw_bb;
@@ -25524,17 +25634,20 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 				current_particle_selected = i;
 				//Setup default parameters.
 				bUpdateParticle = true;
+				bPossibleWickedParticleSelectionChanged = true;
 
 				if (elementID > 0)
 				{
+					// clear any old particle
 					int iParticleEmitter = t.entityelement[elementID].eleprof.newparticle.emitterid;
 					if (iParticleEmitter != -1)
 					{
 						gpup_deleteEffect(iParticleEmitter);
 					}
+
+					// set the new settings
 					t.entityelement[elementID].eleprof.newparticle.emitterid = -1;
 					t.entityelement[elementID].eleprof.newparticle.emittername = Predefined_Particle_Name[current_particle_selected];
-
 					t.entityelement[elementID].eleprof.newparticle.bParticle_Preview = Predefined_bParticle_Preview[current_particle_selected];
 					t.entityelement[elementID].eleprof.newparticle.bParticle_Show_At_Start = Predefined_bParticle_Show_At_Start[current_particle_selected];
 					t.entityelement[elementID].eleprof.newparticle.bParticle_Looping_Animation = Predefined_bParticle_Looping_Animation[current_particle_selected];
@@ -25546,6 +25659,27 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 					t.entityelement[elementID].eleprof.newparticle.fParticle_Speed = Predefined_fParticle_Speed[current_particle_selected];
 					t.entityelement[elementID].eleprof.newparticle.fParticle_Opacity = Predefined_fParticle_Opacity[current_particle_selected];
 
+					// and decide on script to use
+					LPSTR pParticleName = Predefined_Particle_Name[current_particle_selected].Get();
+					if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+					{
+						t.entityelement[elementID].eleprof.aimain_s = "particles\\wpe_area.lua";
+						t.entityelement[elementID].eleprof.soundset4_s = "wpe_area_properties(2";
+						t.entityelement[elementID].eleprof.soundset4_s += "\"";
+						t.entityelement[elementID].eleprof.soundset4_s += t.entityelement[elementID].eleprof.newparticle.emittername;
+						t.entityelement[elementID].eleprof.soundset4_s += "\",3\"";
+						if (t.entityelement[elementID].eleprof.newparticle.bParticle_Show_At_Start == 1)
+							t.entityelement[elementID].eleprof.soundset4_s += "1";
+						else
+							t.entityelement[elementID].eleprof.soundset4_s += "0";
+						t.entityelement[elementID].eleprof.soundset4_s += "\",0\"0\",0\"0\",0\"0\")";
+					}
+					else
+					{
+						t.entityelement[elementID].eleprof.aimain_s = "markers\\particle.lua";
+					}
+
+					// and copy to cursor object
 					edit_grideleprof->newparticle = t.entityelement[elementID].eleprof.newparticle;
 				}
 			}
@@ -25614,6 +25748,7 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 
 		if (ImGui::StyleButton("Add New Particle##+", ImVec2((particle_w*0.5f) - 4.0f, 0)) || iSelectedLibraryStingReturnID == window->GetID("Add New Particle##+"))
 		{
+			bPossibleWickedParticleSelectionChanged = true;
 			if (iSelectedLibraryStingReturnID == window->GetID("Add New Particle##+"))
 			{
 				//This goes to the saved in pref. find free.
@@ -25674,6 +25809,26 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 					t.entityelement[elementID].eleprof.newparticle.fParticle_Speed = Predefined_fParticle_Speed[current_particle_selected];
 					t.entityelement[elementID].eleprof.newparticle.fParticle_Opacity = Predefined_fParticle_Opacity[current_particle_selected];
 
+					// and decide on script to use (code reuse, see above)
+					LPSTR pParticleName = Predefined_Particle_Name[current_particle_selected].Get();
+					if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+					{
+						t.entityelement[elementID].eleprof.aimain_s = "particles\\wpe_area.lua";
+						t.entityelement[elementID].eleprof.soundset4_s = "wpe_area_properties(2";
+						t.entityelement[elementID].eleprof.soundset4_s += "\"";
+						t.entityelement[elementID].eleprof.soundset4_s += t.entityelement[elementID].eleprof.newparticle.emittername;
+						t.entityelement[elementID].eleprof.soundset4_s += "\",3\"";
+						if(t.entityelement[elementID].eleprof.newparticle.bParticle_Show_At_Start==1)
+							t.entityelement[elementID].eleprof.soundset4_s += "1";
+						else
+							t.entityelement[elementID].eleprof.soundset4_s += "0";
+						t.entityelement[elementID].eleprof.soundset4_s += "\",0\"0\",0\"0\",0\"0\")";
+					}
+					else
+					{
+						t.entityelement[elementID].eleprof.aimain_s = "markers\\particle.lua";
+					}
+
 					edit_grideleprof->newparticle = t.entityelement[elementID].eleprof.newparticle;
 
 					bUpdateParticle = true; //Start new effect.
@@ -25696,6 +25851,7 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 		if (current_particle_selected != -1 && current_particle_selected > iPredefinedParticleSetups-1) bDisableButton = false;
 		if (ImGui::StyleButtonEx("Delete Particle", ImVec2((particle_w*0.5f) - 4.0f, 0), bDisableButton))
 		{
+			bPossibleWickedParticleSelectionChanged = true;
 			if (current_particle_selected >= iPredefinedParticleSetups)
 			{
 				strcpy(pref.Saved_Particle_Name[current_particle_selected - iPredefinedParticleSetups], "");
@@ -25710,11 +25866,17 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 				ImGui::SetTooltip("Delete selected custom particle");
 		}
 
-		ImGui::TextCenter("Particle Values");
+		ImGui::TextCenter("Particle States");
+
+		bool bLegacyParticle = true;
+		LPSTR pParticleName = edit_grideleprof->newparticle.emittername.Get();
+		if (strnicmp(pParticleName + strlen(pParticleName) - 3, ".pe", 3) == NULL)
+			bLegacyParticle = false;
 
 		bool btmp = edit_grideleprof->newparticle.bParticle_Preview;
 		if( ImGui::Checkbox("Preview Particle Effect", &btmp) )
 		{
+			bPossibleWickedParticleSelectionChanged = true;
 			bUpdateParticle = true;
 		}
 		edit_grideleprof->newparticle.bParticle_Preview = btmp;
@@ -25724,39 +25886,95 @@ void DisplayFPEBehavior(bool readonly, int entid, entityeleproftype* edit_gridel
 		if (ImGui::Checkbox("Show at start of level", &btmp))
 		{
 			bUpdateParticle = true;
+			if (bLegacyParticle == false)
+			{
+				t.entityelement[elementID].eleprof.aimain_s = "particles\\wpe_area.lua";
+				t.entityelement[elementID].eleprof.soundset4_s = "wpe_area_properties(2";
+				t.entityelement[elementID].eleprof.soundset4_s += "\"";
+				t.entityelement[elementID].eleprof.soundset4_s += t.entityelement[elementID].eleprof.newparticle.emittername;
+				t.entityelement[elementID].eleprof.soundset4_s += "\",3\"";
+				if (btmp == 1)
+					t.entityelement[elementID].eleprof.soundset4_s += "1";
+				else
+					t.entityelement[elementID].eleprof.soundset4_s += "0";
+				t.entityelement[elementID].eleprof.soundset4_s += "\",0\"0\",0\"0\",0\"0\")";
+			}
 		}
 		edit_grideleprof->newparticle.bParticle_Show_At_Start = btmp;
 		if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle whether the particle effect shows at the start of the level");
 
-		btmp = edit_grideleprof->newparticle.bParticle_Looping_Animation;
-		if (ImGui::Checkbox("Looping Animation", &btmp))
+		if (bLegacyParticle == true)
 		{
-			bUpdateParticle = true;
-		}
-		edit_grideleprof->newparticle.bParticle_Looping_Animation = btmp;
-		if (ImGui::IsItemHovered()) ImGui::SetTooltip("Choose whether the particle repeats, or plays once only");
+			// Legacy Particles
+			ImGui::TextCenter("Legacy Particle Controls");
 
-		ImGui::TextCenter("Animation Speed");
-		ImGui::PushItemWidth(-10);
-		int tmpint = edit_grideleprof->newparticle.fParticle_Speed * 100.0f; // 1.0 = normal.
-		if (ImGui::MaxSliderInputInt("##Animation Speed", &tmpint, 0, 200, "Animation Speed"))
-		{
-			bUpdateParticle = true;
-		}
-		edit_grideleprof->newparticle.fParticle_Speed = (float) tmpint/100.0f;
-		ImGui::PopItemWidth();
-		if (ImGui::IsItemHovered()) ImGui::SetTooltip("Set the global speed of the particle effect");
+			btmp = edit_grideleprof->newparticle.bParticle_Looping_Animation;
+			if (ImGui::Checkbox("Looping Animation", &btmp))
+			{
+				bUpdateParticle = true;
+			}
+			edit_grideleprof->newparticle.bParticle_Looping_Animation = btmp;
+			if (ImGui::IsItemHovered()) ImGui::SetTooltip("Choose whether the particle repeats, or plays once only");
 
-		ImGui::TextCenter("Opacity");
-		ImGui::PushItemWidth(-10);
-		tmpint = edit_grideleprof->newparticle.fParticle_Opacity * 100.0f; // 1.0 = normal.
-		if (ImGui::MaxSliderInputInt("##OpacityParticle", &tmpint, 0, 200, "Opacity"))
-		{
-			bUpdateParticle = true;
+			ImGui::TextCenter("Animation Speed");
+			ImGui::PushItemWidth(-10);
+			int tmpint = edit_grideleprof->newparticle.fParticle_Speed * 100.0f; // 1.0 = normal.
+			if (ImGui::MaxSliderInputInt("##Animation Speed", &tmpint, 0, 200, "Animation Speed"))
+			{
+				bUpdateParticle = true;
+			}
+			edit_grideleprof->newparticle.fParticle_Speed = (float)tmpint / 100.0f;
+			ImGui::PopItemWidth();
+			if (ImGui::IsItemHovered()) ImGui::SetTooltip("Set the global speed of the particle effect");
+
+			ImGui::TextCenter("Opacity");
+			ImGui::PushItemWidth(-10);
+			tmpint = edit_grideleprof->newparticle.fParticle_Opacity * 100.0f; // 1.0 = normal.
+			if (ImGui::MaxSliderInputInt("##OpacityParticle", &tmpint, 0, 200, "Opacity"))
+			{
+				bUpdateParticle = true;
+			}
+			edit_grideleprof->newparticle.fParticle_Opacity = (float)tmpint / 100.0f;
+			ImGui::PopItemWidth();
+			if (ImGui::IsItemHovered()) ImGui::SetTooltip("Set the global opacity of the particle effect");
 		}
-		edit_grideleprof->newparticle.fParticle_Opacity = (float)tmpint / 100.0f;
-		ImGui::PopItemWidth();
-		if (ImGui::IsItemHovered()) ImGui::SetTooltip("Set the global opacity of the particle effect");
+		else
+		{
+			// Wicked Particle Properties
+			ImGui::TextCenter("Wicked Particle Controls");
+
+			// wicked particle system
+			bool bPreviewWPENow = edit_grideleprof->newparticle.bParticle_Preview;
+			if (PreviewWPERoot == 0 && bPreviewWPENow)
+			{
+				PreviewWPERoot = WickedCall_LoadWPE(edit_grideleprof->newparticle.emittername.Get());
+				//iAction = 1 Burst all. 2 = Pause. - 3 = Resume. - 4 = Restart - 5 - visible - 6 = not visible. - 7 = pause emit - 8 = resume emit
+				void WickedCall_PerformEmitterAction(int iAction, uint32_t emitter_root);
+				WickedCall_PerformEmitterAction(1, PreviewWPERoot);
+				WickedCall_PerformEmitterAction(4, PreviewWPERoot);
+				WickedCall_PerformEmitterAction(5, PreviewWPERoot);
+			}
+
+			// test burst mode
+			if (ImGui::Button("Trigger Particle Burst##Burst", ImVec2(particle_w, 0)))
+			{
+				WickedCall_PerformEmitterAction(1, PreviewWPERoot);
+			}
+		}
+
+		// wicked particle system cleanup
+		if (bExternal_Entities_Window == false)
+		{
+			// but only when not viewing wicked particles in particles library browser 
+			bool bPreviewWPENow = edit_grideleprof->newparticle.bParticle_Preview;
+			if ((PreviewWPERoot != 0 && !bPreviewWPENow) || (PreviewWPERoot != 0 && bPossibleWickedParticleSelectionChanged == true))
+			{
+				WickedCall_PerformEmitterAction(6, PreviewWPERoot);
+				void DeleteEmitterEffects(uint32_t root);
+				DeleteEmitterEffects(PreviewWPERoot);
+				PreviewWPERoot = 0;
+			}
+		}
 
 		sObject* pObject = GetObjectData(t.entityelement[elementID].obj);
 		if (bUpdateParticle && elementID > 0 && pObject)
@@ -53267,35 +53485,39 @@ bool Shadows_Settings(float fTabColumnWidth, bool bVisualUpdated)
 
 void RenderPreviewEmitter(void)
 {
-	static bool bInit = true;
-	if (PreviewWPERoot > 0)
+	if (bExternal_Entities_Window == false)
 	{
-		float posx, posy, posz, posxa, posya, posza;
-		int GetActiveEditorEntityPos(float* x, float* y, float* z, float* xa, float* ya, float* za);
-		int iEntityIndex = GetActiveEditorEntityPos(&posx, &posy, &posz, &posxa, &posya, &posza);
-		static int iEntityIndexCurrent = -1;
-		if (!bInit && iEntityIndexCurrent != iEntityIndex && PreviewWPERoot != 0)
+		// but only when not viewing wicked particles in particles library browser 
+		static bool bInit = true;
+		if (PreviewWPERoot > 0)
 		{
-			iEntityIndexCurrent = iEntityIndex;
-			//PE: Delete effects.
-			WickedCall_PerformEmitterAction(6, PreviewWPERoot);
-			void DeleteEmitterEffects(uint32_t root);
-			DeleteEmitterEffects(PreviewWPERoot);
-			PreviewWPERoot = 0;
-			bPreviewWPE = false;
-		}
-		if (bInit)
-		{
-			iEntityIndexCurrent = iEntityIndex;
-			bInit = false;
-		}
-		if (iEntityIndex > 0 && PreviewWPERoot > 0)
-		{
-			extern float fPreviewYOffset;
-			extern float fPreviewXOffset;
-			extern float fPreviewZOffset;
-			bool WickedCall_ParticleEffectPositionRotation(uint32_t root, float fX, float fY, float fZ, float fXa, float fYa, float fZa);
-			WickedCall_ParticleEffectPositionRotation(PreviewWPERoot, posx + fPreviewXOffset, posy + fPreviewYOffset, posz + fPreviewZOffset, 0, posya, 0);
+			float posx, posy, posz, posxa, posya, posza;
+			int GetActiveEditorEntityPos(float* x, float* y, float* z, float* xa, float* ya, float* za);
+			int iEntityIndex = GetActiveEditorEntityPos(&posx, &posy, &posz, &posxa, &posya, &posza);
+			static int iEntityIndexCurrent = -1;
+			if (!bInit && iEntityIndexCurrent != iEntityIndex && PreviewWPERoot != 0)
+			{
+				iEntityIndexCurrent = iEntityIndex;
+				//PE: Delete effects.
+				WickedCall_PerformEmitterAction(6, PreviewWPERoot);
+				void DeleteEmitterEffects(uint32_t root);
+				DeleteEmitterEffects(PreviewWPERoot);
+				PreviewWPERoot = 0;
+				bPreviewWPE = false;
+			}
+			if (bInit)
+			{
+				iEntityIndexCurrent = iEntityIndex;
+				bInit = false;
+			}
+			if (iEntityIndex > 0 && PreviewWPERoot > 0)
+			{
+				extern float fPreviewYOffset;
+				extern float fPreviewXOffset;
+				extern float fPreviewZOffset;
+				bool WickedCall_ParticleEffectPositionRotation(uint32_t root, float fX, float fY, float fZ, float fXa, float fYa, float fZa);
+				WickedCall_ParticleEffectPositionRotation(PreviewWPERoot, posx + fPreviewXOffset, posy + fPreviewYOffset, posz + fPreviewZOffset, 0, posya, 0);
+			}
 		}
 	}
 }

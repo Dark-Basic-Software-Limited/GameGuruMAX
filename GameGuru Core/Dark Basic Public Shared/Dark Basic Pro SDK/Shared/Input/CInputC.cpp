@@ -587,30 +587,34 @@ DARKSDK void UpdateKeyboard ( void )
 	bool bInvalid=true;
 
 	// ensure coop level assigned to foreground window (see updatemouse for m_lpDIKeyboard->SetCooperativeLevel)
-
-	if ( FAILED ( hr = m_lpDIKeyboard->GetDeviceState ( sizeof ( m_KeyBuffer ), ( LPVOID ) &m_KeyBuffer ) ) )
+	if (m_lpDIKeyboard)
 	{
-		// the device has probably been lost if the get device state has failed, attempt to reacquire it
-		if ( hr == DIERR_INPUTLOST || hr != S_OK )
+		if (FAILED (hr = m_lpDIKeyboard->GetDeviceState (sizeof (m_KeyBuffer), (LPVOID)&m_KeyBuffer)))
 		{
-			if ( m_lpDIKeyboard )
+			// the device has probably been lost if the get device state has failed, attempt to reacquire it
+			if (hr == DIERR_INPUTLOST || hr != S_OK)
 			{
-				hr = m_lpDIKeyboard->Acquire ( );
-				//LB:190521 - this did not work, VRQ can lose keyboard and not get it back when tab in and out a few times!
-				//if (hr == E_ACCESSDENIED)
-				//{
-				//	if (m_lpDIKeyboard)
-				//	{
-				//		m_lpDIKeyboard->Release   ();
-				//		m_lpDIKeyboard = NULL;
-				//	}
-				//	SetupKeyboardEx(0);
-				//}
+				if (m_lpDIKeyboard)
+				{
+					hr = m_lpDIKeyboard->Acquire ();
+					//LB:190521 - this did not work, VRQ can lose keyboard and not get it back when tab in and out a few times!
+					//if (hr == E_ACCESSDENIED)
+					//{
+					//	if (m_lpDIKeyboard)
+					//	{
+					//		m_lpDIKeyboard->Release   ();
+					//		m_lpDIKeyboard = NULL;
+					//	}
+					//	SetupKeyboardEx(0);
+					//}
+				}
 			}
 		}
+		else
+			bInvalid = false;
 	}
 	else
-		bInvalid=false;
+		bInvalid = false;
 
 	if(bInvalid)
 	{
@@ -623,6 +627,9 @@ DARKSDK void UpdateMouse ( void )
 	// vars
 	HRESULT hr;
 	bool bInvalid=true;
+
+	if (m_lpDIMouse == NULL)
+		return;
 
 	// ensure coop level assigned to foreground window
 	HWND hCurrentHWND = GetForegroundWindow();

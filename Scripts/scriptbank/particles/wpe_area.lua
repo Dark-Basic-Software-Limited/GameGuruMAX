@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Wicked Particle Emmitter - Area v6 by Necrym and Lee
+-- Wicked Particle Emmitter - Area v7 by Necrym and Lee
 -- DESCRIPTION: Will display particle at and around this objects area.
 -- DESCRIPTION: Attach to an object and activate by a linked switch or zone or set is active.
 -- DESCRIPTION: [WPEFILE$="particlesbank//wpe//firearea.pe"]
@@ -18,7 +18,7 @@ local status		= {}
 local played		= {}
 local sndvol		= {}
 
-function wpe_area_properties(e, wpefile, isactive, offsety,offsetx,offsetz)
+function wpe_area_properties(e, wpefile, isactive, offsety, offsetx, offsetz)
 	wpearea[e].wpefile = wpefile
 	wpearea[e].effectid = WParticleEffectLoad(wpefile)
 	wpearea[e].isactive = isactive or 0
@@ -35,7 +35,6 @@ function wpe_area_init(e)
 	wpearea[e].offsety = 0
 	wpearea[e].offsetx = 0
 	wpearea[e].offsetz = 0
-	
 	status[e] = "init"
 	framecount[e] = 0
 	played[e] = 0
@@ -67,6 +66,10 @@ function wpe_area_main(e)
 		WParticleEffectPosition(wpearea[e].effectid,g_Entity[e]['x']+wpearea[e].offsetx,g_Entity[e]['y']+wpearea[e].offsety,g_Entity[e]['z']+wpearea[e].offsetz,0,g_Entity[e]['angley'],0)
 		WParticleEffectVisible(wpearea[e].effectid,1)
 		WParticleEffectAction(wpearea[e].effectid,3)
+		if status[e] == "endinit" then
+			WParticleEffectAction(wpearea[e].effectid,1)
+			status[e] = "bursted"
+		end
 	end
 	if g_Entity[e]['activated'] == 0 then
 		sndvol[e] = 0
