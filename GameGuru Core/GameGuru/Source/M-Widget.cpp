@@ -623,7 +623,7 @@ void widget_loop ( void )
 				if (t.widget.pickedSection > 0)
 				{
 					//Make sure to highlight all objects the object belong to.
-					void CheckGroupListForRubberbandSelections(int entityindex);
+					extern void CheckGroupListForRubberbandSelections(int entityindex);
 					if (t.widget.pickedEntityIndex > 0)
 						CheckGroupListForRubberbandSelections(t.widget.pickedEntityIndex);
 				}

@@ -22003,6 +22003,99 @@ void AddGroupListToRubberBand(int l)
 	return;
 }
 
+// Returns: true if user chose to abort, otherwise false
+static bool QueryAbortDuringRubberbandSelection(int progress, EstimatedMs& estim)
+{
+	// extrapolate expected duration
+	estim.setProgress(progress);
+	estim.timer.stop();
+
+	// prevent repeated key press of Spacebar to prevent the default button activating in MessageBox.
+	while ((GetAsyncKeyState(VK_ESCAPE) & 0x8000) ||
+		(GetAsyncKeyState(VK_SPACE) & 0x8000))
+	{
+		Sleep(10);
+	}
+	// Flush queued keyboard messages
+	MSG msg;
+	while (PeekMessage(&msg, NULL, WM_KEYFIRST, WM_KEYLAST, PM_REMOVE))
+	{
+	}
+
+	// create message
+	wchar_t text[320];
+	swprintf(text, sizeof(text) / sizeof(wchar_t),
+		L"Selections calculation paused.\n"
+		L"Rubberband selection might take a long time due to a lot of entities.\n"
+		L"\n"
+		L"Processed entities: \t\t%d / %d\n"
+		L"Elapsed/estim total time: \t%.1f / %.0f secs\n"
+		L"Estimated remaininga time: \t%.0f secs\n"
+		L"\n"
+		L"Choose Yes to continue processing.\n"
+		L"Choose No to cancel this selection calculation.",
+		estim.processedCount,
+		estim.totalCount,
+		estim.timer.elapsedSec(),
+		estim.estimatedTotalSec(),
+		estim.estimatedRemainingSec()
+	);
+
+	// show message
+	int result = MessageBox(NULL, text, 
+		L"Rubberband Selection Calculation",
+		MB_RETRYCANCEL | MB_DEFBUTTON1 | MB_ICONWARNING | MB_TOPMOST);
+	estim.timer.resume();
+
+	if (result == IDCANCEL)
+	{
+		// abort loop
+		return true;
+	}
+	return false;
+}
+
+/// TODO: Rewrite this function and all of its sub-functions to be more efficient, currently it is O(n^2) or higher and can be optimized to O(n) by using a hash set or similar data structure to track already added entities.<br/>
+/// It can lock up the editor for a very long time (eg: 138,840 ms) if there are many entities in the rubberband list.<br/>
+/// Right now, it simply calls QueryAbortDuringRubberbandSelection() to detect an interupt key press.
+void CheckGroupListForRubberbandSelectionsForAllEntities(int iEntityInGroupList, int entityindex)
+{
+	EstimatedMs estim;
+	estim.timer.start();
+	estim.setProgressCounts(0, g.entityrubberbandlist.size());
+
+	if (iEntityInGroupList >= 0)
+	{
+		//Add all groups with entity to rubberband list.
+		CheckGroupListForRubberbandSelections(entityindex);
+	}
+	else if (g.entityrubberbandlist.size() > 0)
+	{
+		//Make sure all groups are selected from within rubberband list.
+		for (size_t i = 0; i < g.entityrubberbandlist.size(); i++)
+		{
+			int e = g.entityrubberbandlist[i].e;
+			CheckGroupListForRubberbandSelections(e);
+
+			// Note: GetAsyncKeyState() works without needing Windows messages or the main loop!
+			if ((GetAsyncKeyState(VK_ESCAPE) & 0x8000) ||
+				(GetAsyncKeyState(VK_SPACE) & 0x8000)) 
+			{
+				// show a message box showing this calc might take a long time and can be aborted.
+				if (QueryAbortDuringRubberbandSelection(1 + i, estim))
+				{
+					g.entityrubberbandlist.clear();
+					break;
+				}
+			}
+		}
+	}
+
+	estim.timer.stop();
+	//if (estim.timer.elapsedMs() > 2000.0f)
+		//Debug::debugOutput("CheckGroupListForRubberbandSelectionsForAllEntities() took %lld ms. g.entityrubberbandlist.size()=%zu", estim.timer.elapsedMs(), estim.totalCount);
+}
+
 void CheckGroupListForRubberbandSelections(int entityindex)
 {
 	int grouplist = isEntityInGroupList(entityindex);
