@@ -1,8 +1,10 @@
 //----------------------------------------------------
 //--- GAMEGURU - M-GridEdit
 //----------------------------------------------------
+#pragma once
 
 #include "cstr.h"
+#include "Selecting.h"
 
 // prototypes
 void mapeditorexecutable(void);
@@ -89,7 +91,15 @@ void gridedit_saveas_map ( void );
 void gridedit_addentitytomap ( void );
 void gridedit_moveentityrubberband ( void );
 void gridedit_clearentityrubberbandlist ( void );
-void gridedit_addEntityToRubberBandHighlights ( int e );
+void gridedit_addEntityToRubberBandList(
+	int e, 
+	int seedEntityId = 0, 
+	SelModes::eModes modeUsed = SelModes::eModes::CurrMode);
+void gridedit_addEntityToRubberBandHighlights(
+	int e, 
+	SelModes::eAddSelMethods addSelMethod = SelModes::viaRubberBand,
+	int seedEntityId = 0, 
+	SelModes::eModes modeUsed = SelModes::eModes::CurrMode);
 void gridedit_deleteentityfrommap ( void );
 void gridedit_deleteentityrubberbandfrommap ( void );
 void gridedit_updateentityobj ( void );
