@@ -3731,39 +3731,51 @@ int physics_rayintersecttree (float fX, float fY, float fZ, float fToX, float fT
 	float fHeightOfTreeDetect = 200.0f; //LB: Can be improved with geometry awareness (slower)
 	for (int vti = 0; vti < g_VTreeObj.size(); vti++)
 	{
-		bool bRayTooLowOrHigh = false;
-		if (fY < g_VTreeObj[vti].fY && fToY < g_VTreeObj[vti].fY) bRayTooLowOrHigh = true;
-		if (fY > g_VTreeObj[vti].fY + fHeightOfTreeDetect && fToY > g_VTreeObj[vti].fY + fHeightOfTreeDetect) bRayTooLowOrHigh = true;
-		if (bRayTooLowOrHigh==false)
+		// tree left the scan area, skip
+		if (g_VTreeObj[vti].iID == 0) continue;
+
+		// ray against a cylinder: overlap of the height band and the radius in XZ
+		double t0 = 0.0, t1 = 1.0;
+		double fBaseY = g_VTreeObj[vti].fY;
+		double dy = fToY - fY;
+		if (fabs(dy) < 1e-9)
 		{
-			// ray crosses Y area presence of tree
-			float fCX = g_VTreeObj[vti].fX;
-			float fCZ = g_VTreeObj[vti].fZ;
-			float r = 15.0f;
-			double x0 = fCX, y0 = fCZ;
-			double x1 = fX, y1 = fZ;
-			double x2 = fToX, y2 = fToZ;
-			double A = y2 - y1;
-			double B = x1 - x2;
-			double C = x2 * y1 - x1 * y2;
-			double a = (A*A) + (B*B);
-			double b, c, d;
-			const double eps = 1e-14;
-			if (fabs(B) >= eps) 
-			{
-				b = 2 * (A * C + A * B * y0 - (B*B) * x0);
-				c = (C*C) + 2 * B * C * y0 - (B*B) * ((r*r) - (x0*x0) - (y0*y0));
-			}
-			else 
-			{
-				b = 2 * (B * C + A * B * x0 - (A*A) * y0);
-				c = (C*C) + 2 * A * C * x0 - (A*A) * ((r*r) - (x0*x0) - (y0*y0));
-			}
-			d = (b*b) - 4 * a * c;
-			if (d > 0 )
-			{
-				return 1; // hit a tree
-			}
+			if (fY < fBaseY || fY > fBaseY + fHeightOfTreeDetect) continue;
+		}
+		else
+		{
+			double ta = (fBaseY - fY) / dy;
+			double tb = (fBaseY + fHeightOfTreeDetect - fY) / dy;
+			if (ta > tb) { double tmp = ta; ta = tb; tb = tmp; }
+			if (ta > t0) t0 = ta;
+			if (tb < t1) t1 = tb;
+			if (t0 > t1) continue;
+		}
+
+		double r = 15.0;
+		double dx = fToX - fX;
+		double dz = fToZ - fZ;
+		double ox = fX - g_VTreeObj[vti].fX;
+		double oz = fZ - g_VTreeObj[vti].fZ;
+		double a = (dx*dx) + (dz*dz);
+		double b = 2 * ((ox*dx) + (oz*dz));
+		double c = (ox*ox) + (oz*oz) - (r*r);
+		if (a < 1e-9)
+		{
+			// vertical ray
+			if (c < 0) return 1; // hit a tree
+			continue;
+		}
+		double d = (b*b) - 4 * a * c;
+		if (d <= 0) continue;
+		double sq = sqrt(d);
+		double tc0 = (-b - sq) / (2 * a);
+		double tc1 = (-b + sq) / (2 * a);
+		if (tc0 > t0) t0 = tc0;
+		if (tc1 < t1) t1 = tc1;
+		if (t0 <= t1)
+		{
+			return 1; // hit a tree
 		}
 	}
 	return 0;
