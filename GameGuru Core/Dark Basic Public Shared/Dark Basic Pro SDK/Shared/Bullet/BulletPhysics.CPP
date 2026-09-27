@@ -4106,12 +4106,22 @@ void ODESetBodyScaling(int iObjectNumber, float fX, float fY, float fZ)
 	//g_dynamicsWorld->updateSingleAabb((btCollisionObject*)pPhyObject->body); resizing live is UNSTABLE
 }
 
+// 1 when the last ODERayTerrain hit a tree rather than the ground
+int g_iODERayTerrainHitTree = 0;
+
 int ODERayTerrain ( float fX, float fY, float fZ, float fToX, float fToY, float fToZ, bool bUpdateDebugObj)
 {
 	// inject tree detection, so can exit early if ray tried to go 'THROUGH' a tree
 	extern int physics_rayintersecttree (float fX, float fY, float fZ, float fToX, float fToY, float fToZ);
+	g_iODERayTerrainHitTree = 0;
 	if (physics_rayintersecttree (fX, fY, fZ, fToX, fToY, fToZ) == 1)
 	{
+		// report the tree hit point (not the last ray's)
+		extern float g_fTreeRayHitX, g_fTreeRayHitY, g_fTreeRayHitZ, g_fTreeRayHitNX, g_fTreeRayHitNY, g_fTreeRayHitNZ;
+		g_hitObjectNumber = 0;
+		g_hitPointWorld = btVector3(g_fTreeRayHitX, g_fTreeRayHitY, g_fTreeRayHitZ);
+		g_hitNormalWorld = btVector3(g_fTreeRayHitNX, g_fTreeRayHitNY, g_fTreeRayHitNZ);
+		g_iODERayTerrainHitTree = 1;
 		return 1;
 	}
 	return ODERayTerrainEx ( fX, fY, fZ, fToX, fToY, fToZ, COL_TERRAIN, bUpdateDebugObj);
