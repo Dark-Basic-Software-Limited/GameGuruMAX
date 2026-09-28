@@ -342,19 +342,20 @@ bool DoesLineGoThroughBlocker (float fFromOrigX, float fFromOrigY, float fFromOr
 					float fToX = fToOrigX;
 					float fToY = fToOrigY;
 					float fToZ = fToOrigZ;
+					// rotate into the blocker's own space (z is flipped, so add fAngle)
 					float tofromradian = 0.0174533f;
 					float fDX = fFromX - fCenterX;
 					float fDZ = fCenterZ - fFromZ;
 					float fDD = sqrtf(fabs(fDX * fDX) + fabs(fDZ * fDZ));
 					float fFromA = atan2(fDX, fDZ) / tofromradian;
-					fFromA = (fFromA - g_BlockerList[iDoorIndex].fAngle) * tofromradian;
+					fFromA = (fFromA + g_BlockerList[iDoorIndex].fAngle) * tofromradian;
 					fFromX = fCenterX + (sinf(fFromA) * fDD);
 					fFromZ = fCenterZ - (cosf(fFromA) * fDD);
 					fDX = fToX - fCenterX;
 					fDZ = fCenterZ - fToZ;
 					fDD = sqrtf(fabs(fDX * fDX) + fabs(fDZ * fDZ));
 					float fToA = atan2(fDX, fDZ) / tofromradian;
-					fToA = (fToA - g_BlockerList[iDoorIndex].fAngle) * tofromradian;
+					fToA = (fToA + g_BlockerList[iDoorIndex].fAngle) * tofromradian;
 					fToX = fCenterX + (sinf(fToA) * fDD);
 					fToZ = fCenterZ - (cosf(fToA) * fDD);
 					float fX = fFromX;

@@ -4276,7 +4276,8 @@ int RDBlockNavMeshCore(lua_State* L,int iWithShape)
 								float fRelativeToCenterOfBlockerX = fSliceX - fX;
 								float fRelativeToCenterOfBlockerZ = fSliceZ - fZ;
 								float fRelativeDist = sqrt(fabs(fRelativeToCenterOfBlockerX * fRelativeToCenterOfBlockerX) + fabs(fRelativeToCenterOfBlockerZ * fRelativeToCenterOfBlockerZ));
-								float fFinalAngle = GGToDegree(atan2(fRelativeToCenterOfBlockerX, fRelativeToCenterOfBlockerZ)) + fAngle;
+								// into the blocker's space (turned by +fAngle)
+								float fFinalAngle = GGToDegree(atan2(fRelativeToCenterOfBlockerX, fRelativeToCenterOfBlockerZ)) - fAngle;
 								fRelativeToCenterOfBlockerX = NewXValue(0, fFinalAngle, fRelativeDist);
 								fRelativeToCenterOfBlockerZ = NewZValue(0, fFinalAngle, fRelativeDist);
 								if (fabs(fRelativeToCenterOfBlockerX) < fRadius && fabs(fRelativeToCenterOfBlockerZ) < fRadius2)
