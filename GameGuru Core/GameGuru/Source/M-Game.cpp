@@ -729,7 +729,7 @@ void game_createnavmeshfromlevel ( bool bForceGeneration )
 					OffsetLimb(iBuildAllLevelObj, iLimbIndex, vecTreePos.x, vecTreePos.y, vecTreePos.z);
 					iLimbIndex++;
 				}
-				delete pOutPoints;
+				delete[] pOutPoints;
 			}
 		}
 	}
@@ -810,7 +810,7 @@ void game_createnavmeshfromlevel ( bool bForceGeneration )
 							numCurrentVertices += pTreeCubeShape->dwIndexCount;
 						}
 					}
-					delete pOutPoints;
+					delete[] pOutPoints;
 
 					// remove old vert soup in favor of new one
 					if (pRawVertices) delete[] pRawVertices;

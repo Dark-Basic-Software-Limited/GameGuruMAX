@@ -600,7 +600,7 @@ void physics_managevirtualtreecylinders (void)
 					}
 				}
 			}
-			delete pOutPoints;
+			delete[] pOutPoints;
 		}
 		// finally remove any from list which have become inactive
 		for (int vti = 0; vti < g_VTreeObj.size(); vti++)
