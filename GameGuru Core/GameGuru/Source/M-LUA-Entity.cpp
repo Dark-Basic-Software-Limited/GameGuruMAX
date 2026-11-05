@@ -2510,6 +2510,9 @@ void entity_lua_setentityhealth_core ( int iSilentOrDamage )
 	// cannot set any health/damage if currently in ragdoll phase
 	if (t.entityelement[t.e].ragdollplusactivate != 0)
 	{
+		// the death flags above are for this call only, restored as at the end (else the next death of any cause takes them)
+		g_bForceRagdoll = false;
+		g_bForceNoRagdollJustDestroy = false;
 		return;
 	}
 	// if new health is zero, apply damage to entity directly
