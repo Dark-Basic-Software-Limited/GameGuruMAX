@@ -13,6 +13,7 @@
 #include "M-GridEditB.h"
 #include "M-RPG.h"
 #include "M-Workshop.h"
+#include "Selecting.h"
 
 // OPTICK Performance
 #ifdef OPTICK_ENABLE
@@ -253,8 +254,6 @@ int iObjectMoveModeDropSystemUsing = 0;
 bool bObjectAllowOverlapping = 1;
 
 float fDebug = 0.0f, fDebug1 = 0.0f, fDebug2 = 0.0f, fDebug3 = 0.0f;
-
-int i_switch_group_tab = 0;
 int current_selected_group = -1;
 int thumb_selected_group = -1;
 bool group_editing_on = false;
@@ -1419,6 +1418,8 @@ void mapeditorexecutable_init ( void )
 	}
 
 	t.gridentitygridlock = pref.iGridMode;
+
+	SelModes::init();
 }
 
 void mapeditorexecutable_loop_leavetestgame(void)
@@ -2157,7 +2158,7 @@ void mapeditorexecutable_loop(void)
 
 				g_EntityClipboard.clear(); //PE: Clear any old copy/paste.
 				undosys_clearall(); //PE: Clear undo redo system.
-
+				SelModes::init();
 
 				if(!bCloseStoryboardAfterLoad)
 					iLevelEditorFromStoryboardID = -1; //If loaded from here, we cant update storyboard.
@@ -3860,26 +3861,7 @@ void mapeditorexecutable_loop(void)
 								}
 
 								// and add to new rubber band group
-								sRubberBandType rubberbandItem;
-								rubberbandItem.e = t.e;
-								rubberbandItem.x = t.entityelement[t.e].x;
-								rubberbandItem.y = t.entityelement[t.e].y;
-								rubberbandItem.z = t.entityelement[t.e].z;
-								rubberbandItem.px = t.entityelement[t.e].x;
-								rubberbandItem.py = t.entityelement[t.e].y;
-								rubberbandItem.pz = t.entityelement[t.e].z;
-								rubberbandItem.rx = t.entityelement[t.e].rx;
-								rubberbandItem.ry = t.entityelement[t.e].ry;
-								rubberbandItem.rz = t.entityelement[t.e].rz;
-								rubberbandItem.quatmode = t.entityelement[t.e].quatmode;
-								rubberbandItem.quatx = t.entityelement[t.e].quatx;
-								rubberbandItem.quaty = t.entityelement[t.e].quaty;
-								rubberbandItem.quatz = t.entityelement[t.e].quatz;
-								rubberbandItem.quatw = t.entityelement[t.e].quatw;
-								rubberbandItem.scalex = t.entityelement[t.e].scalex;
-								rubberbandItem.scaley = t.entityelement[t.e].scaley;
-								rubberbandItem.scalez = t.entityelement[t.e].scalez;
-								g.entityrubberbandlist.push_back(rubberbandItem);
+								gridedit_addEntityToRubberBandList(t.e);
 							}
 						}
 
@@ -4168,7 +4150,7 @@ void mapeditorexecutable_loop(void)
 			ImGui::DockBuilderDockWindow("Game Settings##GameSettings", dock_id_right);
 			ImGui::DockBuilderDockWindow("Logic Settings##LogicSettings", dock_id_right);
 			ImGui::DockBuilderDockWindow("Shooter Genre##GameLogicTools", dock_id_right);
-			ImGui::DockBuilderDockWindow("Current Objects##AdditionalIconsWindow", dock_id_left_down_large);
+			ImGui::DockBuilderDockWindow("Selection Tools##AdditionalIconsWindow", dock_id_left_down_large);
 			ImGui::DockBuilderDockWindow("Bug Reporting System##BugReportingWindow", dock_id_right);
 
 			// Disable tab bar.
@@ -5951,13 +5933,13 @@ void mapeditorexecutable_loop(void)
 					}
 				}
 				if (!bIsNewObjectInGroup)
-					i_switch_group_tab = 1;
+					SelTools::setNextTabToShow(SelTools::eTabs::Selected);
 				else
-					i_switch_group_tab = 2;
+					SelTools::setNextTabToShow(SelTools::eTabs::Groups);
 			}
 			else
 			{
-				i_switch_group_tab = 1;
+				SelTools::setNextTabToShow(SelTools::eTabs::Selected);
 			}
 		}
 
@@ -10574,7 +10556,7 @@ void mapeditorexecutable_loop(void)
 			bool bOpen = true;
 			ImGui::Begin(TABENTITYNAME, &bOpen, iGenralWindowsFlags);
 			ImGui::End();
-			ImGui::Begin("Current Objects##AdditionalIconsWindow", &bOpen, iGenralWindowsFlags);
+			ImGui::Begin("Selection Tools##AdditionalIconsWindow", &bOpen, iGenralWindowsFlags);
 			ImGui::End();
 		}
 		if (refresh_gui_docking > 0) 
@@ -11519,26 +11501,7 @@ void mapeditorexecutable_loop(void)
 													if (stricmp(pParentName, pThisName) == NULL)
 													{
 														iAnchorEntityIndex = e;
-														sRubberBandType rubberbandItem;
-														rubberbandItem.e = e;
-														rubberbandItem.x = t.entityelement[e].x;
-														rubberbandItem.y = t.entityelement[e].y;
-														rubberbandItem.z = t.entityelement[e].z;
-														rubberbandItem.px = t.entityelement[e].x;
-														rubberbandItem.py = t.entityelement[e].y;
-														rubberbandItem.pz = t.entityelement[e].z;
-														rubberbandItem.rx = t.entityelement[e].rx;
-														rubberbandItem.ry = t.entityelement[e].ry;
-														rubberbandItem.rz = t.entityelement[e].rz;
-														rubberbandItem.quatmode = t.entityelement[e].quatmode;
-														rubberbandItem.quatx = t.entityelement[e].quatx;
-														rubberbandItem.quaty = t.entityelement[e].quaty;
-														rubberbandItem.quatz = t.entityelement[e].quatz;
-														rubberbandItem.quatw = t.entityelement[e].quatw;
-														rubberbandItem.scalex = t.entityelement[e].scalex;
-														rubberbandItem.scaley = t.entityelement[e].scaley;
-														rubberbandItem.scalez = t.entityelement[e].scalez;
-														g.entityrubberbandlist.push_back (rubberbandItem);
+														gridedit_addEntityToRubberBandList(e);
 													}
 												}
 											}
@@ -12187,10 +12150,10 @@ void mapeditorexecutable_loop(void)
 			ImGui::End();
 
 			//#########################
-			//#### Current objects ####
+			//#### Selection Tools ####
 			//#########################
-			
-			ImGui::Begin("Current Objects##AdditionalIconsWindow", &bAlwaysOpen, iGenralWindowsFlags | ImGuiWindowFlags_NoTitleBar);
+
+			ImGui::Begin("Selection Tools##AdditionalIconsWindow", &bAlwaysOpen, iGenralWindowsFlags | ImGuiWindowFlags_NoTitleBar);
 
 			static ImVec2 vBelowContentSize = { 0.0,40.0 };
 			bool bSelectionAvail = false;
@@ -12218,18 +12181,18 @@ void mapeditorexecutable_loop(void)
 			#define GROUPV2
 
 
-			int iInsideTab = 0;
 			if (ImGui::BeginTabBar("currentandgrouptabbar"))
 			{
 				int tabflags = 0;
-				if (i_switch_group_tab == 1)
+				if (SelTools::nextTabToShow_is(SelTools::eTabs::Selected))
 				{
-					i_switch_group_tab = 0;
+					SelTools::resetNextTabToShow();
 					tabflags = ImGuiTabItemFlags_SetSelected;
 				}
-				if (ImGui::BeginTabItem(" Current Objects ", NULL, tabflags))
+				if (ImGui::BeginTabItem(" Selected Objects ", NULL, tabflags))
 				{
-					iInsideTab = 1;
+					if (ImGui::IsItemHovered() && bToolTipActive) ImGui::SetTooltip("Selected Objects");
+					SelTools::setKnownActiveTab(SelTools::eTabs::Selected);
 					tabflags = 0;
 
 					ImGui::SetWindowFontScale(fFontSize_leftpanel);
@@ -12636,19 +12599,19 @@ void mapeditorexecutable_loop(void)
 				}
 
 				tabflags = 0;
-				if (i_switch_group_tab == 2)
+				if (SelTools::nextTabToShow_is(SelTools::eTabs::Groups))
 				{
-					i_switch_group_tab = 0;
+					SelTools::resetNextTabToShow();
 					tabflags = ImGuiTabItemFlags_SetSelected;
 				}
 				if (ImGui::BeginTabItem(" Groups ", NULL, tabflags))
 				{
 					if (ImGui::IsItemHovered() && bToolTipActive) ImGui::SetTooltip("Object Groups");
+					SelTools::setKnownActiveTab(SelTools::eTabs::Groups);
 
 					//Use Columns and fixed size.
 					ImGui::Columns(iColumns_leftpanel, "CurrentObjectsAdditional", false);  //false no border
 					ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(2.0f, 2.0f));
-					iInsideTab = 2;
 					
 					//#### Group Lists ####
 					for (int l = 0; l < MAXGROUPSLISTS; l++)
@@ -12854,13 +12817,18 @@ void mapeditorexecutable_loop(void)
 					}
 					ImGui::EndTabItem();
 				}
-				
+
 				tabflags = 0;
-				if (i_switch_group_tab == 3)
+				if (SelTools::nextTabToShow_is(SelTools::eTabs::Modes))
 				{
-					i_switch_group_tab = 0;
+					SelTools::resetNextTabToShow();
 					tabflags = ImGuiTabItemFlags_SetSelected;
 				}
+				if (SelModes::SelModesWindow::drawWindow(tabflags))
+				{
+					SelTools::setKnownActiveTab(SelTools::eTabs::Modes);
+				}
+
 				ImGui::EndTabBar(); //PE:Fix Assert error , stacksize.
 			}
 
@@ -12990,7 +12958,7 @@ void mapeditorexecutable_loop(void)
 				if (bIsASmartObject == true )
 				{
 					// yes, so change labels to reflect Smart Object editing
-					if (iInsideTab == 1)
+					if (SelTools::knownActiveTab_is(SelTools::eTabs::Selected))
 					{
 						// but only when in current object view
 						if (b == 0) { pLabelToolTip = "This selection is a Smart Object"; }
@@ -13032,7 +13000,8 @@ void mapeditorexecutable_loop(void)
 					{
 						IconColor = IconInActive;
 					}
-					if ((iIconID == TOOL_UNGROUP || iIconID == TOOL_GROUPEDIT || iIconID == TOOL_GROUPSAVE) && current_selected_group >= 0 && iInsideTab == 2)
+					if ((iIconID == TOOL_UNGROUP || iIconID == TOOL_GROUPEDIT || iIconID == TOOL_GROUPSAVE) && 
+						current_selected_group >= 0 && (SelTools::knownActiveTab_is(SelTools::eTabs::Groups)))
 					{
 						IconColor = IconActive;
 						bIconActive = true;
@@ -21160,11 +21129,47 @@ void gridedit_clearentityrubberbandlist ( void )
 				}
 			}
 		}
+		g.entityrubberbandlist.clear();
+		SelModes::Match::countRubberBandTypes();
 	}
-	g.entityrubberbandlist.clear();
 }
 
-void gridedit_addEntityToRubberBandHighlights ( int e )
+void gridedit_addEntityToRubberBandList(
+	int e, 
+	int seedEntityId /* = 0 */, 
+	SelModes::eModes modeUsed /* = CurrMode */)
+{
+	sRubberBandType item;
+	auto& elem = t.entityelement[e];
+
+	item.e = e;
+	item.x = elem.x;
+	item.y = elem.y;
+	item.z = elem.z;
+	item.px = elem.x;
+	item.py = elem.y;
+	item.pz = elem.z;
+	item.rx = elem.rx;
+	item.ry = elem.ry;
+	item.rz = elem.rz;
+	item.quatmode = elem.quatmode;
+	item.quatx = elem.quatx;
+	item.quaty = elem.quaty;
+	item.quatz = elem.quatz;
+	item.quatw = elem.quatw;
+	item.scalex = elem.scalex;
+	item.scaley = elem.scaley;
+	item.scalez = elem.scalez;
+	item.seedEntityId = seedEntityId;
+	item.modeUsed = (modeUsed == SelModes::CurrMode) ? SelModes::getMode() : modeUsed;
+	g.entityrubberbandlist.emplace_back(item);
+}
+
+void gridedit_addEntityToRubberBandHighlights(
+	int e, 
+	SelModes::eAddSelMethods addSelMethod /* = SelModes::viaRubberBand */,
+	int seedEntityId /* = 0 */, 
+	SelModes::eModes modeUsed /* = CurrMode */)
 {
 	// 011215 - skip if in marker mode and not a marker
 	if ( t.gridentitymarkersmodeonly == 1 && t.entityprofile[t.entityelement[e].bankindex].ismarker==0 ) 
@@ -21178,39 +21183,39 @@ void gridedit_addEntityToRubberBandHighlights ( int e )
 	bool bEntityIsHighlighted = false;
 	if ( g.entityrubberbandlist.size() > 0 )
 	{
+		int thise = 0;
 		for ( int i = 0; i < (int)g.entityrubberbandlist.size(); i++ )
 		{
-			int thise = g.entityrubberbandlist[i].e;
-			if ( e == thise ) bEntityIsHighlighted = true;
+			thise = g.entityrubberbandlist[i].e;
+			if (e == thise)
+			{
+				bEntityIsHighlighted = true;
+				break;
+			}
 		}
 	}
-	if ( bEntityIsHighlighted == false )
+	if ( bEntityIsHighlighted == false && SelModes::entityTypeIsAllowed(e, addSelMethod) )
 	{
-		sRubberBandType rubberbandItem;
-		rubberbandItem.e = e;
-		rubberbandItem.x = t.entityelement[e].x;
-		rubberbandItem.y = t.entityelement[e].y;
-		rubberbandItem.z = t.entityelement[e].z;
-		rubberbandItem.px = t.entityelement[e].x;
-		rubberbandItem.py = t.entityelement[e].y;
-		rubberbandItem.pz = t.entityelement[e].z;
-		rubberbandItem.rx = t.entityelement[e].rx;
-		rubberbandItem.ry = t.entityelement[e].ry;
-		rubberbandItem.rz = t.entityelement[e].rz;	
-		rubberbandItem.quatmode = t.entityelement[e].quatmode;
-		rubberbandItem.quatx = t.entityelement[e].quatx;
-		rubberbandItem.quaty = t.entityelement[e].quaty;
-		rubberbandItem.quatz = t.entityelement[e].quatz;
-		rubberbandItem.quatw = t.entityelement[e].quatw;
-		rubberbandItem.scalex = t.entityelement[e].scalex;
-		rubberbandItem.scaley = t.entityelement[e].scaley;
-		rubberbandItem.scalez = t.entityelement[e].scalez;
-		g.entityrubberbandlist.push_back ( rubberbandItem );
+		// if addSelMethod == viaRubberBand, seedEntityId might be > 0.
+		// if addSelMethod == viaCtrlClick, seedEntityId will be 0 anyway.
+		seedEntityId = 0;
+		if (addSelMethod == SelModes::viaCtrlClick) 
+			seedEntityId = e;
+
+		gridedit_addEntityToRubberBandList(e, seedEntityId, modeUsed);
 
 		if ( t.entityelement[e].staticflag == 0 ) 
 			SetAlphaMappingOn ( tobj, 103 );
 		else
 			SetAlphaMappingOn ( tobj, 101 );
+	}
+
+	if (SelModes::entityTypeIsAllowed(e, addSelMethod))
+	{
+		if (addSelMethod == SelModes::viaCtrlClick)
+			addEntityTypeAndScan_viaCtrlClick(e, seedEntityId, modeUsed);
+		else if (bEntityIsHighlighted == false)
+			addEntityType_viaRubberBand(e, seedEntityId, modeUsed);
 	}
 }
 
@@ -21369,7 +21374,7 @@ void gridedit_mapediting ( void )
 					if (pref.iDragCameraMovement && t.ebe.on == 0 && t.inputsys.keycontrol == 1 && bActivateRubberBand)
 					{
 						bActivateRubberBand = false;
-						// if clicked a single entity WHILE holding control, can add to list (need to click to select)
+						/// if clicked a single entity WHILE holding control, can add to list (need to click to select)
 						if (t.inputsys.mclick == 1 && t.inputsys.keycontrol == 1 && t.tentitytoselect > 0)
 						{
 							if (g.entityrubberbandlist.size() > 0)
@@ -21398,12 +21403,14 @@ void gridedit_mapediting ( void )
 										break;
 									}
 								}
-								if (bAlreadyInList == false)
+								if (bAlreadyInList == false && SelModes::mode_isNormal())
 								{
-									gridedit_addEntityToRubberBandHighlights(t.widget.pickedEntityIndex);
+									// t.widget.pickedEntityIndex is the currently highlighted entitty. It tries to automatically add it here.
+									gridedit_addEntityToRubberBandHighlights(t.widget.pickedEntityIndex, SelModes::viaRubberBand, t.widget.pickedEntityIndex);
 								}
 							}
-							gridedit_addEntityToRubberBandHighlights(t.tentitytoselect);
+							// t.tentitytoselect is the entity chosen via Ctrl+Click.
+							gridedit_addEntityToRubberBandHighlights(t.tentitytoselect, SelModes::viaCtrlClick);
 						}
 						// when select entity (widget called up), if parent to children, add them to rubberband so they can all be modified at the same time
 						if (t.tentitytoselect > 0)
@@ -21441,7 +21448,8 @@ void gridedit_mapediting ( void )
 							}
 							else
 							{
-								gridedit_clearentityrubberbandlist();
+								if (SelModes::mode_isNormal())
+									gridedit_clearentityrubberbandlist();
 							}
 						}
 						else
@@ -21449,7 +21457,7 @@ void gridedit_mapediting ( void )
 							// if clicked a single entity WHILE holding control, can add to list
 							if ( t.tentitytoselect > 0 )
 							{
-								gridedit_addEntityToRubberBandHighlights ( t.tentitytoselect );
+								gridedit_addEntityToRubberBandHighlights ( t.tentitytoselect, SelModes::viaCtrlClick );
 							}
 						}
 
@@ -21563,7 +21571,7 @@ void gridedit_mapediting ( void )
 									fHitOffsetZ = 0.0001; //So we trigger a widget.
 								}
 
-								i_switch_group_tab = 1; //Display "current objects" tab.
+								SelTools::setNextTabToShow(SelTools::eTabs::Selected);
 							}
 							t.inputsys.rubberbandmode = 0;
 						}
@@ -21647,6 +21655,7 @@ void gridedit_mapediting ( void )
 							// now de-highlight any in the list NOT covered by the boundbox
 							if ( g.entityrubberbandlist.size() > 0 )
 							{
+								bool listChanged = false;
 								int i = 0;
 								while ( i < (int)g.entityrubberbandlist.size() )
 								{
@@ -21686,12 +21695,15 @@ void gridedit_mapediting ( void )
 										}
 										g.entityrubberbandlist.erase(g.entityrubberbandlist.begin() + i);
 										i = 0;
+										listChanged = true;
 									}
 									else
 									{
 										i++;
 									}
 								}
+								if (listChanged)
+									SelModes::Match::countRubberBandTypes();
 							}
 
 							// when release mouse while rubber banding
@@ -21728,7 +21740,7 @@ void gridedit_mapediting ( void )
 										fHitOffsetZ = 0.0001; //So we trigger a widget.
 									}
 
-									i_switch_group_tab = 1; //Display "current objects" tab.
+									SelTools::setNextTabToShow(SelTools::eTabs::Selected);
 								}
 							}
 							else
@@ -23013,6 +23025,9 @@ void gridedit_mapediting ( void )
 											fLastRubberBandX1 = 0;
 											fLastRubberBandY2 = 0;
 											fLastRubberBandY1 = 0;
+
+											// reset the selection mode
+											SelModes::switchMode(SelModes::Normal);
 
 											CreateNewGroup(-1);
 											bCreateNewGroupOnNextDrop = false;

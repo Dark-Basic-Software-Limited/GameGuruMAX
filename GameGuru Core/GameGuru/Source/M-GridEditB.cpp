@@ -18,6 +18,7 @@
 #include "Nlohmann JSON/json.hpp"
 #include "M-RPG.h"
 #include "M-Workshop.h"
+#include "Selecting.h"
 
 // for improved performance debug view
 #include <cctype>   // isspace, isdigit
@@ -215,7 +216,6 @@ extern int iObjectMoveModeDropSystem;
 extern int iObjectMoveModeDropSystemUsing;
 extern bool bObjectAllowOverlapping;
 extern float fDebug, fDebug1, fDebug2, fDebug3;
-extern int i_switch_group_tab;
 extern int current_selected_group;
 extern bool group_editing_on;
 extern bool bCreateNewGroupOnNextDrop;
@@ -3471,26 +3471,7 @@ void AddPayLoad(ImGuiPayload* payload, bool addtocursor)
 							if (iAnchorEntityIndex == -1 || bLowestFound) iAnchorEntityIndex = t.e;
 
 							// and add to new rubber band group
-							sRubberBandType rubberbandItem;
-							rubberbandItem.e = t.e;
-							rubberbandItem.x = t.entityelement[t.e].x;
-							rubberbandItem.y = t.entityelement[t.e].y;
-							rubberbandItem.z = t.entityelement[t.e].z;
-							rubberbandItem.px = t.entityelement[t.e].x;
-							rubberbandItem.py = t.entityelement[t.e].y;
-							rubberbandItem.pz = t.entityelement[t.e].z;
-							rubberbandItem.rx = t.entityelement[t.e].rx;
-							rubberbandItem.ry = t.entityelement[t.e].ry;
-							rubberbandItem.rz = t.entityelement[t.e].rz;						
-							rubberbandItem.quatmode = t.entityelement[t.e].quatmode;
-							rubberbandItem.quatx = t.entityelement[t.e].quatx;
-							rubberbandItem.quaty = t.entityelement[t.e].quaty;
-							rubberbandItem.quatz = t.entityelement[t.e].quatz;
-							rubberbandItem.quatw = t.entityelement[t.e].quatw;
-							rubberbandItem.scalex = t.entityelement[t.e].scalex;
-							rubberbandItem.scaley = t.entityelement[t.e].scaley;
-							rubberbandItem.scalez = t.entityelement[t.e].scalez;
-							g.entityrubberbandlist.push_back(rubberbandItem);
+							gridedit_addEntityToRubberBandList(t.e);
 							centerx += gsx * 1.05f;
 						}
 					}
@@ -21977,26 +21958,7 @@ void AddGroupListToRubberBand(int l)
 			}
 			if (!found)
 			{
-				sRubberBandType rubberbandItem;
-				rubberbandItem.e = e;
-				rubberbandItem.x = t.entityelement[e].x;
-				rubberbandItem.y = t.entityelement[e].y;
-				rubberbandItem.z = t.entityelement[e].z;
-				rubberbandItem.px = t.entityelement[e].x;
-				rubberbandItem.py = t.entityelement[e].y;
-				rubberbandItem.pz = t.entityelement[e].z;
-				rubberbandItem.rx = t.entityelement[e].rx;
-				rubberbandItem.ry = t.entityelement[e].ry;
-				rubberbandItem.rz = t.entityelement[e].rz;			
-				rubberbandItem.quatmode = t.entityelement[e].quatmode;
-				rubberbandItem.quatx = t.entityelement[e].quatx;
-				rubberbandItem.quaty = t.entityelement[e].quaty;
-				rubberbandItem.quatz = t.entityelement[e].quatz;
-				rubberbandItem.quatw = t.entityelement[e].quatw;
-				rubberbandItem.scalex = t.entityelement[e].scalex;
-				rubberbandItem.scaley = t.entityelement[e].scaley;
-				rubberbandItem.scalez = t.entityelement[e].scalez;
-				g.entityrubberbandlist.push_back(rubberbandItem);
+				gridedit_addEntityToRubberBandList(e);
 			}
 		}
 	}
@@ -22345,26 +22307,7 @@ int DuplicateFromListToCursor(std::vector<sRubberBandType> vEntityDuplicateList,
 			t.entityelement[t.e].creationOfGroupID = iUniqueGroupID;
 
 			// and add to new rubber band group
-			sRubberBandType rubberbandItem;
-			rubberbandItem.e = t.e;
-			rubberbandItem.x = t.entityelement[t.e].x;
-			rubberbandItem.y = t.entityelement[t.e].y;
-			rubberbandItem.z = t.entityelement[t.e].z;
-			rubberbandItem.px = t.entityelement[t.e].x;
-			rubberbandItem.py = t.entityelement[t.e].y;
-			rubberbandItem.pz = t.entityelement[t.e].z;
-			rubberbandItem.rx = t.entityelement[t.e].rx;
-			rubberbandItem.ry = t.entityelement[t.e].ry;
-			rubberbandItem.rz = t.entityelement[t.e].rz;
-			rubberbandItem.quatmode = t.entityelement[t.e].quatmode;
-			rubberbandItem.quatx = t.entityelement[t.e].quatx;
-			rubberbandItem.quaty = t.entityelement[t.e].quaty;
-			rubberbandItem.quatz = t.entityelement[t.e].quatz;
-			rubberbandItem.quatw = t.entityelement[t.e].quatw;
-			rubberbandItem.scalex = t.entityelement[t.e].scalex;
-			rubberbandItem.scaley = t.entityelement[t.e].scaley;
-			rubberbandItem.scalez = t.entityelement[t.e].scalez;
-			g.entityrubberbandlist.push_back(rubberbandItem);
+			gridedit_addEntityToRubberBandList(t.e);
 		}
 
 		// clone all the logic connections
@@ -22777,7 +22720,7 @@ void CreateNewGroup(int iParentGroupID, bool bSnapshotGroupThumb, cstr GroupName
 				if (sEntityGroupListName[current_selected_group].Len() == 0)
 				{
 					// Display group tab only for non smart objects
-					i_switch_group_tab = 2;
+					SelTools::setNextTabToShow(SelTools::eTabs::Groups);
 				}
 			}
 		}
@@ -30395,6 +30338,21 @@ void DragCameraMovement(void)
 	#endif
 }
 
+// TODO: move to namespace ImGui
+bool ImGui_modalWinActive(void)
+{
+	// check if a modal window is active
+	ImGuiContext& g = *GImGui; //ImGui::GetCurrentContext();
+	bool modalActive = false;
+	if (g.OpenPopupStack.Size > 0)
+	{
+		ImGuiWindow* popup = g.OpenPopupStack.back().Window;
+		if (popup && (popup->Flags & ImGuiWindowFlags_Modal))
+			modalActive = true;
+	}
+	return modalActive;
+}
+
 void MouseLeftDragXZPanning(void)
 {
 	static int iActivateCount = 0;
@@ -30406,8 +30364,23 @@ void MouseLeftDragXZPanning(void)
 		bool bOkayToGo = false;
 		static bool bOverLockedObject = false;
 		if (bPanningActive == true) bOkayToGo = true;
-		if (t.onedrag == 0 && bPanningActive == false && pref.iDragCameraMovement && t.ebe.on == 0 && t.inputsys.xmouse != 500000 && t.grideditselect == 5 && t.gridentity == 0 && t.widget.activeObject == 0 && t.inputsys.keyshift == 0 && t.inputsys.keycontrol == 0 && bDotObjectDragging==false ) bOkayToGo = true;
+
+		if (t.onedrag == 0
+			&& bPanningActive == false 
+			&& pref.iDragCameraMovement 
+			&& t.ebe.on == 0 
+			&& t.inputsys.xmouse != 500000 
+			&& t.grideditselect == 5 
+			&& t.gridentity == 0 
+			&& t.widget.activeObject == 0 
+			&& t.inputsys.keyshift == 0 
+			&& t.inputsys.keycontrol == 0 
+			&& bDotObjectDragging==false
+			&& !ImGui_modalWinActive() // test last, to avoid call if unnecessary. This prevents panning while modal window open.
+		)
+			bOkayToGo = true;
 		if(bOverLockedObject) bOkayToGo = false;
+
 		if (ImGui::IsMouseDown(0) && bOkayToGo == true)
 		{
 			//PE: Give priority to object selection
@@ -50888,18 +50861,34 @@ void HandleObjectDeletion()
 					t.tentitytoselect = 0;
 				}
 			}
-			if (t.inputsys.keyspace == 0) t.inputsys.spacekeynotreleased = 0;
+			if (t.inputsys.spacekeynotreleased == 1)
+			{
+				if (t.inputsys.keyspace == 0)
+					t.inputsys.spacekeynotreleased = 0;
+			}
+			// space key can be used to end selection of multiple entities in rubber band mode
 			if (t.inputsys.keyspace == 1 && t.inputsys.rubberbandmode == 0 && t.inputsys.spacekeynotreleased == 0)
 			{
-				// end selection when press SPACE
-				gridedit_clearentityrubberbandlist();
-				t.widget.pickedEntityIndex = 0;
-				if (t.widget.pickedObject > 0)
+				if (SelModes::allowedTypesIsEmpty())
 				{
-					t.widget.pickedObject = 0;
-					widget_updatewidgetobject();
+					// on second press of spacebar, end selection (or first press, if already empty)
+ 					gridedit_clearentityrubberbandlist();
+					t.widget.pickedEntityIndex = 0;
+					if (t.widget.pickedObject > 0)
+					{
+						t.widget.pickedObject = 0;
+						widget_updatewidgetobject();
+					}
+					t.tentitytoselect = 0;
+					SelModes::switchMode(SelModes::Normal);
 				}
-				t.tentitytoselect = 0;
+				else
+				{
+					// on first press of spacebar, clear the list
+					SelTools::setNextTabToShow(SelTools::eTabs::Modes);
+					SelModes::clearAllowedTypesAndSelections();
+					t.inputsys.spacekeynotreleased = 1; // prevent immediate repeat of space key for this block
+				}
 			}
 		}
 	}

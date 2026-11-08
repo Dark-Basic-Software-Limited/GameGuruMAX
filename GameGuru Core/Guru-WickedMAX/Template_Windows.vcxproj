@@ -569,6 +569,7 @@
     <ClInclude Include="..\GameGuru\Include\M-Workshop.h" />
     <ClInclude Include="..\GameGuru\Include\miniz.h" />
     <ClInclude Include="..\GameGuru\Include\preprocessor-moreflags.h" />
+    <ClInclude Include="..\GameGuru\Include\Selecting.h" />
     <ClInclude Include="..\GameGuru\Include\Types.h" />
     <ClInclude Include="..\GameGuru\WickedPlaceholders\GGPlaceholders.h" />
     <ClInclude Include="..\SDK\OpenXR\include\openxr.h" />
@@ -747,6 +748,7 @@
     <ClCompile Include="..\GameGuru\Source\M-Widget.cpp" />
     <ClCompile Include="..\GameGuru\Source\M-Workshop.cpp" />
     <ClCompile Include="..\GameGuru\Source\miniz.c" />
+    <ClCompile Include="..\GameGuru\Source\Selecting.cpp" />
     <ClCompile Include="..\GameGuru\Source\sha1.cpp" />
     <ClCompile Include="..\GameGuru\Source\sha2.cpp" />
     <ClCompile Include="..\GameGuru\Source\Types.cpp" />
