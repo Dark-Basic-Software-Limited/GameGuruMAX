@@ -7354,20 +7354,8 @@ void mapeditorexecutable_loop(void)
 								float fOldActiveObjectX = ObjectPositionX(iActiveObj);
 								float fOldActiveObjectY = ObjectPositionY(iActiveObj);
 								float fOldActiveObjectZ = ObjectPositionZ(iActiveObj);
-								if (iEntityInGroupList >= 0)
-								{
-									//Add all groups with entity to rubberband.
-									CheckGroupListForRubberbandSelections(t.ttte);
-								}
-								else if (g.entityrubberbandlist.size() > 0)
-								{
-									//Make sure all groups is selected from within rubberband selecting.
-									for (int i = 0; i < (int)g.entityrubberbandlist.size(); i++)
-									{
-										int e = g.entityrubberbandlist[i].e;
-										CheckGroupListForRubberbandSelections(e);
-									}
-								}
+
+								CheckGroupListForRubberbandSelectionsForAllEntities(iEntityInGroupList, t.ttte);
 
 								// move the target entity
 								PositionObject(iActiveObj, fPos[0], fPos[1], fPos[2]);
@@ -7406,20 +7394,7 @@ void mapeditorexecutable_loop(void)
 							}
 							if (!bReadOnlyMode && bUpdateRoataion)
 							{
-								if (iEntityInGroupList >= 0)
-								{
-									//Add all groups with entity to rubberband.
-									CheckGroupListForRubberbandSelections(t.ttte);
-								}
-								else if (g.entityrubberbandlist.size() > 0)
-								{
-									//Make sure all groups is selected from within rubberband selecting.
-									for (int i = 0; i < (int)g.entityrubberbandlist.size(); i++)
-									{
-										int e = g.entityrubberbandlist[i].e;
-										CheckGroupListForRubberbandSelections(e);
-									}
-								}
+								CheckGroupListForRubberbandSelectionsForAllEntities(iEntityInGroupList, t.ttte);
 
 								// rotate the target entity now (one way euler values)
 								int iObj = iActiveObj;
@@ -7487,20 +7462,7 @@ void mapeditorexecutable_loop(void)
 								t.entityelement[t.ttte].scaley = ObjectScaleY(iActiveObj) - 100.0;
 								t.entityelement[t.ttte].scalez = ObjectScaleZ(iActiveObj) - 100.0;
 
-								if (iEntityInGroupList >= 0)
-								{
-									//Add all groups with entity to rubberband.
-									CheckGroupListForRubberbandSelections(t.ttte);
-								}
-								else if (g.entityrubberbandlist.size() > 0)
-								{
-									//Make sure all groups is selected from within rubberband selecting.
-									for (int i = 0; i < (int)g.entityrubberbandlist.size(); i++)
-									{
-										int e = g.entityrubberbandlist[i].e;
-										CheckGroupListForRubberbandSelections(e);
-									}
-								}
+								CheckGroupListForRubberbandSelectionsForAllEntities(iEntityInGroupList, t.ttte);
 
 								// if we need to also scale rubber band highlighted objects, do so now
 								if (g.entityrubberbandlist.size() > 0)
@@ -19396,20 +19358,8 @@ void editor_mainfunctionality ( void )
 					{
 						//PE: Make sure all groups are selected.
 						int group = isEntityInGroupList(t.widget.pickedEntityIndex);
-						if (group >= 0)
-						{
-							//Add all groups with entity to rubberband.
-							CheckGroupListForRubberbandSelections(t.widget.pickedEntityIndex);
-						}
-						else if (g.entityrubberbandlist.size() > 0)
-						{
-							//Make sure all groups is selected from within rubberband selecting.
-							for (int i = 0; i < (int)g.entityrubberbandlist.size(); i++)
-							{
-								int e = g.entityrubberbandlist[i].e;
-								CheckGroupListForRubberbandSelections(e);
-							}
-						}
+
+						CheckGroupListForRubberbandSelectionsForAllEntities(group, t.widget.pickedEntityIndex);
 					}
 					//  avoid interference from terrain/entity mode change
 					GGQUATERNION quatRotationEvent = { 0,0,0,0 };
