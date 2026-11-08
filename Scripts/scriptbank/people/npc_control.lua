@@ -1,5 +1,5 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- NPC Control v95 by Necrym59 and Lee
+-- NPC Control v96 by Necrym59 and Lee
 -- DESCRIPTION: The attached NPC will be controlled by this behavior.
 -- DESCRIPTION: [SENSE_TEXT$="Who's that ..an intruder??"]
 -- DESCRIPTION: [SENSE_RANGE=500(0,2000)]
@@ -1300,6 +1300,7 @@ function npc_control_main(e)
 end
 
 function npc_control_preexit(e)
+	SetPreExitValue(e,1) -- keep calling preexit until the death animation ends
 	if g_Entity[e]['animating'] == 0 then
 		SetEntityHealth(e,0)
 		SetPreExitValue(e,2) -- when we set this to two, we instruct the engine to stop calling preexit and go to _exit
