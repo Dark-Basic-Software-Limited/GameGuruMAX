@@ -35,6 +35,7 @@ g_gameplayercontrol_lastTimeMoved=123
 g_gameplayercontrol_powerjump=0
 g_swimimpulsetimer = 0
 g_swimeffects = 0
+g_underwatersoundon = 0
 g_VRswitchweapondelay = 0
 g_vrthumbx = 0
 g_vrthumby = 0
@@ -1496,6 +1497,36 @@ local function AddShake( timeNow )
 	SetGamePlayerStateShakeZ( shakez )
 end
 
+-- plays only while the head is under, and stops wherever the player stops being under
+function gameplayercontrol.underwatersound(on)
+	local underwaterSound = GetGamePlayerControlSoundStartIndex()+34
+	if (RawSoundExist(underwaterSound) == 1) then
+		if (on == 1) then
+			if (RawSoundPlaying(underwaterSound) == 0) then
+				LoopRawSound(underwaterSound)
+			end
+			g_underwatersoundon = 1
+		elseif (g_underwatersoundon == 1) then
+			StopRawSound(underwaterSound)
+			g_underwatersoundon = 0
+		end
+	end
+end
+
+-- the ambient track and exit sound come back on any way out of the water
+function gameplayercontrol.leftunderwater()
+	if ( g_prevunderwater == 1 ) then
+		StartAmbientMusicTrack()
+		local exitSound = GetGamePlayerControlSoundStartIndex()+14
+		if ( RawSoundExist ( exitSound ) == 1 ) then
+			if ( RawSoundPlaying ( exitSound ) == 0 ) then
+				PlayRawSound ( exitSound )
+			end
+		end
+		g_prevunderwater = 0
+	end
+end
+
 function gameplayercontrol.control()
 
 	local timeNow = g_Time
@@ -1926,6 +1957,7 @@ function gameplayercontrol.control()
    -- drowning
    if ( g_PlayerHealth == 0 or GetGamePlayerStateEditModeActive() ~= 0 or GetGamePlayerStateNoWater() == 1 ) then 
       ResetUnderwaterState()
+      gameplayercontrol.underwatersound(0)
       ---return
    end
 	
@@ -2019,12 +2051,6 @@ function gameplayercontrol.control()
 		 
 			-- going under water
 			if ( camY <= waterThreshold) then 
-				local underwaterSound = GetGamePlayerControlSoundStartIndex()+34
-				if (RawSoundExist(underwaterSound) == 1) then
-					if(RawSoundPlaying(underwaterSound) == 0) then
-						LoopRawSound(underwaterSound)
-					end
-				end
 				-- head goes under water
 				if ( GetGamePlayerControlInWaterState() < 2 ) then 
 					SetGamePlayerControlInWaterState(2)
@@ -2050,6 +2076,9 @@ function gameplayercontrol.control()
 					end
 				end
 				if ( camY <= waterThreshold - 20) then
+					if ( g_PlayerHealth > 0 ) then
+						gameplayercontrol.underwatersound(1)
+					end
 					g_prevunderwater = 1
 					StopAmbientMusicTrack()
 					-- if g_PlayerUnderwaterMode == 1 lose 1 health per second until dead , else 50 health 
@@ -2104,22 +2133,10 @@ function gameplayercontrol.control()
 					SetGamePlayerControlDrownTimestamp(Timer()+8000)
 					
 					-- End underwater ambient sounds.
-					local underwaterSound = GetGamePlayerControlSoundStartIndex()+34
-					if (RawSoundExist(underwaterSound) == 1) then
-						StopRawSound(underwaterSound)
-					end
+					gameplayercontrol.underwatersound(0)
 					
 					-- play exit underwater sound
-					if( g_prevunderwater == 1) then
-						StartAmbientMusicTrack()
-						ttsnd = GetGamePlayerControlSoundStartIndex()+14
-						if ( RawSoundExist ( ttsnd ) == 1 ) then
-							if(RawSoundPlaying(ttsnd) == 0) then
-								PlayRawSound ( ttsnd )
-							end
-						end
-						g_prevunderwater = 0
-					end
+					gameplayercontrol.leftunderwater()
 					
 					if(g_swimimpulsetimer == 0) then
 						local swimSound = GetGamePlayerControlSoundStartIndex()+35+math.random(0,3)
@@ -2150,6 +2167,8 @@ function gameplayercontrol.control()
 				
 			else
 				-- head comes out of water
+				gameplayercontrol.underwatersound(0)
+				gameplayercontrol.leftunderwater()
 				if ( GetGamePlayerControlInWaterState() > 1 ) then 
 					SetGamePlayerControlInWaterState(1)
 					SetGamePlayerControlDrownTimestamp(0)
@@ -2160,6 +2179,7 @@ function gameplayercontrol.control()
 			end
 		else
 			-- climb out of water
+			gameplayercontrol.underwatersound(0)
 			if ( GetGamePlayerControlInWaterState() > 0 ) then 
 				ttsnd = GetGamePlayerControlSoundStartIndex()+14
 				if ( RawSoundExist ( ttsnd ) == 1 ) then
@@ -2170,8 +2190,11 @@ function gameplayercontrol.control()
 				g_gravitymode = 0
 				g_gravitymoderefresh = 1
 			end
+			gameplayercontrol.leftunderwater()
 		end
 	else
+      gameplayercontrol.underwatersound(0)
+      gameplayercontrol.leftunderwater()
       SetGamePlayerControlInWaterState(0)
       SetUnderwaterOff()
 	  g_gravitymode = 0
