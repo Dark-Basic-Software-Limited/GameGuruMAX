@@ -40122,7 +40122,7 @@ void process_storeboard(bool bInitOnly)
 		//ImGuiWindowFlags_MenuBar , ImGuiWindowFlags_NoTitleBar, ImGuiWindowFlags_NoBringToFrontOnFocus
 		if (bModal)
 		{
-			bPopModalStoryboard = ImGui::BeginPopupModal("##StoryboardWindow", &bStoryboardWindow, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoResize); // ImGuiWindowFlags_NoScrollbar
+			bPopModalStoryboard = ImGui::BeginPopupModal("##StoryboardWindow", &bStoryboardWindow, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
 		}
 		else
 		{
@@ -40130,7 +40130,7 @@ void process_storeboard(bool bInitOnly)
 			style_winback.w = 1.0f;
 			ImGui::PushStyleColor(ImGuiCol_WindowBg, style_winback);
 			int flags = ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove;
-			if (!bScreen_Editor_Window) flags |= ImGuiWindowFlags_MenuBar;
+			if (!bScreen_Editor_Window) flags |= ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse;
 			bPopModalStoryboard = ImGui::Begin("##StoryboardWindow", &bStoryboardWindow, flags); // ImGuiWindowFlags_NoScrollbar
 		}
 		if (bPopModalStoryboard)
@@ -41258,6 +41258,9 @@ void process_storeboard(bool bInitOnly)
 				}
 
 				ImGui::NextColumn();
+
+				// Keep sidebar overflow local; the storyboard canvas and header stay fixed.
+				ImGui::BeginChild("##StoryboardSidebar", ImVec2(0, 0), false);
 
 				const ImNodesEditorContext& editor = ImNodes::EditorContextGet();
 				if (gImNodes->HoveredPinIdx.HasValue() && gImNodes->HoveredPinIdx.Value() >= 0)
@@ -42903,11 +42906,7 @@ void process_storeboard(bool bInitOnly)
 				// insert a keyboard shortcut component into panel
 				UniversalKeyboardShortcut(eKST_Storyboard);
 
-				if (ImGui::GetCurrentWindow()->ScrollbarSizes.x > 0) {
-					//Hitting exactly at the botton could cause flicker, so add some additional lines when scrollbar on.
-					ImGui::Text("");
-					ImGui::Text("");
-				}
+				ImGui::EndChild();
 
 				ImGui::Columns(1);
 			}

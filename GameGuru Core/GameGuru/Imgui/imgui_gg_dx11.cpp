@@ -9211,15 +9211,12 @@ void UniversalKeyboardShortcut(eKeyboardShortcutType KST)
 		// restore indent
 		ImGui::Indent(-10);
 
-		float fShortcutTextSpacing = 6.6f;
-		//PE: TODO - We need to calcutate wrapping lines also for this to be precise.
-		//PE: We need some additional height when we are using wrapping.
-		if(iContentHeight[KST] <= 5)
-			fLastContentHeight[KST] = (float) (iContentHeight[KST] + 2) * (ImGui::GetFontSize()+ fShortcutTextSpacing);
-		else
-			fLastContentHeight[KST] = (float)(iContentHeight[KST] + 5) * (ImGui::GetFontSize() + fShortcutTextSpacing);
-
-		if (bShowCameraViewShortcuts) fLastContentHeight[KST] += fSectionSpacer;
+		// Use the laid-out bounds, including wrapped labels and section spacing.
+		// Extra estimated rows would make the parent scroll through empty space.
+		const ImGuiWindow* shortcutWindow = ImGui::GetCurrentWindow();
+		fLastContentHeight[KST] = ceilf(
+			shortcutWindow->DC.CursorMaxPos.y - shortcutWindow->DC.CursorStartPos.y
+			+ shortcutWindow->WindowPadding.y * 2.0f);
 
 		// finished panel
 		ImGui::EndChild();
