@@ -38336,45 +38336,7 @@ void process_storeboard(bool bInitOnly)
 			else iDelayLoadFrames--;
 		}
 
-		static int iStoryboardAdvancedChanged = -1;
-
-		if (bInitOnly) iStoryboardAdvancedChanged = -1; //PE: Make sure to reload after new project on welcome screen.
-		if (!bInitOnly)
-		{
-			if (!bStoryboardInitNodes)
-			{
-				iStoryboardAdvancedChanged = pref.iStoryboardAdvanced;
-			}
-			if (iStoryboardAdvancedChanged != pref.iStoryboardAdvanced)
-			{
-				//PE: If we get a change we must reload the project.
-				if (strlen(Storyboard.gamename) > 0)
-				{
-					load_storyboard(Storyboard.gamename);
-					iGamePausedNodeID = storyboard_add_missing_nodex(8, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iLoadGameNodeID = storyboard_add_missing_nodex(3, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iSaveGameNodeID = storyboard_add_missing_nodex(9, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iGraphicsNodeID = storyboard_add_missing_nodex(10, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iSoundsNodeID = storyboard_add_missing_nodex(11, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iControlNodeID = storyboard_add_missing_nodex(12, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					iLoadingScreenNodeID = storyboard_add_missing_nodex(2, preview_size_x, fNodeWidth, fNodeHeight + 20.0, false);
-					
-				}
-				else
-				{
-					//We got a empty level , setup everything again.
-					bStoryboardInitNodes = false; //Just init again.
-					bStoryboardFirstRunSetInitPos = false;
-					strcpy(pref.cLastUsedStoryboardProject, "");
-					bTriggerSaveAsAfterNewLevel = true;
-					bTriggerSaveAs = true;
-					strcpy(SaveProjectAsName, "");
-					strcpy(SaveProjectAsError, "");
-				}
-				iStoryboardAdvancedChanged = pref.iStoryboardAdvanced;
-			}
-		}
-
+		// Advanced mode only filters the view; project loading owns node initialization.
 		storeboard_init_nodes(preview_size_x, fNodeWidth, fNodeHeight+20.0);
 
 		if (bInitOnly) return;
@@ -40303,8 +40265,12 @@ void process_storeboard(bool bInitOnly)
 
 					if (bValid && Storyboard.Nodes[i].used)
 					{
-						//PE: Store current location for restore/save.
-						if (bStoryboardFirstRunSetInitPos)
+						// ImNodes removes nodes that were not submitted in the previous frame.
+						// Restore newly visible nodes without reloading the project or its textures.
+						const ImNodesEditorContext& editor = ImNodes::EditorContextGet();
+						if (editor.Nodes.IdMap.GetInt(Storyboard.Nodes[i].id, -1) == -1)
+							ImNodes::SetNodeGridSpacePos(Storyboard.Nodes[i].id, Storyboard.Nodes[i].restore_position);
+						else if (bStoryboardFirstRunSetInitPos)
 							Storyboard.Nodes[i].restore_position = ImNodes::GetNodeGridSpacePos(Storyboard.Nodes[i].id);
 
 						//PE: Setup node.
