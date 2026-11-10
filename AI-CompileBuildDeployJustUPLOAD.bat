@@ -1,5 +1,0 @@
-echo Run Steam deploy script to send DEPLOY Area files to Steam ONLY
-C:
-cd "C:\Dropbox\MAXMASTER\Steam Upload\Steamworks SDK\tools\ContentBuilder"
-call "UPDATE JUST MAX FOR EARLYTEST.bat"
-exit /p
