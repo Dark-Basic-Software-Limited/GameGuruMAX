@@ -1,4 +1,5 @@
 echo off
+if defined CLAUDECODE (echo This is Lee's manual release script - run it yourself, not through Claude Code. & exit /b 1)
 echo ---
 echo ==========================================================
 echo Script to compile MAX, Handle build files, Deploy to Steam
@@ -50,17 +51,19 @@ set SOLUTION_PATH="D:\DEV\GAMEGURUMAXREPO\GameGuru Core\GameGuruWickedMAX.sln"
 set CONFIGURATION=ReleaseForSteam
 set PLATFORM=x64
 %MSBUILD_PATH% %SOLUTION_PATH% /p:Configuration=%CONFIGURATION% /p:Platform=%PLATFORM%
+rem Capture the MSBuild result BEFORE restoring the placeholder keys (UseNONE must always run).
+set BUILD_RC=%ERRORLEVEL%
 call "UseNONE.bat"
-if %ERRORLEVEL% neq 0 (
+if not "%BUILD_RC%"=="0" (
     echo.
     color 4F
     echo =====================================
     echo          BUILD FAILED!
-    echo       Exit Code: %ERRORLEVEL%
+    echo       Exit Code: %BUILD_RC%
     echo =====================================
     timeout /t 5 >nul
     color 07
-    exit /b %ERRORLEVEL%
+    exit /b %BUILD_RC%
 )
 cd /d "%OLD_DIR%"
 endlocal
@@ -78,6 +81,11 @@ echo Using timestamp: %timestamp%
 set "targetDir=D:\DEV\BUILDS\GameGuru Wicked MAX PDBs"
 copy "%sourceFile%" "%targetDir%\GameGuruMAX_%timestamp%.exe"
 copy "D:\DEV\BUILDS\GameGuru Wicked MAX Build Area\Max\GameGuruMAX.pdb" "%targetDir%\GameGuruMAX_%timestamp%.pdb"
+rem Share the pair with other pipeline operators' crash triage (only if the shared folder exists)
+if exist "C:\Dropbox\MAXMASTER\PDBs\Official\" (
+    copy "%sourceFile%" "C:\Dropbox\MAXMASTER\PDBs\Official\GameGuruMAX_%timestamp%.exe"
+    copy "D:\DEV\BUILDS\GameGuru Wicked MAX Build Area\Max\GameGuruMAX.pdb" "C:\Dropbox\MAXMASTER\PDBs\Official\GameGuruMAX_%timestamp%.pdb"
+)
 echo .
 
 echo Update VERSION.INI to reflect the exact EXE/PDB pair with its correct version/date number
@@ -120,9 +128,11 @@ setlocal EnableDelayedExpansion
 set "folderA=%~1"
 set "folderB=%~2"
 echo Now checking %folderA%
+rem Only copy a BUILD-area script back when it is NEWER than the repo copy (/d), so freshly pulled
+rem repo fixes (e.g. AI pipeline fixes merged from ai-fixes) are never overwritten by an older build-area file.
 for %%F in ("%folderA%\*") do (
-	if exist %folderB%\%%~nxF (
-		xcopy "%%~fF" "%folderB%\%%~nxF" /y		
+	if exist "%folderB%\%%~nxF" (
+		xcopy "%%~fF" "%folderB%\%%~nxF" /y /d
 	)
 )
 endlocal

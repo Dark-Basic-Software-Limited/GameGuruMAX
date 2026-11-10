@@ -1,0 +1,8 @@
+# Release builds temporarily overwrite these tracked placeholder files with private key material.
+# '-diff' makes git print "Binary files differ" instead of their contents, so a swapped key can never be
+# echoed by git diff / show / log -p (in any clone, including AI tooling sessions). Merging is unaffected.
+**/Common-Keys.h -diff
+**/Common-Keys.cpp -diff
+**/Encryptor.h -diff
+**/Encryptor.cpp -diff
+**/DBDLLCoreEncryptCall.cpp -diff

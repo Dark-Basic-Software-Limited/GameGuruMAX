@@ -224,7 +224,6 @@ SharingScripts.zip
 GameGuru Core/SDK/EOS-SDK/Bin
 GameGuru Core/SDK/EOS-SDK/Tools
 GameGuru Core/SDK/EOS-SDK/Include
-
 GameGuru Core/.vs/GameGuruWickedMAX/v17/DocumentLayout.json
 GameGuru Core/SDK/OGG/.vs/ogg_vorbis_static/v17/DocumentLayout.json
 GameGuru Core/CopyBUILDtoSTEAMandUPLOAD.bat
@@ -247,3 +246,13 @@ GameGuru Core/Guru-WickedMAX/Template_Windows.vcxproj.user
 GameGuru Core/Guru-WickedMAX/Wicked-MAX/x64/ReleaseTEST/mipastu medieval.ipdb
 AI-CompileBuildDeployJustUPLOAD.bat
 AI-CompileBuildDeploy.bat
+/tools/ai-pipeline/config.local.json
+/.claude/settings.local.json
+/Directory.Build.props
+/.claude
+AI-CompileBuildDeploy.bat
+CLAUDE.md
+/docs/ai-pipeline
+/docs/bible
+/tools/ai-pipeline
+/tools/bible
