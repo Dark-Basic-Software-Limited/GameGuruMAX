@@ -1,9 +1,9 @@
--- Quest Sequencer v15 by Necrym59
+-- Quest Sequencer v16 by Necrym59
 -- DESCRIPTION: Will sequentially run the next Quest/Mission in order at completion of each.
 -- DESCRIPTION: If a quests Quest Status = END_SEQ then the Quest Sequencer itself is destroyed when completed.
 -- DESCRIPTION: [QUEST_START_TEXT$="Quest Sequence Activated"]
 -- DESCRIPTION: [QUEST_END_TEXT$="Quest Completed"]
--- DESCRIPTION: [@QUEST_READOUT=1(1=Title, 2=Description1)] 
+-- DESCRIPTION: [@QUEST_READOUT=1(1=Title, 2=Description1, 3=Description2, 4=Description3)] 
 -- DESCRIPTION: [@@READOUT_USER_GLOBAL$=""(0=globallist)]] user global name (eg: MyReadout)
 -- DESCRIPTION: [@QuestChoice=1(0=QuestList)]
 -- DESCRIPTION: [@SPAWN_QUEST_OBJECT=1(1=On,2=Off)] when quest accepted.
@@ -141,6 +141,12 @@ function quest_sequencer_main(e)
 			if g_quest_sequence[e].quest_readout == 2 then
 				_G["g_UserGlobal['"..g_quest_sequence[e].readout_user_global.."']"] = g_quest_sequence[e].description1
 			end
+			if g_quest_sequence[e].quest_readout == 3 then
+				_G["g_UserGlobal['"..g_quest_sequence[e].readout_user_global.."']"] = g_quest_sequence[e].description2
+			end
+			if g_quest_sequence[e].quest_readout == 4 then
+				_G["g_UserGlobal['"..g_quest_sequence[e].readout_user_global.."']"] = g_quest_sequence[e].description3
+			end			
 		else
 			_G["g_UserGlobal['"..g_quest_sequence[e].readout_user_global.."']"] = ""
 		end	
