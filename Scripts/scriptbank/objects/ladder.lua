@@ -1,8 +1,8 @@
 -- LUA Script - precede every function and global member with lowercase name of script + '_main'
--- Ladder v27 by Necrym59
+-- Ladder v28 by Necrym59
 -- DESCRIPTION: This script is to be attached to the ladder object? Set ladder object to Physics on, Collision=Box. IsImobile=ON
 -- DESCRIPTION: [DISPLAY_PROMPTS!=1] prompts on/off
--- DESCRIPTION: [PROMPT_TEXT$="W-up S-down, Spacebar-jump off"]
+-- DESCRIPTION: [PROMPT_TEXT$="W-up, S-down, A-left, D-right, Spacebar-jump off"]
 -- DESCRIPTION: [USE_MOUNT_KEY!=0] Use 'E' to mount
 -- DESCRIPTION: [MOUNT_PROMPT$="E to use"] Mount prompt
 -- DESCRIPTION: [#CLIMBING_SPEED=0.7(0.1,3.0)] player climbing speed
@@ -209,6 +209,29 @@ function ladder_main(e)
 			end
 			ladder.state = 'idle'
 		end
+		if g_KeyPressA == 1 then -- 'A' to jump off left
+			StopSound(e,0)
+			PlaySound(e,1)
+			ForcePlayer(g_PlayerAngY - 90, ladders[e].exit_force)
+			mounted = 0
+			if ladder.climb_style == 2 then
+				ChangePlayerWeapon(last_gun)
+				SetPlayerWeapons(1)
+			end
+			ladder.state = 'idle'
+		end
+		if g_KeyPressD == 1 then -- 'D' to jump off right
+			StopSound(e,0)
+			PlaySound(e,1)
+			ForcePlayer(g_PlayerAngY + 90, ladders[e].exit_force)
+			mounted = 0
+			if ladder.climb_style == 2 then
+				ChangePlayerWeapon(last_gun)
+				SetPlayerWeapons(1)
+			end
+			ladder.state = 'idle'
+		end		
+		
 		if g_KeyPressE == 1 and g_Time > ekeypause[e] then -- 'E' used while on ladder
 			ekeypause[e] = g_Time + 1000
 			StopSound(e,0)
