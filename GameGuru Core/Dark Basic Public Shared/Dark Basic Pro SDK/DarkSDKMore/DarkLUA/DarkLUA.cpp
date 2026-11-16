@@ -3899,7 +3899,8 @@ int AICouldSee(lua_State *L )
 	if ( n < 4 ) return 0;
 
 #ifdef WICKEDENGINE
-	// No subsystem for AI in MAX
+	// No subsystem for AI in MAX: answer 0 as the other AI queries do (nothing pushed handed the caller its own 4th argument)
+	lua_pushinteger ( L , 0 );
 #else
 	lua_pushinteger ( L , AICouldSee ( lua_tonumber(L, 1) , lua_tonumber(L, 2) , lua_tonumber(L, 3) , lua_tonumber(L, 4) ) );
 #endif
