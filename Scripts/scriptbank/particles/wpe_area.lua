@@ -25,6 +25,11 @@ function wpe_area_properties(e, wpefile, isactive, offsety, offsetx, offsetz)
 	wpearea[e].offsety = offsety or 0
 	wpearea[e].offsetx = offsetx or 0
 	wpearea[e].offsetz = offsetz or 0
+	-- not shown at start: hide it now, as _main only runs near the player
+	if wpearea[e].isactive == 0 then
+		WParticleEffectVisible(wpearea[e].effectid,0)
+		WParticleEffectAction(wpearea[e].effectid,2)
+	end
 end
 
 function wpe_area_init(e)
