@@ -481,6 +481,45 @@ bool Game_Settings_Window = false;
 bool Logic_Settings_Window = false;
 int iRestoreLastWindow = 0;
 std::vector<sRubberBandType> vEntityLockedList;
+
+// lock or unlock every object in the level (Edit menu)
+void editor_lockallobjects(bool bLock)
+{
+	if (bLock)
+	{
+		for (int e = 1; e < t.entityelement.size(); e++)
+		{
+			if (t.entityelement[e].bankindex <= 0 || t.entityelement[e].editorlock || t.entityelement[e].obj <= 0) continue;
+			sObject* pObject = g_ObjectList[t.entityelement[e].obj];
+			if (!pObject) continue;
+			t.entityelement[e].editorlock = 1;
+			#ifndef ALLOWSELECTINGLOCKEDOBJECTS
+			WickedCall_SetObjectRenderLayer(pObject, GGRENDERLAYERS_CURSOROBJECT);
+			#endif
+			sRubberBandType vEntityLockedItem;
+			vEntityLockedItem.e = e;
+			vEntityLockedList.push_back(vEntityLockedItem);
+		}
+	}
+	else
+	{
+		for (int i = 0; i < vEntityLockedList.size(); i++)
+		{
+			int e = vEntityLockedList[i].e;
+			if (e < 0 || e >= t.entityelement.size()) continue;
+			t.entityelement[e].editorlock = 0;
+			if (t.entityelement[e].obj > 0)
+			{
+				sObject* pObject = g_ObjectList[t.entityelement[e].obj];
+				if (pObject) WickedCall_SetObjectRenderLayer(pObject, GGRENDERLAYERS_NORMAL);
+			}
+		}
+		vEntityLockedList.clear();
+	}
+	// any lock/unlock operations resets, avoids issue of duplcating a static object and unable to 'move' it
+	t.widget.pickedObject = 0;
+	g.projectmodified = 1;
+}
 #define MAXGROUPSLISTS 100
 cstr sEntityGroupListName[MAXGROUPSLISTS];
 std::vector<sRubberBandType> vEntityGroupList[MAXGROUPSLISTS];
@@ -3349,6 +3388,9 @@ void mapeditorexecutable_loop(void)
 				if (ImGui::MenuItem("Delete", "DEL")) {
 					iExecuteCTRLkey = ImGuiKey_Delete;
 				}
+				ImGui::Separator();
+				if (ImGui::MenuItem("Lock All Objects", "")) editor_lockallobjects(true);
+				if (ImGui::MenuItem("Unlock All Objects", "", false, vEntityLockedList.size() > 0)) editor_lockallobjects(false);
 
 
 
