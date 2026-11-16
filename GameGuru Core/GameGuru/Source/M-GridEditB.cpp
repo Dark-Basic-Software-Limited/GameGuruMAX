@@ -52599,6 +52599,11 @@ bool Graphics_Performance_Settings(float fTabColumnWidth, bool bVisualUpdated)
 			if (iGFXMode == 0) visuals_shaderlevels_setlevel(1, true);
 			if (iGFXMode == 1) visuals_shaderlevels_setlevel(3, true);
 			if (iGFXMode == 2) visuals_shaderlevels_setlevel(4, true);
+			// the visuals a save writes take the mode too
+			t.gamevisuals.shaderlevels.entities = t.visuals.shaderlevels.entities;
+			t.gamevisuals.shaderlevels.terrain = t.visuals.shaderlevels.terrain;
+			t.gamevisuals.shaderlevels.vegetation = t.visuals.shaderlevels.vegetation;
+			g.projectmodified = 1;
 		}
 		if (ImGui::IsItemHovered()) ImGui::SetTooltip("Choose the ideal graphics mode for this level, or set custom settings");
 		ImGui::PopItemWidth();
