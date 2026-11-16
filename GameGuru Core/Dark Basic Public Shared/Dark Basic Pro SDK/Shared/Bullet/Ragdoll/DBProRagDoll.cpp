@@ -468,6 +468,8 @@ void DBProRagDoll::Activate()
 
 void DBProRagDoll::ApplyForce(int iLimbNumber, btVector3& Start, btVector3& End, float fForceValue)
 {
+	// no direction, no push (a zero vector gave every bone a NaN impulse)
+	if ((End - Start).length2() < 0.000001f) return;
 	for (int i = 0; i < m_ragDollBoneArray.size(); i++)
 	{
 		btRigidBody* pBody = m_ragDollBoneArray[i]->GetRigidBody();
