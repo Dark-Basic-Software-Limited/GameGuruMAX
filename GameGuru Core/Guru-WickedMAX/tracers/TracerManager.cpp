@@ -267,6 +267,9 @@ namespace Tracers
 #ifdef DISABLETEMP
         return;
 #endif
+        // a streak longer than its shot would slide back through the shooter
+        const float fShotLength = XMVectorGetX(XMVector3Length(XMVectorSubtract(XMLoadFloat3(&end), XMLoadFloat3(&start))));
+        if (max_length > fShotLength) max_length = fShotLength;
         tracers.push_back({ start, end, gameTime, lifeTime, color, glow, scroll ,scaleV, width, max_length, tracerID });
     }
 
