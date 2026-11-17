@@ -816,7 +816,6 @@ void ImGui_RenderLast(void)
 				extern float fEmptyLevelFloorY;
 				extern bool bEmptyLevelGrid;
 
-				flags |= ImGuiWindowFlags_Tooltip;
 				flags |= ImGuiWindowFlags_NoBackground;
 				flags |= ImGuiWindowFlags_NoScrollbar;
 
@@ -838,7 +837,8 @@ void ImGui_RenderLast(void)
 				//ImGui::SetNextWindowPos(viewPortPos + ImVec2(center, menubarsize), ImGuiCond_Always);
 				ImGui::SetNextWindowSize(ImVec2(boxwidth, 50));
 
-				if (ImGui::Begin("##additionalEnableEmptyLevelMode", &bAlwaysOpen, flags))
+				// not in the tooltip layer, which drew it over every window
+				if (ImGui::Begin("##additionalEnableEmptyLevelMode", &bAlwaysOpen, flags & ~ImGuiWindowFlags_Tooltip))
 				{
 					ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, { 2.0f, 2.0f });
 
