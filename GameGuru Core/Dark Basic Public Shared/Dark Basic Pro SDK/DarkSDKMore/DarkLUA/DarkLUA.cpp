@@ -6028,6 +6028,35 @@ int IntersectCore (lua_State* L, int iMode)
 		else
 		{
 			tthitvalue = -1;
+
+			// terrain hit: look for an entity in front of it (modes 0 and 1) and store the point
+			// (trees are tested first, so only a ground hit is sure to be the nearest)
+			extern int g_iODERayTerrainHitTree;
+			float fGroundX = ODEGetRayCollisionX();
+			float fGroundY = ODEGetRayCollisionY();
+			float fGroundZ = ODEGetRayCollisionZ();
+			float fGroundNX = ODEGetRayNormalX();
+			float fGroundNY = ODEGetRayNormalY();
+			float fGroundNZ = ODEGetRayNormalZ();
+			int iNearerHit = 0;
+			if ((iMode == 0 || iMode == 1) && g_iODERayTerrainHitTree == 0)
+			{
+				iNearerHit = IntersectAllEx(g.entityviewstartobj, g.entityviewendobj, fX, fY, fZ, fGroundX, fGroundY, fGroundZ, iIgnoreObjNo, iMode, iIndexInIntersectDatabase, iLifeInMilliseconds, iIgnorePlayerCapsule, true);
+			}
+			if (iNearerHit > 0)
+			{
+				tthitvalue = iNearerHit;
+			}
+			else
+			{
+				g_pGlob->checklist[5].fvaluea = fGroundX;
+				g_pGlob->checklist[5].fvalueb = fGroundY;
+				g_pGlob->checklist[5].fvaluec = fGroundZ;
+				g_pGlob->checklist[6].fvaluea = fGroundNX;
+				g_pGlob->checklist[6].fvalueb = fGroundNY;
+				g_pGlob->checklist[6].fvaluec = fGroundNZ;
+				g_pGlob->checklistqty = 7;
+			}
 		}
 	}
 	bool bFullWickedAccuracy = true;
