@@ -5781,7 +5781,7 @@ void gun_load ( void )
 
 		// Setup gun with smoke images
 		t.num=g.firemodes[t.gunid][t.i].settings.smoke;
-		if (t.num == 0)
+		if (t.num <= 0)
 		{
 			// when settings.smoke is zero, disable the smoke
 			g.firemodes[t.gunid][t.i].settings.smokeimg = 0;
