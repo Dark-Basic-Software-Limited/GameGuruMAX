@@ -211,37 +211,55 @@ void weapon_processanimation ( void )
 void weapon_projectile_init ( void )
 {
 
-	// scan all projectiles in 'projectiletypes' folder
+	// scan the projectile types in the install folder, then the writable folder (as guns do)
 	timestampactivity (0, "Preparing ProjectileTypes");
-	SetDir ( "gamecore" );
-	UnDim ( t.filelist_s );
-	buildfilelist("projectiletypes","");
-	SetDir ( ".." );
-	if ( ArrayCount(t.filelist_s) > 0 ) 
+	cstr pRootDir = GetDir();
+	for (int iProjectilesInTwoFolders = 0; iProjectilesInTwoFolders < 2; iProjectilesInTwoFolders++)
 	{
-		timestampactivity (0, "Loading ProjectileTypes");
-		for ( t.chkfile = 0 ; t.chkfile <= ArrayCount(t.filelist_s); t.chkfile++ )
+		if (iProjectilesInTwoFolders == 1)
 		{
-			t.file_s = t.filelist_s[t.chkfile];
-			timestampactivity (0, t.file_s.Get());
-			if ( t.file_s != "." && t.file_s != ".." )
+			// writable folder - switch to it
+			char pathToUse[MAX_PATH];
+			strcpy(pathToUse, pRootDir.Get());
+			GG_GetRealPath(pathToUse, 0);
+			SetDir(pathToUse);
+		}
+		UnDim ( t.filelist_s );
+		if ( PathExist("gamecore") == 1 )
+		{
+			SetDir ( "gamecore" );
+			buildfilelist("projectiletypes","");
+			SetDir ( ".." );
+		}
+
+		// the loader reads its files relative to the root folder
+		SetDir(pRootDir.Get());
+		if ( ArrayCount(t.filelist_s) > 0 )
+		{
+			timestampactivity (0, "Loading ProjectileTypes");
+			for ( t.chkfile = 0 ; t.chkfile <= ArrayCount(t.filelist_s); t.chkfile++ )
 			{
-				if ( cstr(Lower(Right(t.file_s.Get(),4))) == ".txt" ) 
+				t.file_s = t.filelist_s[t.chkfile];
+				timestampactivity (0, t.file_s.Get());
+				if ( t.file_s != "." && t.file_s != ".." )
 				{
-					// get folder name only
-					char pPathOnly[1024];
-					strcpy ( pPathOnly, t.file_s.Get() );
-					for ( int n = strlen(pPathOnly); n > 0; n-- )
+					if ( cstr(Lower(Right(t.file_s.Get(),4))) == ".txt" )
 					{
-						if ( pPathOnly[n] == '\\' || pPathOnly[n] == '/' )
+						// get folder name only
+						char pPathOnly[1024];
+						strcpy ( pPathOnly, t.file_s.Get() );
+						for ( int n = strlen(pPathOnly); n > 0; n-- )
 						{
-							pPathOnly[n] = 0;
-							break;
+							if ( pPathOnly[n] == '\\' || pPathOnly[n] == '/' )
+							{
+								pPathOnly[n] = 0;
+								break;
+							}
 						}
+						t.tProjectileName_s = pPathOnly;
+						timestampactivity (0, t.tProjectileName_s.Get());
+						weapon_projectile_load ( );
 					}
-					t.tProjectileName_s = pPathOnly;
-					timestampactivity (0, t.tProjectileName_s.Get());
-					weapon_projectile_load ( );
 				}
 			}
 		}
