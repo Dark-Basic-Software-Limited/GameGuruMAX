@@ -6358,6 +6358,8 @@ void GetMainEntityList(char* folder_s, char* rel_s, void *pFolder, char* folder_
 	}
 }
 
+int g_iEntityFolderRefreshes = 0; // counts refreshes, so a kept file pointer can tell it was freed
+
 void RefreshEntityFolder(char* folder_s, void *pFolder)
 {
 	int tt = 0;
@@ -6374,6 +6376,7 @@ void RefreshEntityFolder(char* folder_s, void *pFolder)
 		int foldertype = pNewFolder->iType;
 
 		//Delete everything inside pNewFolder->m_pFirstFile
+		g_iEntityFolderRefreshes++;
 		cFolderItem::sFolderFiles * m_pnextFiles, *m_pFiles = pNewFolder->m_pFirstFile;
 
 		while (m_pFiles) 
