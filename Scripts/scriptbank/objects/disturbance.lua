@@ -1,26 +1,29 @@
--- Disturbance v1 by Necrym59
+-- Disturbance v2 by Necrym59
 -- DESCRIPTION: The attached object will detect Player and process a selected action and sound
 -- DESCRIPTION: [SENSE_RANGE=90(1,1000)]
 -- DESCRIPTION: [SENSE_TEXT$="Detected"]
 -- DESCRIPTION: [@ACTION_TYPE=1(1=None, 2=Alert)]
 -- DESCRIPTION: [ALERT_RANGE=100(10,3000)]
+-- DESCRIPTION: [SOUND_VOLUME=100[1,100] adjust this zones sounds volume
 -- DESCRIPTION: <Sound0> - Disturbance Sound
 
-local disturbance = {}
-local sense_range = {}
-local sense_text = {}
-local action_type = {}
-local alert_range = {}
+local disturbance 	= {}
+local sense_range 	= {}
+local sense_text 	= {}
+local action_type 	= {}
+local alert_range 	= {}
+local sound_volume 	= {}
 
 local doonce = {}
 local played = {}
 local status = {}
 
-function disturbance_properties(e,sense_range, sense_text, action_type, alert_range)
+function disturbance_properties(e,sense_range, sense_text, action_type, alert_range, sound_volume)
 	disturbance[e].sense_range = sense_range
 	disturbance[e].sense_text = sense_text
 	disturbance[e].action_type = action_type
 	disturbance[e].alert_range = alert_range
+	disturbance[e].sound_volume = sound_volume
 end
 
 function disturbance_init(e)
@@ -28,7 +31,8 @@ function disturbance_init(e)
 	disturbance[e].sense_range = 90
 	disturbance[e].sense_text = "Detected"
 	disturbance[e].action_type = 1
-	disturbance[e].alert_range = 100	
+	disturbance[e].alert_range = 100
+	disturbance[e].sound_volume = 100
 	doonce[e] = 0
 	played[e] = 0
 	status[e] = "init"
@@ -48,7 +52,9 @@ function disturbance_main(e)
 				doonce[e] = 1			
 			end
 			if played[e] == 0 then
-				PlaySound(e,0)
+				PlaySoundIfSilent(e,0)
+				SetSound(e,0)
+				SetSoundVolume(disturbance[e].sound_volume)			
 				played[e] = 1
 			end				
 		end	
@@ -61,7 +67,9 @@ function disturbance_main(e)
 			end
 			MakeAISound(g_PlayerPosX,g_PlayerPosY,g_PlayerPosZ,disturbance[e].alert_range,1,-1)
 			if played[e] == 0 then
-				PlaySound(e,0)
+				PlaySoundIfSilent(e,0)
+				SetSound(e,0)
+				SetSoundVolume(disturbance[e].sound_volume)			
 				played[e] = 1
 			end			
 		end		
