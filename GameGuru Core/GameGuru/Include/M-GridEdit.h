@@ -1,8 +1,10 @@
 //----------------------------------------------------
 //--- GAMEGURU - M-GridEdit
 //----------------------------------------------------
+#pragma once
 
 #include "cstr.h"
+#include <chrono> // only used by DurationMs
 
 // prototypes
 void mapeditorexecutable(void);
@@ -162,3 +164,129 @@ void SetUpdaterWritePathFile(char* sContents);
 
 void loadMarketplaceData(int* ggMaxDlc, cstr* ggMaxLink, int* sketchfabDlc, cstr* sketchfabLink, int* shockwaveDlc, cstr* shockwaveLink,
 						 int* communityDlc, cstr* communityLink, int* gcStoreDlc, cstr* gcStoreImageURL, cstr* gcStoreLink);
+
+///  Elapsed duration
+struct DurationMs
+{
+private:
+	bool m_isPaused = false;
+	long m_pausedDurMs = 0;
+	std::chrono::steady_clock::time_point m_pauseStartMs;
+
+public:
+	std::chrono::steady_clock::time_point startTimeMs;
+	std::chrono::steady_clock::time_point endTimeMs;
+
+	inline bool hasStarted() const
+	{
+		return startTimeMs != std::chrono::steady_clock::time_point{};
+	}
+
+	inline bool hasStopped() const
+	{
+		return endTimeMs != std::chrono::steady_clock::time_point{};
+	}
+
+	inline void start()
+	{
+		reset();
+		startTimeMs = std::chrono::steady_clock::now();
+	}
+
+	// stop() also acts as pause(), allowing for resume()
+	inline void stop()
+	{
+		auto now = std::chrono::steady_clock::now();
+
+		// If paused at end(), finalize pause time
+		if (!m_isPaused)
+		{
+			// only useful if resume() is called again
+			m_pauseStartMs = now;
+			m_isPaused = true;
+		}
+
+		endTimeMs = now;
+	}
+
+	inline void resume()
+	{
+		if (m_isPaused)
+		{
+			auto now = std::chrono::steady_clock::now();
+			m_pausedDurMs += std::chrono::duration_cast<std::chrono::milliseconds>(now - m_pauseStartMs).count();
+			m_isPaused = false;
+		}
+	}
+
+	inline float elapsedMs()
+	{
+		long raw_elapsedMs = std::chrono::duration_cast<std::chrono::milliseconds>(endTimeMs - startTimeMs).count();
+		long elapsedMs_calc = raw_elapsedMs - m_pausedDurMs;
+		return elapsedMs_calc;
+	}
+
+	inline float elapsedSec()
+	{
+		return elapsedMs() / 1000.0f;
+	}
+
+	inline void reset()
+	{
+		m_isPaused = false;
+		m_pausedDurMs = 0;
+		m_pauseStartMs = std::chrono::steady_clock::time_point{};
+
+		startTimeMs = std::chrono::steady_clock::time_point{};
+		endTimeMs = std::chrono::steady_clock::time_point{};
+	}
+};
+
+///  Estimated duration
+struct EstimatedMs
+{
+public:
+	DurationMs timer;
+	int processedCount = 0;
+	int totalCount = 0;
+
+	inline void setProgressCounts(int processedCount_manual, int totalCount_manual)
+	{
+		processedCount = processedCount_manual;
+		totalCount = totalCount_manual;
+	}
+
+	inline void setProgress(int processedCount_manual)
+	{
+		processedCount = processedCount_manual;
+	}
+
+	inline float estimatedTotalSec()
+	{
+		if (processedCount <= 0 || totalCount <= 0)
+			return 0.0;
+
+		float progress = float(processedCount) / float(totalCount);
+
+		if (progress <= 0.0f)
+			return 0.0f;
+
+		return timer.elapsedSec() / progress;
+	}
+
+	inline float estimatedRemainingSec()
+	{
+		float total = estimatedTotalSec();
+		float elapsed = timer.elapsedSec();
+		return (total > elapsed) ? (total - elapsed) : 0.0f;
+	}
+
+	inline float progressPercent() const
+	{
+		if (processedCount <= 0 || totalCount <= 0)
+			return 0.0f;
+
+		float progress = float(processedCount) / float(totalCount);
+		return progress * 100.0f;
+	}
+};

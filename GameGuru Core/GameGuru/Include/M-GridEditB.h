@@ -1,6 +1,7 @@
 //
 // Included by GridEdit and GridEdit B for types and protos common to both
 //
+#pragma once
 
 // Includes
 #include "M-CharacterCreatorPlusTTS.h"
@@ -131,6 +132,7 @@ bool DeleteEntityFromLists(int e);
 int isEntityInGroupList(int e, int ignoregroup = -1);
 int isEntityInGroupListDirect(int e, int group);
 void ReplaceEntityInGroupList(int e, int eto);
+void CheckGroupListForRubberbandSelectionsForAllEntities(int iEntityInGroupList, int entityindex);
 void CheckGroupListForRubberbandSelections(int entityindex);
 void AddGroupListToRubberBand(int l);
 int DuplicateFromListToCursor(std::vector<sRubberBandType> vEntityDuplicateList, bool bRandomShiftXZ = true, int iOriginalGroupIndexForChild = -1, bool bAttachToCursor = true);
