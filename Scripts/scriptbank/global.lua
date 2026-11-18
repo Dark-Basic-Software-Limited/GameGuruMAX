@@ -2661,6 +2661,8 @@ GetTerrainCollisionDetails( objectId, num )
 -- px,py,pz,dx,dy,dz = Convert2DTo3D(ScreenPercentX,ScreenPercentY) -- px,py,pz = 3D Position. dx,dy,dz = 3D Direction for use with IntersectAll or similar calls.
 -- ScreenPosX,ScreenPosY = Convert3DTo2D(x,y,z) -- Convert a 3D positon into 2D screen positions.
 -- ScreenPercentX,ScreenPercentX = ScreenCoordsToPercent(ScreenPosX,ScreenPosY) -- Convert 2D screen positions into screen percentage position.
+-- LoadTracerImage("FileName",ImageID) -- Load a .dds tracer image into ImageID (0-99) for AddTracer. Load it before use: a tracer whose ImageID has no image draws nothing.
+-- AddTracer(x,y,z,tx,ty,tz,lifetime,r,g,b,glow,scrollv,scalev,width,maxlength,ImageID) -- Draw a bullet tracer from x,y,z to tx,ty,tz (all 16 values are needed). lifetime in seconds, r,g,b 0-255, glow brightens it, scrollv and scalev scroll and scale the image along it, width in world units, maxlength the length of the streak that travels from start to end over the lifetime (0 = the whole line at once, fading), ImageID from LoadTracerImage. The stock guns use 0.12, 255,128,25, 10, 0, 1.0, 1.2, 100.
 
 -- Storyboard commands
 -- SetScreenHUDGlobalScale : SetScreenHUDGlobalScale
