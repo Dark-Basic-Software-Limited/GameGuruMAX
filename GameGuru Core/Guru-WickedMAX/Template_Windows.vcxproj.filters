@@ -585,6 +585,9 @@
     <ClInclude Include="CrashLogger.h">
       <Filter>Code</Filter>
     </ClInclude>
+    <ClInclude Include="..\GameGuru\Include\Selecting.h">
+      <Filter>GameGuruEngine\GameGuruSourceCode</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1016,6 +1019,9 @@
     </ClCompile>
     <ClCompile Include="CustomShaders.cpp" />
     <ClCompile Include="..\GameGuru\Source\M-DAINew.cpp">
+      <Filter>GameGuruEngine\GameGuruSourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameGuru\Source\Selecting.cpp">
       <Filter>GameGuruEngine\GameGuruSourceCode</Filter>
     </ClCompile>
   </ItemGroup>
