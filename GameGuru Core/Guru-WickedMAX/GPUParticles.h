@@ -51,6 +51,9 @@ int gpup_deleteEffect( int ID );
 void gpup_deleteAllEffects(void);
 void gpup_setEffectVisible( int ID, int visible );
 int gpup_getEffectVisible ( int ID );
+int gpup_getMaxEffects ( void );
+int gpup_getEffectLoaded ( int ID );
+int gpup_getEmitterActive ( int ID ); // 1 when the emitter spawns particles, 0 not, -1 no such effect
 float gpup_getParticleSpeed(int ID);
 float gpup_getParticleOpacity(int ID);
 float gpup_getParticleSize(int ID);

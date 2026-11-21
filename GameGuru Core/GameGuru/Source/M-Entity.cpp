@@ -8925,7 +8925,13 @@ void newparticle_updateparticleemitter ( newparticletype* pParticle, float fScal
 
 			// switch emitter on or off
 			if (bShowThisParticle == true)
+			{
 				gpup_emitterActive(iParticleEmitter, 1);
+
+				// in a test game, drawn again if the test game's start hid it (newparticle_testgamebegin)
+				if (bImGuiInTestGame == true && gpup_getEffectVisible(iParticleEmitter) == 0)
+					gpup_setEffectVisible(iParticleEmitter, 1);
+			}
 			else
 				gpup_emitterActive(iParticleEmitter, 0);
 
@@ -9033,6 +9039,59 @@ void newparticle_updateparticleemitter ( newparticletype* pParticle, float fScal
 			}
 		}
 	}
+}
+
+// a test game starts with every legacy particle effect the editor made switched off and hidden, then each particle entity
+// set as the game wants it (Show at start of level), so an effect previewed in the editor, or one no entity owns any more,
+// does not burn on in the game; when the test game ends each is put back as it was
+struct sParticleTestGameState
+{
+	int iID;
+	int iActive;
+	int iVisible;
+};
+std::vector<sParticleTestGameState> g_ParticleTestGameStates;
+bool g_bParticleTestGameBegun = false;
+
+void newparticle_testgamebegin ( void )
+{
+	if ( g_bParticleTestGameBegun == false )
+	{
+		g_ParticleTestGameStates.clear();
+		for ( int iID = 0; iID < gpup_getMaxEffects(); iID++ )
+		{
+			if ( gpup_getEffectLoaded(iID) == 0 ) continue;
+			sParticleTestGameState state;
+			state.iID = iID;
+			state.iActive = gpup_getEmitterActive(iID);
+			state.iVisible = gpup_getEffectVisible(iID);
+			g_ParticleTestGameStates.push_back(state);
+			gpup_emitterActive(iID, 0);
+			gpup_setEffectVisible(iID, 0);
+		}
+		g_bParticleTestGameBegun = true;
+	}
+	for ( int e = 1; e <= g.entityelementlist; e++ )
+	{
+		int entid = t.entityelement[e].bankindex;
+		if ( entid > 0 && t.entityprofile[entid].ismarker == 10 )
+		{
+			entity_updateparticleemitter(e);
+		}
+	}
+}
+
+void newparticle_testgameend ( void )
+{
+	for ( int i = 0; i < (int)g_ParticleTestGameStates.size(); i++ )
+	{
+		int iID = g_ParticleTestGameStates[i].iID;
+		if ( gpup_getEffectLoaded(iID) == 0 ) continue;
+		gpup_emitterActive(iID, g_ParticleTestGameStates[i].iActive);
+		gpup_setEffectVisible(iID, g_ParticleTestGameStates[i].iVisible);
+	}
+	g_ParticleTestGameStates.clear();
+	g_bParticleTestGameBegun = false;
 }
 
 void newparticle_deleteparticleemitter( int iParticleEffect )

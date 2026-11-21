@@ -2034,6 +2034,13 @@ int gpup_loadEffectHigh( const char* fl, float x, float y, float z, float s, flo
 	return gpup_loadEffectFile( fl, x, y, z, s, 2.0f, ps );
 }
 
+// whether the emitter of an effect spawns particles (1), or not (0); -1 no such effect
+int gpup_getEmitterActive( int ID )
+{
+	if ( ID < 0 || ID >= gpup_maxeffects ) return -1;
+	return gpup_emitter[ID].emitterActive;
+}
+
 // Activate or deactivate the emitter of a specific effect. 
 void gpup_emitterActive( int ID, int active )
 {
@@ -2484,6 +2491,17 @@ int gpup_getEffectVisible ( int ID )
 {
 	if ( ID < 0 || ID >= gpup_maxeffects ) return 0;
 	return gpup_emitter[ID].effectVisible;
+}
+
+int gpup_getMaxEffects ( void )
+{
+	return gpup_maxeffects;
+}
+
+int gpup_getEffectLoaded ( int ID )
+{
+	if ( ID < 0 || ID >= gpup_maxeffects ) return 0;
+	return gpup_emitter[ID].effectLoaded;
 }
 float gpup_getParticleSpeed(int ID)
 {
