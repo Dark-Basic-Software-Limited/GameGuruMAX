@@ -3619,6 +3619,13 @@ void game_preparelevel ( void )
 	entity_init ( );
 	if ( t.game.runasmultiplayer == 1 ) mp_refresh ( );
 
+	// the editor's legacy particle effects switched off and hidden for a test game, each particle entity as the game wants it
+	if ( t.game.gameisexe == 0 )
+	{
+		extern void newparticle_testgamebegin ( void );
+		newparticle_testgamebegin ( );
+	}
+
 	// Load weapon system
 	t.screenprompt_s = "LOADING NEW WEAPONS";
 	if (t.game.gameisexe == 0)  printscreenprompt(t.screenprompt_s.Get()); else loadingpageprogress(5);

@@ -1679,6 +1679,11 @@ bool commonexecutable_loop_for_game(void)
 				wiProfiler::SetEnabled(true);
 			}
 			editor_previewmap_afterloopcode(0);
+
+			// the editor's legacy particle effects back as they were before the test game
+			extern void newparticle_testgameend ( void );
+			newparticle_testgameend ( );
+
 			mapeditorexecutable_loop_leavetestgame();
 
 			// mapeditor or standalone game
@@ -2461,6 +2466,11 @@ void mapeditorexecutable_loop(void)
 			bImGuiInTestGame = true;
 			RunCode(0); //switch to backbuffer
 			editor_multiplayermode();
+			{
+				// the editor's legacy particle effects back as they were before the game
+				extern void newparticle_testgameend ( void );
+				newparticle_testgameend ( );
+			}
 			bBlockImGuiUntilNewFrame = true;
 			bRenderNextFrame = false;
 			SetCameraToImage(0, g.postprocessimageoffset, GetDisplayWidth(), GetDisplayHeight(), 2); //switch back to render target.
